@@ -4,9 +4,39 @@ Bộ mod tiếng Việt cho [Yu-Gi-Oh! Forbidden Memories Recompiled](https://gi
 (bản PC/Android dựng từ mã nguồn giải mã của game PS1, port v0.3.0), và một APK Android gói sẵn mọi mod.
 Bản dịch lấy từ bản Việt hoá đĩa [yugioh-fm-vi-patch](https://github.com/2ez4gcx/yugioh-fm-vi-patch).
 
-**Không kèm dữ liệu game.** Bạn cần tự có đĩa `Yu-Gi-Oh! Forbidden Memories (USA).bin` (SLUS-01411).
+**Không kèm dữ liệu game.** File game gốc do người chơi tự cung cấp (xem [File game gốc](#file-game-gốc-người-chơi-tự-cung-cấp)).
 
 ![Thoại tiếng Việt, 4x + chữ HD](docs/anh/recompiled_thoai_hd.png)
+
+## File game gốc (người chơi tự cung cấp)
+
+Repo và các file ở Releases **không chứa** file game: không có đĩa, không có EXE `SLUS_014.11`, không có hình, nhạc
+hay thoại gốc của game. Game chạy từ chính file đĩa của bạn, đọc trực tiếp lúc chơi. Các mod ở đây chỉ chứa phần
+dịch, phần vẽ lại và các bảng chỉnh sửa.
+
+Bạn cần:
+
+| | |
+|---|---|
+| Game | Yu-Gi-Oh! Forbidden Memories, bản **Mỹ (USA)**, mã **SLUS-01411** |
+| Định dạng | file **`.bin`** dạng thô (một track, MODE2/2352), tên file đặt tùy ý. Không dùng `.iso`, `.chd`, `.cue` thay cho `.bin` (file `.cue` không cần) |
+| Kích thước | 517.872.768 byte |
+| SHA-256 đĩa chuẩn | `6e22494a45bf50fa2d239cd3819a57163a5f9b91e0365babc3e101509b5c3a7c` |
+
+- Dùng **đĩa gốc chưa vá**: không dùng file đã áp bản vá Việt hoá đĩa (`yugioh-fm-vi.ppf`) hay bản vá khác, vì port
+  đọc dữ liệu thẳng từ đĩa và bản dịch của port là mod riêng. Bản châu Âu (PAL) hay Nhật không chạy được.
+- Lấy file từ **đĩa game của chính bạn** bằng phần mềm chép đĩa ra BIN/CUE (sector thô 2352 byte). Đừng hỏi hay
+  chia sẻ link tải file game trong repo này.
+- Kiểm tra file trên Windows: `certutil -hashfile "tên-file.bin" SHA256` (PowerShell: `Get-FileHash "tên-file.bin"`).
+  Mã khác mã ở trên thường là file đã vá, bản khác vùng, hoặc file chép lỗi.
+
+Đặt file ở đâu:
+
+- **Android:** chép file `.bin` vào điện thoại (ví dụ thư mục Download). Lần đầu mở app, chọn **Choose disc image...**
+  rồi chọn file. App tự chép vào bộ nhớ của nó (`Android/data/org.yfmredecomp.game/files/game/`), lần sau không
+  cần chọn lại; có thể xoá bản ở Download sau khi app đã chép xong.
+- **PC (bản chính thức):** lần đầu chạy `memories-pc.exe`, chọn file `.bin` trong hộp thoại.
+- **PC (build từ mã nguồn):** đặt file `.bin` vào thư mục `game\` của mã nguồn rồi chạy `play.bat`.
 
 ## Tải về
 
@@ -45,7 +75,7 @@ APK riêng gói thêm (của tác giả khác, xem Ghi công): Monster Effects, 
 1. Nếu máy đang có YFM Re-Decomp **bản chính thức**, gỡ nó trước (khác khoá ký). Gỡ app sẽ xoá save trong app:
    muốn giữ thì chép `Android/data/org.yfmredecomp.game/files/saves` ra chỗ khác trước, cài xong chép lại.
    Nếu đang có một bản APK riêng trước đó thì cài đè luôn, save được giữ.
-2. Chép APK và file `.bin` sang điện thoại, cài APK.
+2. Chép APK và file `.bin` (file game gốc của bạn, xem [File game gốc](#file-game-gốc-người-chơi-tự-cung-cấp)) sang điện thoại, cài APK.
 3. Mở app (lần đầu hơi lâu vì giải nén gói HD), chọn **Choose disc image...** và chọn file `.bin`.
 4. Tuỳ chọn: Video > Internal 4x và HD text cho hình đẹp; máy yếu thì 2x.
 
