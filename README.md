@@ -1,8 +1,9 @@
 # Yu-Gi-Oh! Forbidden Memories Recompiled — Việt hoá (PC + Android)
 
-Bộ mod tiếng Việt cho [Yu-Gi-Oh! Forbidden Memories Recompiled](https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled)
-(bản PC/Android dựng từ mã nguồn giải mã của game PS1, port v0.3.0), và một APK Android gói sẵn mọi mod.
-Bản dịch lấy từ bản Việt hoá đĩa [yugioh-fm-vi-patch](https://github.com/2ez4gcx/yugioh-fm-vi-patch).
+Một gói mod tiếng Việt cho [Yu-Gi-Oh! Forbidden Memories Recompiled](https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled)
+(bản PC/Android dựng từ mã nguồn giải mã của game PS1). Dùng **bản chính thức v0.3.0** của port cho cả Windows và
+Android, chỉ cần thêm **một file zip** mod. Bản dịch lấy từ bản Việt hoá đĩa
+[yugioh-fm-vi-patch](https://github.com/2ez4gcx/yugioh-fm-vi-patch).
 
 **Không kèm dữ liệu game.** File game gốc do người chơi tự cung cấp (xem [File game gốc](#file-game-gốc-người-chơi-tự-cung-cấp)).
 
@@ -40,91 +41,86 @@ Bạn cần:
 
 ## Tải về
 
-Ở mục [Releases](../../releases):
-
-| File | Dùng cho |
+| File | Lấy ở |
 |---|---|
-| `YFM-ReDecomp-v0.3.0-VietHoa-arm64.apk` | Android (arm64, Android 7.0 trở lên): APK gói sẵn mọi mod và gói HD, cài là chơi |
-| `yfm-mods-viet-hoa-android.zip` | APK **chính thức** v0.3.0: nhập bằng Mods > Import mod... |
-| `yfm-mods-viet-hoa-pc.zip` | Windows: bản chính thức v0.3.0 hoặc bản build từ mã nguồn |
+| Game bản chính thức v0.3.0: `yfm-redecomp-v0.3.0-android-arm64.apk` (Android) hoặc `yfm-redecomp-v0.3.0-windows.zip` (Windows) | [release v0.3.0 của port](https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.0) |
+| Gói HD (tuỳ chọn): `yfm-redecomp-hd-mod-v0.3.0.zip`; trên Android tải trong app bằng Mods > HD pack... | release v0.3.0 của port |
+| **Gói mod Việt hoá**: `yfm-viet-hoa-mods-v<phiên bản>.zip`, dùng chung cho Windows và Android | [Releases](../../releases) của repo này |
 
-Mã SHA-256 của từng file nằm trong `SHA256SUMS.txt` của release.
+Mã SHA-256 của gói mod nằm trong `SHA256SUMS.txt` của release.
 
-## Có gì
+## Có gì trong gói mod
 
-- **Tiếng Việt (chữ)**: toàn bộ cốt truyện, menu, thẻ nhớ, 722 mô tả lá bài, loại bài, thủ hộ tinh, tên người,
-  địa danh. Tên lá bài giữ tiếng Anh.
-- **Tiếng Việt (đồ hoạ)**: BẤM NÚT START và dòng ghi công, menu tiêu đề và menu trong game, banner ĐẤU TỰ DO,
-  CHÚ Ý!, ô ĐỊA HÌNH và tên địa hình, màn kết quả, tiêu đề CÀI ĐẶT, nhãn MỚI!.
-- **Đủ 722 lá**: 82 lá vốn không rơi được thêm vào bảng rơi S/A của đối thủ dùng lá đó, 122 lá giá 999999 sao
-  được hạ giá theo cấp, 24 lá không có mật mã được thêm mật mã thật.
-- **Rơi nhiều lá**: mỗi trận thắng 5 lá (đổi ở Mods > Rơi nhiều lá).
-- **Monster Effects – tiếng Việt**: mô tả hiệu ứng tiếng Việt cho 63 lá của mod Monster Effects.
+| Mod | Tác giả | Làm gì |
+|---|---|---|
+| Tiếng Việt (`viet-hoa`) | bản Việt hoá này | toàn bộ cốt truyện, menu, thẻ nhớ, 722 mô tả lá bài, loại bài, thủ hộ tinh, tên người, địa danh; tên lá bài giữ tiếng Anh |
+| Tiếng Việt: đồ hoạ (`viet-hoa-gfx`) | bản Việt hoá này | BẤM NÚT START và dòng ghi công, menu tiêu đề và trong game, banner ĐẤU TỰ DO, CHÚ Ý!, ô ĐỊA HÌNH và tên địa hình, màn kết quả, tiêu đề CÀI ĐẶT, nhãn MỚI! |
+| Đủ 722 lá (`du-722-la`) | bản Việt hoá này | 82 lá vốn không rơi được thêm vào bảng rơi S/A của đối thủ dùng lá đó, 122 lá giá 999999 sao được hạ giá theo cấp, 24 lá không có mật mã được thêm mật mã thật |
+| Rơi nhiều lá (`roi-nhieu-la`) | bản Việt hoá này | mỗi trận thắng 5 lá (đổi số lá trong tuỳ chọn của mod) |
+| Monster Effects – tiếng Việt (`monster-effects-vi`) | bản Việt hoá này | mô tả hiệu ứng tiếng Việt cho 63 lá của Monster Effects |
+| Monster Effects | jonasfelix92 | 61 quái vật có hiệu ứng, mở rộng Dark Hole và Harpie's Feather Duster |
+| Adversários à Mesa (`simon-at-table`) | jonasfelix92 | đối thủ ngồi sau bàn đấu, chớp mắt và đổi nét mặt theo điểm sinh mệnh |
+| 3D Duel Arena | jonasfelix92 | cảnh 3D quanh bàn đấu; sân vận động ở giải đấu trong cốt truyện (đối thủ 9 đến 17) |
+| Dual Play, AI Hard Mode 0.1.10 | jonasfelix92 | tuỳ chọn, tắt sẵn |
 
-APK riêng gói thêm (của tác giả khác, xem Ghi công): Monster Effects, Adversários à Mesa (đối thủ ngồi sau bàn),
-3D Duel Arena (sân vận động giải đấu), gói Forbidden Memories HD, và 3D Monsters đặt sẵn **đánh thẳng trên bàn**
-(không vào cảnh hai lá bài lớn). Dual Play, AI Hard Mode và một bản Việt hoá khác (translation-vi) có sẵn nhưng tắt.
+Mod code trong gói có cả bản Windows (i386) và Android (arm64), build cho game v0.3.0.
 
 | | |
 |---|---|
 | ![Mô tả lá bài](docs/anh/recompiled_mo_ta_la_bai_hd.png) | ![Kết quả, rơi 5 lá](docs/anh/roi-5-la.png) |
 | ![Đánh trên bàn](docs/anh/danh-tren-ban.png) | ![Sân vận động](docs/anh/san-van-dong.png) |
 
-## Cài trên Android: APK riêng
+## Cài trên Android
 
-1. Nếu máy đang có YFM Re-Decomp **bản chính thức**, gỡ nó trước (khác khoá ký). Gỡ app sẽ xoá save trong app:
-   muốn giữ thì chép `Android/data/org.yfmredecomp.game/files/saves` ra chỗ khác trước, cài xong chép lại.
-   Nếu đang có một bản APK riêng trước đó thì cài đè luôn, save được giữ.
-2. Chép APK và file `.bin` (file game gốc của bạn, xem [File game gốc](#file-game-gốc-người-chơi-tự-cung-cấp)) sang điện thoại, cài APK.
-3. Mở app (lần đầu hơi lâu vì giải nén gói HD), chọn **Choose disc image...** và chọn file `.bin`.
-4. Tuỳ chọn: Video > Internal 4x và HD text cho hình đẹp; máy yếu thì 2x.
+1. Cài `yfm-redecomp-v0.3.0-android-arm64.apk` (Android 7.0 trở lên, máy arm64), mở app, chọn **Choose disc image...**
+   và chọn file `.bin`.
+2. **Mods > HD pack...** để tải gói HD (tuỳ chọn).
+3. **Mods > Import mod...**, chọn `yfm-viet-hoa-mods-v<phiên bản>.zip`. Mod nhập vào đều đang tắt: bật
+   **Tiếng Việt, Tiếng Việt: đồ hoạ, Đủ 722 lá, Rơi nhiều lá, Monster Effects, Monster Effects – tiếng Việt,
+   Adversários à Mesa, 3D Duel Arena**.
+4. **Mods > 3D Monsters > Monsters attack = On the field**: quái vật đánh thẳng trên bàn, không vào cảnh hai lá bài lớn.
+5. **Apply** rồi mở lại app. Tuỳ chọn: Video > Internal 4x và HD text (máy yếu thì 2x).
 
-## Cài trên Android: APK chính thức
+## Cài trên Windows
 
-1. Cài `yfm-redecomp-v0.3.0-android-arm64.apk` từ [release chính thức](https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.0), chọn file `.bin`.
-2. Mods > **HD pack...** (tải gói HD), rồi **Import mod...** chọn `yfm-mods-viet-hoa-android.zip`.
-3. Bật: Tiếng Việt, Tiếng Việt: đồ hoạ, Đủ 722 lá, Rơi nhiều lá, Monster Effects, Monster Effects – tiếng Việt,
-   Adversários à Mesa, 3D Duel Arena. Trong 3D Monsters: Monsters attack = On the field. Apply rồi mở lại app.
+1. Giải nén `yfm-redecomp-v0.3.0-windows.zip`, chạy `memories-pc.exe`, chọn file `.bin`.
+2. Gói HD (tuỳ chọn): giải nén `yfm-redecomp-hd-mod-v0.3.0.zip` vào thư mục game (cạnh `memories-pc.exe`).
+3. Đóng game. Giải nén `yfm-viet-hoa-mods-v<phiên bản>.zip` vào `Documents\My Games\YFM Re-Decomp`
+   (thành `...\YFM Re-Decomp\mods\viet-hoa`, ...). Các mod tự bật, trừ Dual Play và AI Hard Mode.
+4. Mở game, **F10 > Game > Mods > 3D Monsters > Monsters attack = On the field**, Apply.
+   Video > Resolution > Internal 4x và Video > HD text.
 
-## Cài trên PC (Windows)
-
-1. Tải và giải nén `yfm-redecomp-v0.3.0-windows.zip` từ [release chính thức](https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.0)
-   (hoặc build từ mã nguồn), chạy `memories-pc.exe` và chọn file `.bin`.
-2. Gói HD: giải nén `yfm-redecomp-hd-mod-v0.3.0.zip` của release chính thức vào thư mục game.
-3. Giải nén `yfm-mods-viet-hoa-pc.zip` vào `Documents\My Games\YFM Re-Decomp` (để có `mods\viet-hoa`, ...).
-4. Mở game, F10 > Game > Mods: bật các mod như bước 3 của Android, 3D Monsters > Monsters attack = On the field,
-   Apply. Video > Resolution > Internal 4x và Video > HD text.
+Cập nhật lên gói mod mới: làm lại bước 3 (Android) hoặc giải nén đè (Windows).
 
 ## Save cũ
 
 Save thẻ nhớ từ giả lập (`.mcr`, `.mcd`, `.srm`, `.gme`, `.mcs`, `.psv`...) hay từ bản Việt hoá đĩa: chép vào thư mục
-`saves` (PC: `Documents\My Games\YFM Re-Decomp\saves`; Android: `Android/data/org.yfmredecomp.game/files/saves`)
+`saves` (Windows: `Documents\My Games\YFM Re-Decomp\saves`; Android: `Android/data/org.yfmredecomp.game/files/saves`)
 rồi chọn LOAD ở màn tiêu đề. Tên nhân vật có dấu tiếng Việt từ bản đĩa sẽ hiện sai chữ (bảng mã khác).
 Save state (F5/F7, hay của giả lập) không chuyển được giữa máy và phiên bản: lưu trong game trước khi chuyển.
 
 ## Lưu ý
 
-- APK chưa được thử trên điện thoại thật bởi người làm; bộ mod đã chạy đúng trên bản Windows build từ cùng mã
-  v0.3.0 (chữ, đồ hoạ, đánh trên bàn, rơi 5 lá, sân vận động).
-- Hai bản Việt hoá (Tiếng Việt và translation-vi) không bật cùng lúc được: port từ chối bộ mod xung đột.
-- Font port rộng cố định 8 px (bản đĩa dùng VWF): vài chỗ được ngắt dòng lại hoặc rút gọn cho vừa ô, như
-  "Thung Lũng Vua" (ô bản đồ 16 chữ) và menu chọn thủ hộ tinh.
+- Gói mod đã chạy đúng trên bản Windows build từ mã v0.3.0 (cùng mã với APK): chữ và đồ hoạ tiếng Việt, đánh
+  trên bàn, rơi 5 lá, sân vận động. Bản Android của các mod jonasfelix92 tác giả ghi là chưa thử trên máy thật.
+- Font của port rộng cố định 8 px (bản đĩa dùng chữ rộng thay đổi), nên vài chỗ được ngắt dòng lại hoặc xếp lại cho
+  vừa ô: mô tả lá bài, vài câu thoại dài, tên "Thung Lũng Vua" trên bản đồ (ô 16 chữ), menu chọn thủ hộ tinh
+  (lựa chọn sát lề trái để "Sao Thiên Vương" vừa khung, kể cả chữ HD trên Android).
+- Chỉ dùng bản Việt hoá này: đừng bật cùng một bản dịch tiếng Việt khác (port từ chối bộ mod có hai bản dịch xung đột).
 
-## Làm lại APK
+## Đóng gói lại
 
-`android/make_apk.py` thêm các mod vào APK chính thức v0.3.0 (mod đi kèm ở `assets/build/files`, mã build mới
-mỗi bộ mod để cài đè nhận mod mới), rồi `zipalign -P 16 -f 4` và `apksigner` (build-tools 35, JDK 17). Mod code
-phải build bằng `tools/pc/build_mod.py` của port **v0.3.0** (API 12): bản API mới hơn bị game v0.3.0 từ chối.
-Khoá ký, APK chính thức và công cụ không nằm trong repo.
+`python make_bundle.py --version <phiên bản> --out <thư mục>` gom `mods/` của repo này với mod của tác giả khác (từ thư
+mục mod của người chơi) thành một file zip. Mod code phải build bằng `tools/pc/build_mod.py` của port **v0.3.0**
+(API 12): bản API mới hơn bị game v0.3.0 từ chối.
 
 ## Ghi công và giấy phép
 
 - Port Yu-Gi-Oh! Forbidden Memories Recompiled: Unchiga và cộng sự (phần port: MIT). Giải mã gốc:
   [memories-decomp](https://github.com/krystalgamer/memories-decomp). Yu-Gi-Oh! và Forbidden Memories thuộc Konami.
-- Gói Forbidden Memories HD: Unchiga, X@nder.
+- Gói Forbidden Memories HD: Unchiga, X@nder (tải ở release của port, không nằm trong gói này).
 - Monster Effects, Adversários à Mesa, 3D Duel Arena, Dual Play và bản AI Hard Mode 0.1.10: jonasfelix92
   (AI Hard Mode gốc: DecompRecomp).
-- translation-vi 0.9: tác giả ghi trong mod.
 - Bản Việt hoá (chữ, đồ hoạ, mô tả hiệu ứng), Đủ 722 lá, Rơi nhiều lá: Bản Việt hóa phi lợi nhuận bởi KhươngKid.
 
-APK và các file zip chứa mod và gói HD của các tác giả trên. Trước khi chia sẻ công khai, hãy hỏi ý họ.
+Gói mod chứa mod của jonasfelix92: trước khi chia sẻ công khai, hãy hỏi ý tác giả.

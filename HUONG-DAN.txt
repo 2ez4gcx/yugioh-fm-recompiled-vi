@@ -1,0 +1,34 @@
+YU-GI-OH! FORBIDDEN MEMORIES RECOMPILED — GÓI MOD VIỆT HOÁ
+Dùng cho bản chính thức v0.3.0 (Windows và Android) của Unchiga:
+https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.0
+
+Không kèm file game: cần đĩa Mỹ SLUS-01411 dạng .bin thô (MODE2/2352), chưa vá,
+SHA-256 6e22494a45bf50fa2d239cd3819a57163a5f9b91e0365babc3e101509b5c3a7c, lấy từ đĩa của chính bạn.
+
+TRONG GÓI (thư mục mods/)
+  Của bản Việt hoá:  viet-hoa (chữ), viet-hoa-gfx (đồ hoạ), du-722-la (đủ 722 lá),
+                     roi-nhieu-la (5 lá mỗi trận thắng), monster-effects-vi (mô tả hiệu ứng tiếng Việt)
+  Của jonasfelix92:  monster-effects, simon-at-table (Adversários à Mesa), 3d-duel-arena,
+                     dual-play và ai-hard-mode (hai mod này tắt sẵn)
+
+ANDROID
+1. Cài yfm-redecomp-v0.3.0-android-arm64.apk (bản chính thức), mở app, chọn Choose disc image... -> file .bin.
+2. Mods > HD pack... (tải gói HD chính thức).
+3. Mods > Import mod... -> chọn file zip này. Mod nhập vào đều đang tắt: bật
+   Tiếng Việt, Tiếng Việt: đồ hoạ, Đủ 722 lá, Rơi nhiều lá, Monster Effects, Monster Effects – tiếng Việt,
+   Adversários à Mesa, 3D Duel Arena.
+4. Mods > 3D Monsters > Monsters attack = On the field (đánh thẳng trên bàn).
+5. Apply rồi mở lại app. Tuỳ chọn: Video > Internal 4x, HD text (máy yếu: 2x).
+
+WINDOWS
+1. Giải nén yfm-redecomp-v0.3.0-windows.zip (bản chính thức), chạy memories-pc.exe, chọn file .bin.
+2. Giải nén yfm-redecomp-hd-mod-v0.3.0.zip (gói HD chính thức) vào thư mục game (cạnh memories-pc.exe).
+3. Đóng game. Giải nén gói này vào Documents\My Games\YFM Re-Decomp (sẽ có ...\YFM Re-Decomp\mods\viet-hoa ...).
+   Các mod tự bật (trừ Dual Play, AI Hard Mode).
+4. Mở game, F10 > Game > Mods > 3D Monsters > Monsters attack = On the field, Apply.
+   Video > Resolution > Internal 4x và Video > HD text.
+
+GHI CHÚ
+- Rơi 5 lá: mod Rơi nhiều lá đặt Game > Card drops mỗi lần mở game; đổi số lá trong Mods > Rơi nhiều lá.
+- Save thẻ nhớ cũ (.mcr .mcd .srm .gme .mcs .psv ...): chép vào thư mục saves rồi chọn LOAD ở màn tiêu đề.
+- Mod của jonasfelix92 và gói HD thuộc về tác giả của chúng. Bản Việt hoá phi lợi nhuận bởi KhươngKid.
