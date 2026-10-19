@@ -1,0 +1,38 @@
+[
+ {
+  "file": "field_label.png",
+  "alias": "ô FIELD: nhãn ĐỊA HÌNH",
+  "archive": "WA_MRG.MRG",
+  "offset": 11873292,
+  "words": 10,
+  "rows": 8,
+  "bpp": 4,
+  "stride": 64,
+  "clut_offset": 11930016,
+  "clut_entries": 16
+ },
+ {
+  "file": "field_names.png",
+  "alias": "ô FIELD: tên 6 địa hình",
+  "archive": "WA_MRG.MRG",
+  "offset": 11872288,
+  "words": 16,
+  "rows": 48,
+  "bpp": 4,
+  "stride": 64,
+  "clut_offset": 11930016,
+  "clut_entries": 16
+ },
+ {
+  "file": "new_badge.png",
+  "alias": "rương bài: nhãn MỚI!",
+  "archive": "WA_MRG.MRG",
+  "offset": 11875444,
+  "words": 6,
+  "rows": 8,
+  "bpp": 4,
+  "stride": 64,
+  "clut_offset": 11928864,
+  "clut_entries": 16
+ }
+]

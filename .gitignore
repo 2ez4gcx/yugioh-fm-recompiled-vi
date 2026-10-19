@@ -1,0 +1,15 @@
+# game data: never commit (copyrighted) - bring your own USA BIN
+*.bin
+*.cue
+*.iso
+# release files go in GitHub Releases, not the repository
+*.apk
+*.zip
+*.idsig
+# signing key, downloads and tools for android/make_apk.py
+keystore/
+dl/
+tools/
+build/
+__pycache__/
+*.pyc

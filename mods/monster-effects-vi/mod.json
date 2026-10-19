@@ -1,0 +1,326 @@
+{
+    "id": "monster-effects-vi",
+    "name": "Monster Effects – tiếng Việt",
+    "version": "0.37.1",
+    "author": "2ez4gcx",
+    "description": "Mô tả hiệu ứng tiếng Việt cho 63 lá của Monster Effects 0.37.1.",
+    "enabled": true,
+    "after": [
+        "monster-effects"
+    ],
+    "cards": [
+        {
+            "replace": 12,
+            "description": "Được +500 công cho mỗi Lava Battleguard bạn điều khiển.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 23,
+            "description": "Cuối lượt của bạn, lá này nếu đang ngửa trên sân sẽ trở về tay chủ.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 40,
+            "description": "Chuyển mọi quái vật hệ Rồng đang ngửa trên sân sang tư thế tấn công.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 83,
+            "description": "Khi vào sân ngửa: quái vật hệ Thây Ma đang ngửa được +200 công/thủ. Khi lá này còn ngửa, chúng được thêm 200 vào đầu 4 lượt tới của bạn.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 48,
+            "description": "Khi lá này bị tiêu diệt: lấy ngẫu nhiên 1 quái vật có công từ 1500 trở xuống trong Bộ bài lên tay.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 58,
+            "description": "Khi quái vật đối thủ sắp gây sát thương chiến đấu: bỏ lá này khỏi tay, bạn không nhận sát thương của trận đó.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 84,
+            "description": "Khi vào sân ngửa: tiêu diệt ngẫu nhiên 1 lá Phép hoặc Bẫy đang úp trên sân đối thủ.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 99,
+            "description": "Khi Castle of Dark Illusions đang ngửa: được +100 công/thủ, thêm 100 vào đầu 4 lượt tới của bạn. Castle rời sân thì mất hết điểm cộng.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 102,
+            "description": "LẬT: lấy ngẫu nhiên 1 lá Bẫy trong Mộ của bạn lên tay.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 114,
+            "description": "Khi lá này gây sát thương chiến đấu cho đối thủ, họ bỏ ngẫu nhiên 1 lá trên tay.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 166,
+            "description": "Mỗi khi một quái vật khác được triệu hồi thường hoặc lật ngửa, bạn được 500 Điểm Sinh Mệnh.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 224,
+            "description": "Khi vào sân ngửa: lật xem ngẫu nhiên 1 lá úp trong ô Phép/Bẫy đối thủ. Là Bẫy thì tiêu diệt, không thì úp lại.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 235,
+            "description": "Được +100 công cho mỗi quái vật hệ Thực Vật đang ngửa trên sân.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 256,
+            "description": "Sau khi tính sát thương, khi lá này đấu với một quái vật: tiêu diệt quái vật đó, đồng thời tiêu diệt lá này.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 258,
+            "description": "Là quái vật cuối khi Dung hợp: thay 1 nguyên liệu quái vật để ra Dung hợp yếu nhất. Có thể kèm Trang bị; các bản trước vẫn như thường.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 109,
+            "description": "Là quái vật cuối khi Dung hợp: thay 1 nguyên liệu quái vật để ra Dung hợp yếu nhất. Có thể kèm Trang bị; các bản trước vẫn như thường.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 266,
+            "description": "Khi vào sân ngửa: gây 500 sát thương cho đối thủ với mỗi lá Phép hoặc Bẫy trên sân của họ.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 269,
+            "description": "Là quái vật cuối khi Dung hợp: thay 1 nguyên liệu quái vật để ra Dung hợp yếu nhất. Có thể kèm Trang bị; các bản trước vẫn như thường.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 368,
+            "description": "Được +100 công cho mỗi quái vật trong Mộ của bạn, kể cả khi lá này đang úp.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 371,
+            "description": "Mỗi lượt một lần, nếu đang ngửa khi đối thủ tấn công: công của quái vật tấn công thành 0, chỉ lúc tính sát thương.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 372,
+            "description": "Mỗi lượt một lần, nếu đang ngửa khi đối thủ tấn công: công của quái vật tấn công thành 0, chỉ lúc tính sát thương.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 373,
+            "description": "Mỗi lượt một lần, nếu đang ngửa khi đối thủ tấn công: công của quái vật tấn công thành 0, chỉ lúc tính sát thương.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 386,
+            "description": "Được +300 công/thủ cho mỗi lá đang ngửa trên sân có \"Harpie Lady\" trong tên.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 393,
+            "description": "Quái vật bị lá này tấn công sẽ bị tiêu diệt vào cuối lượt thứ năm sau đòn tấn công.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 394,
+            "description": "Quái vật không phải hệ Máy tấn công lá này sẽ bị tiêu diệt vào cuối lượt thứ hai của chủ nó sau đòn đó.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 387,
+            "description": "Lá này có thể tấn công vào ô quái vật trống của đối thủ để tấn công trực tiếp.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 397,
+            "description": "Lá này có thể tấn công vào ô quái vật trống của đối thủ để tấn công trực tiếp.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 398,
+            "description": "Lá này có thể tấn công vào ô quái vật trống của đối thủ để tấn công trực tiếp.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 422,
+            "description": "Lá này có thể tấn công vào ô quái vật trống của đối thủ để tấn công trực tiếp.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 399,
+            "description": "Quái vật bị lá này tấn công sẽ bị tiêu diệt vào cuối lượt thứ năm sau khi tính sát thương.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 407,
+            "description": "Được +100 công cho mỗi quái vật hệ Máy đang ngửa trên cả hai sân, tính cả lá này.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 428,
+            "description": "LẬT: lấy ngẫu nhiên 1 lá Phép trong Mộ của bạn lên tay.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 462,
+            "description": "LẬT: được 3000 Điểm Sinh Mệnh. Nếu lá này từ sân vào Mộ của bạn: mất 5000 Điểm Sinh Mệnh.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 469,
+            "description": "Khi vào sân ngửa: lật xem ngẫu nhiên 1 lá Phép/Bẫy đang úp của đối thủ. Là Phép thì tiêu diệt, là Bẫy thì úp lại.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 478,
+            "description": "Khi lá này tấn công quái vật GIÓ, nó được +1000 công trong trận đó.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 488,
+            "description": "Lá này có thể tấn công vào ô quái vật trống của đối thủ để tấn công trực tiếp.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 490,
+            "description": "Khi vào sân ngửa: bạn mất 2000 Điểm Sinh Mệnh, đối thủ mất 1000 Điểm Sinh Mệnh.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 492,
+            "description": "Khi lá này ngửa trên sân: mọi quái vật ÁNH SÁNG đang ngửa được +500 công, mọi quái vật BÓNG TỐI đang ngửa bị -400 công.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 493,
+            "description": "Được +500 công cho mỗi lá Trang bị gắn vào lá này.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 500,
+            "description": "Khi được triệu hồi thường hoặc lật ngửa (kể cả do chiến đấu): tiêu diệt ngẫu nhiên 1 quái vật hệ Rồng đang ngửa trên sân đối thủ.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 501,
+            "description": "LẬT: tiêu diệt ngẫu nhiên 1 quái vật trên sân đối thủ.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 516,
+            "description": "Được +300 công/thủ cho mỗi lá trên tay bạn.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 524,
+            "description": "Khi lá này ngửa trên sân: mọi quái vật NƯỚC đang ngửa được +500 công, mọi quái vật LỬA đang ngửa bị -400 công.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 527,
+            "description": "Khi lá này ngửa trên sân: mọi quái vật ĐẤT đang ngửa được +500 công, mọi quái vật GIÓ đang ngửa bị -400 công.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 541,
+            "description": "LẬT: trả ngẫu nhiên 1 quái vật trên sân đối thủ về tay chủ. Tay đã đầy thì đưa nó vào Mộ.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 551,
+            "description": "Mỗi lần lá này tấn công, bạn mất 1000 Điểm Sinh Mệnh.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 554,
+            "description": "Được +500 công cho mỗi Swamp Battleguard bạn điều khiển.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 562,
+            "description": "LẬT: đưa 5 lá trên cùng của Bộ bài đối thủ vào Mộ.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 574,
+            "description": "Khi lá này bị tiêu diệt: lấy ngẫu nhiên 1 quái vật có thủ từ 1500 trở xuống trong Bộ bài lên tay.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 583,
+            "description": "LẬT: gỡ Swords of Revealing Light của đối thủ. Gỡ được thì quái vật của bạn tấn công hai lần lượt này (hoặc lượt tới của bạn).",
+            "frame": "Orange"
+        },
+        {
+            "replace": 336,
+            "description": "Tiêu diệt mọi quái vật trên sân, xóa mọi hiệu ứng Swords of Revealing Light và lá địa hình đang có hiệu lực."
+        },
+        {
+            "replace": 672,
+            "description": "Tiêu diệt mọi lá Phép và Bẫy của đối thủ, gỡ Swords of Revealing Light và mọi điểm cộng Trang bị của họ, xóa lá địa hình đang có hiệu lực."
+        },
+        {
+            "replace": 586,
+            "description": "Khi vào sân ngửa: chọn ngẫu nhiên 2 lá Phép/Bẫy đang úp ở hai bên sân và tiêu diệt chúng. Cần đủ 2 mục tiêu.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 591,
+            "description": "LẬT: cả hai bên bỏ hết bài thật trên tay, rồi mỗi bên rút đủ 5 lá. Bộ bài không đủ thì rút phần còn lại, không bị thua.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 598,
+            "description": "Khi lá này ngửa: mọi quái vật LỬA trên sân được +500 công, mọi quái vật NƯỚC bị -400 công.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 602,
+            "description": "LẬT: chọn ngẫu nhiên tối đa 2 quái vật trên sân, ưu tiên của đối thủ, trả về tay chủ. Tay đầy thì đưa vào Mộ.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 609,
+            "description": "Khi lá này ngửa: mọi quái vật GIÓ trên sân được +500 công, mọi quái vật ĐẤT bị -400 công.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 610,
+            "description": "Quái vật không phải hệ Thây Ma tấn công lá này sẽ không được tấn công ở lượt kế tiếp của nó.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 616,
+            "description": "Khi vào sân ngửa hoặc lật ngửa: công và thủ gốc giảm một nửa tới cuối lượt sau của bạn, rồi gấp đôi công và thủ gốc.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 628,
+            "description": "Khi lá này ngửa: mọi quái vật BÓNG TỐI trên sân được +500 công, mọi quái vật ÁNH SÁNG bị -400 công.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 635,
+            "description": "Quái vật này có thể tấn công vào ô quái vật trống của đối thủ để tấn công trực tiếp.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 641,
+            "description": "LẬT: chọn ngẫu nhiên 1 quái vật đối thủ, đổi quyền điều khiển nó với lá này. Cả hai phải còn trên sân.",
+            "frame": "Orange"
+        },
+        {
+            "replace": 642,
+            "description": "Là quái vật cuối khi Dung hợp: thay 1 nguyên liệu quái vật để ra Dung hợp yếu nhất. Có thể kèm Trang bị; các bản trước vẫn như thường.",
+            "frame": "Orange"
+        }
+    ]
+}

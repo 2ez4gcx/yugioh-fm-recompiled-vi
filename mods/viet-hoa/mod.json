@@ -1,0 +1,12 @@
+{
+    "id": "viet-hoa",
+    "name": "Tiếng Việt",
+    "version": "1.0",
+    "author": "2ez4gcx",
+    "description": "Việt hoá toàn bộ cốt truyện, menu, mô tả 722 lá bài, loại bài, thủ hộ tinh, tên người và địa danh (tên lá bài giữ tiếng Anh).",
+    "enabled": true,
+    "conflicts": [
+        "translation-vi"
+    ],
+    "text": "text_vi.txt"
+}

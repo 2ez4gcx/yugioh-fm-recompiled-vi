@@ -1,0 +1,6939 @@
+# Việt hoá Yu-Gi-Oh! Forbidden Memories cho bản Recompiled.
+# Sinh bởi tools/recompiled_mod.py từ text/*.tsv; đừng sửa tay, sửa TSV rồi chạy lại.
+
+@bank dialog
+
+{:L0001}
+{f8 0B 22}{cont}
+
+{:L0004}
+Nút{end}
+
+{:L000B}
+{f8 0B 25}{jump L0004}
+
+[0002]
+TÊN:{call L125A}{f8 16}{end}
+
+[0003]
+{f8 00 00} {f8 00 80}{f8 01 18}THỦ HỘ TINH
+{f8 01 04} {f8 00 01} {f8 00 81}{f8 01 10} {f8 00 02} {f8 00 82}{f8 01 18}{f8 00 40}{end}
+
+[0008]  {:L00A6}
+{f8 0A 01} BỘ BÀI CHƯA SẴN SÀNG!{end}
+
+[0009]
+{choice 53}{call L00A6}
+{f8 0A 00} XẾP BÀI
+ THOÁT
+{choose 80 0 0}
+
+[000A]
+{f8 17 L00EC L00E8}
+
+{:L00E8}
+{f8 06 A0 00}{cont}
+
+{:L00EC}
+XONG!{end}
+
+[000B]
+{f8 02 08}CHỌN BÀI ĐỂ ĐỔI    {sp}
+
+
+{sp}{call L0001}   OK
+
+ {call L000B}   HỦY  {sp}
+
+{sp}{f8 0B 24}Nút      CHỌN XONG
+
+{f8 02 80}{f8 0B 22}{f8 0B 25}{f8 0B 24}{f8 0A 02}CHỌN BÀI{end}
+
+[000C]
+{f8 09}{f8 06 A0 00}WIN{f8 03 08 56 1D 80 83} LOSE{f8 03 0C 56 1D 80 83}{end}
+
+[000D]
+       CHỌN ĐỐI THỦ!{end}
+
+[0011]
+{choice 4C 8F}{f8 02 2C}LƯU
+{f8 02 14}XẾP BỘ BÀI
+VỀ MÀN TIÊU ĐỀ
+{f8 02 14}RỜI QUÁN
+{choose 80 0 0 0 0}
+
+[0012]
+{choice 42}{f8 02 04}KO
+CÓ
+{choose 80 0 0}
+
+[001C]
+{f8 0A 01}{f8 02 24}BẠN CẦN XẾP BỘ BÀI
+{f8 02 18}ĐỂ CHƠI CHẾ ĐỘ CỐT TRUYỆN!{end}
+
+[0020]
+
+{f8 0A 80}{f8 02 14}TIẾN HÀNH ĐỔI
+
+{f8 0A 81}{f8 02 24}CHỌN LẠI
+
+{f8 0A 82}{f8 02 0C}VỀ MÀN TIÊU ĐỀ{end}
+
+[0021]
+{choice 5B 8F}CHỌN THỦ HỘ TINH
+ {f8 00 01} {f8 00 81}
+ {f8 00 02} {f8 00 82}
+{choose 80 0 0}
+
+[0022]
+{choice 53}BỎ ĐẤU?
+ KHÔNG
+ CÓ
+{choose 80 0 0}
+
+[0023]
+SỐ BÍ MẬT{f8 03 08 56 1D 80 C4}{f8 03 0C 56 1D 80 C4}{end}
+
+[0024]
+{f8 0A 01}    {f8 03 48 56 1D 80 01}P:BỘ BÀI
+
+{f8 02 38}CHƯA XONG{end}
+
+[0025]
+{f8 0B 27}{f8 0B 28}Nút  BẮT ĐẦU ĐẤU
+{f8 01 04} {f8 0B 25}    Nút  VỀ MÀN TIÊU ĐỀ{end}
+
+[0028]
+{f8 02 24}KHÔNG THỂ ĐẤU VỚI
+{f8 02 34}CÙNG MÃ ĐẤU SĨ!{end}
+
+[0029]
+{f8 02 2C}KHÔNG THỂ ĐỔI VỚI
+{f8 02 34}CÙNG MÃ ĐẤU SĨ!{end}
+
+[003D]  {:L0504}
+{f8 18 L0514 L0522 L0518 L0526}
+
+[003E]  {:L050E}
+{f8 17 L0514 L0518}
+
+{:L0514}
+BẠN{end}
+
+[003F]  {:L051C}
+{f8 17 L0522 L0526}
+
+{:L0522}
+MÁY{end}
+
+[0040]
+{f8 01 08}{f8 0A 01} HẠ GỤC TOÀN BỘ{cont}
+
+{:L0543}
+{f8 0A 00}{f8 06 00 00}{f8 04 01}{f8 01 F8}ĐIỀU KIỆN THẮNG{f8 06 B8 00}{f8 0A 02}{f8 04 02}LƯỢT{f8 0A 00}{f8 03 80 56 1D 80 82}{f8 01 10}{f8 01 10}{f8 0A 02}CÔNG TRUNG BÌNH{f8 01 18}PHÁ HỦY BÀI{f8 01 18}ĐÒN HIỆU QUẢ
+{f8 01 14}THỦ TRUNG BÌNH{f8 01 18}THỦ THẤT BẠI{f8 01 18}THỦ THÀNH CÔNG{f8 01 80}{f8 0A 80}{f8 02 A0}{f8 03 18 56 1D 80 84}{f8 01 18}{f8 02 A8}{f8 03 20 56 1D 80 83}{f8 01 18}{f8 02 A8}{f8 03 28 56 1D 80 83}{f8 01 10}{f8 01 10}{f8 02 A0}{f8 03 30 56 1D 80 84}{f8 01 18}{f8 02 A8}{f8 03 38 56 1D 80 83}{f8 01 18}{f8 02 A8}{f8 03 40 56 1D 80 83}{f8 01 80}{f8 0A 81}{f8 02 E8}{f8 03 1C 56 1D 80 84}{f8 01 18}{f8 02 F0}{f8 03 24 56 1D 80 83}{f8 01 18}{f8 02 F0}{f8 03 2C 56 1D 80 83}{f8 01 10}{f8 01 10}{f8 02 E8}{f8 03 34 56 1D 80 84}{f8 01 18}{f8 02 F0}{f8 03 3C 56 1D 80 83}{f8 01 18}{f8 02 F0}{f8 03 44 56 1D 80 83}{f8 0A 00}{f8 01 80}{f8 01 F8}{f8 04 01}{f8 06 F8 FF}THỐNG KÊ TẤN CÔNG{sp}{call L050E}{f8 02 30}{call L051C}{f8 01 50}{f8 06 F8 FF}THỐNG KÊ PHÒNG THỦ{sp}{call L050E}{f8 02 30}{jump L051C}
+
+[0041]
+{f8 01 08}{f8 0A 01} THẮNG DO HẾT BÀI{jump L0543}
+
+[0042]
+{f8 01 08}{f8 0A 01} GOM ĐỦ Exodia{jump L0543}
+
+[0043 0045]
+{f8 01 10}{f8 0A 02}ĐÁNH COMBO{f8 01 18}ÚP BÀI{f8 01 18}DUNG HỢP{f8 01 18}TRANG BỊ{f8 01 18}ĐỔI SÂN{f8 01 18}PHÉP THUẦN{f8 01 18}KÍCH BẪY{f8 01 88}{f8 01 E8}{f8 0A 80}{f8 02 A8}{f8 03 48 56 1D 80 83}{f8 01 18}{f8 02 A8}{f8 03 50 56 1D 80 83}{f8 01 18}{f8 02 A8}{f8 03 58 56 1D 80 83}{f8 01 18}{f8 02 A8}{f8 03 60 56 1D 80 83}{f8 01 18}{f8 02 A8}{f8 03 68 56 1D 80 83}{f8 01 18}{f8 02 A8}{f8 03 70 56 1D 80 83}{f8 01 18}{f8 02 A8}{f8 03 78 56 1D 80 83}{f8 01 88}{f8 01 E8}{f8 0A 81}{f8 02 F0}{f8 03 4C 56 1D 80 83}{f8 01 18}{f8 02 F0}{f8 03 54 56 1D 80 83}{f8 01 18}{f8 02 F0}{f8 03 5C 56 1D 80 83}{f8 01 18}{f8 02 F0}{f8 03 64 56 1D 80 83}{f8 01 18}{f8 02 F0}{f8 03 6C 56 1D 80 83}{f8 01 18}{f8 02 F0}{f8 03 74 56 1D 80 83}{f8 01 18}{f8 02 F0}{f8 03 7C 56 1D 80 83}{f8 01 E0}{f8 01 88}{f8 0A 00}{f8 04 01}{f8 06 F8 FF}CHIÊU RIÊNG{f8 02 50}{call L050E}{f8 02 30}{call L051C}{end}
+
+[0044]
+{f8 04 01}
+{f8 06 F8 FF}               {f8 02 38}{call L050E}{f8 02 30}{call L051C}{f8 01 20}{f8 06 F8 FF}          {f8 02 60}{call L050E}{f8 02 30}{call L051C}{f8 01 20}{f8 06 F8 FF}              {f8 02 30}WINNER ···{sp}{call L0504}{f8 01 42}{f8 02 38}     {sp}
+{f8 02 38}       {f8 01 80}{f8 01 FE}{f8 04 02}{f8 0A 02}BÀI DÙNG
+{f8 01 14}LP CÒN LẠI
+{f8 01 14}{f8 01 10}          {f8 01 2A}      {f8 01 86}{f8 0A 80}{f8 02 B0}{f8 03 08 56 1D 80 82}{f8 01 20}{f8 02 A0}{f8 03 10 56 1D 80 84}{f8 01 E0}{f8 0A 81}{f8 02 F8}{f8 03 0C 56 1D 80 82}{f8 01 20}{f8 02 E8}{f8 03 14 56 1D 80 84}{f8 01 78}{f8 04 02}{f8 0A 00}{f8 18 L098D L09A6 L09B5 L09C4}
+
+{:L09A6}
+{f8 06 F8 FF}WINNER {sp}{f8 09}{end}
+
+{:L09B5}
+{f8 06 F8 FF}WINNER {sp}{jump L122B}
+
+{:L09C4}
+{f8 06 F8 FF}WINNER {sp}{jump L1238}
+
+{:L0A52}
+{f8 18 L0AC0 L0A5C L0A9F L0A7E}
+
+{:L0A5C}
+Swords of Revealing Light{f8 03 10 56 1D 80 01}{end}
+
+{:L0A7E}
+Swords of Revealing Light{f8 03 10 56 1D 80 01}{cont}
+
+{:L0A9F}
+{f8 01 FC}{f8 06 E0 00}{f8 00 10}THỦ HỘ
+{f8 06 F0 00}TINH{f8 0A 00}{f8 01 F8}{cont}
+
+{:L0AC0}
+{end}
+
+[0052]
+{f8 01 E4}{call L0A52}{f8 01 1C}{jump L09FA}
+
+[0053]
+{f8 01 1C}{call L0A52}{f8 01 E4}{jump L0A34}
+
+[0054]
+{f8 01 1C}{call L0A52}{f8 01 E4}{jump L09FA}
+
+[0055]
+{f8 01 1C}{call L0A52}{f8 01 E4}{jump L0A34}
+
+[00BA]
+{jump L0E63}
+
+[00BC]
+{choice 53}TẢI DỮ LIỆU?
+ BẮT ĐẦU
+ THOÁT
+{choose 80 0 0}
+
+[00BD]
+
+{f8 0A 06}{f8 02 4C}DỮ LIỆU LỖI!{end}
+
+[00BE]
+{f8 02 3C}ĐANG ĐỊNH DẠNG...
+{jump L0E60}
+
+[00BF]
+
+{f8 02 40}ĐỊNH DẠNG{jump L0DEB}
+
+[00C0]
+{f8 02 20}ĐANG ĐỌC THẺ NHỚ...
+{f8 01 08}{f8 02 08}ĐỪNG CẮM/RÚT THẺ NHỚ
+{f8 02 1C}Ở KHE THẺ NHỚ 1 & 2{end}
+
+[00C1]
+{f8 02 24}CHƯA CẮM THẺ NHỚ
+{f8 02 20}VÀO KHE THẺ NHỚ{sp}{f8 03 48 56 1D 80 01}!{end}
+
+[00C2]
+{f8 02 2C}1P THẺ NHỚ khe 1
+{f8 02 2C}2P THẺ NHỚ khe 2
+{f8 01 08}     {f8 0B 22}BẮT ĐẦU TẢI{f8 0B 25}HỦY{end}
+
+[00C3]
+
+{f8 0A 01}{f8 02 38}THẺ NHỚ khe{sp}{f8 03 48 56 1D 80 01}{sp}
+{f8 02 38}ĐÃ BỊ THAY THẾ!
+{f8 0A 00}{end}
+
+[00C4]
+{f8 02 34}ĐANG ĐỔI BÀI
+{f8 01 08}{f8 02 08}ĐỪNG CẮM/RÚT THẺ NHỚ
+{f8 02 1C}Ở KHE THẺ NHỚ 1 & 2{end}
+
+[00C5]
+
+{f8 02 4C}ĐỔI THẤT BẠI!{end}
+
+[00C6]
+
+{f8 02 44}ĐỔI THÀNH CÔNG!{end}
+
+[00C7]
+
+{f8 02 40}TẢI{jump L0D67}
+
+[00C8]
+{choice 53}{f8 0A 01}TẢI{cont}
+
+{:L0D16}
+{f8 0A 00}?
+{jump L0DD4}
+
+[00C9]
+{choice 53}{f8 0A 01}LƯU{jump L0D16}
+
+[00CA]
+{choice 53}{f8 0A 01}TẢI VỀ{jump L0D16}
+
+[00CB]
+
+TẢI VỀ THẤT BẠI!{end}
+
+[00CC]
+
+{f8 02 18}TẢI VỀ{jump L0DEB}
+
+[00CD]
+
+{f8 02 40}LƯU{cont}
+
+{:L0D67}
+ THẤT BẠI!{end}
+
+[00CE]
+{f8 0A 01}{f8 02 14}KHÔNG TÌM THẤY DỮ LIỆU!
+{f8 01 08}{f8 0A 00}{f8 02 20}CẮM THẺ NHỚ CÓ DỮ LIỆU
+{f8 02 54}ĐÃ LƯU!{end}
+
+[00CF]
+{choice 53}GHI ĐÈ?  {sp}{nl}{cont}
+
+{:L0DD4}
+CÓ
+KHÔNG
+{choose 80 0 0}
+
+[00D0]
+
+{f8 02 48}TẢI{cont}
+
+{:L0DEB}
+ XONG!{end}
+
+[00D1]
+
+{f8 02 48}LƯU{jump L0DEB}
+
+[00D2]
+{f8 02 30}CẦN CÓ THẺ NHỚ
+{f8 02 28}Ở KHE THẺ NHỚ{sp}{f8 03 48 56 1D 80 01}!{end}
+
+[00D3]
+
+{f8 02 60}TRỐNG!{end}
+
+[00D4]
+{f8 02 2C}ĐANG ĐỌC THẺ NHỚ{nl}{cont}
+
+{:L0E60}
+{f8 01 08}{cont}
+
+{:L0E63}
+{f8 02 08}ĐỪNG CẮM/RÚT THẺ NHỚ
+{f8 02 2C}Ở KHE THẺ NHỚ{sp}{f8 03 48 56 1D 80 01}{sp}{end}
+
+[00D5]
+{f8 02 58}ĐANG TẢI...
+{jump L0E60}
+
+[00D6]
+{f8 02 58}ĐANG LƯU...
+{jump L0E60}
+
+[00D7]
+{f8 02 48}ĐANG TẢI VỀ...
+{jump L0E60}
+
+[00D8]
+
+{f8 02 40}TẢI{cont}
+
+{:L0EE3}
+ THẤT BẠI!{end}
+
+[00D9]
+
+{f8 02 40}LƯU{jump L0EE3}
+
+[00DA]
+{f8 02 40}KHÔNG ĐỌC ĐƯỢC
+{f8 02 50}THẺ NHỚ!{end}
+
+[00DB]
+{f8 0A 01}       KHÔNG ĐỦ KHỐI NHỚ TRỐNG!
+{f8 0A 00}{f8 01 08}{f8 02 48}{f8 03 08 56 1D 80 82} KHỐI DÙNG
+{f8 02 38}{f8 03 0C 56 1D 80 02} KHỐI CẦN DÙNG{end}
+
+[00DC]
+
+{f8 02 30}TẢI VỀ{jump L0EE3}
+
+[00DD]
+
+{f8 02 38}ĐỊNH DẠNG{jump L0EE3}
+
+[00DE]
+
+{f8 02 18}THẺ NHỚ CHƯA ĐỊNH DẠNG!{end}
+
+[00DF]
+{choice 53}XÓA THẺ?
+HỦY
+CÓ
+{choose 80 0 0}
+
+[00E1]
+{f8 0A 01}SAO BÀI
+{f8 0A 00} {f8 0B 26}x{f8 03 08 56 1D 80 06}{end}
+
+[00E2]
+Xin nhập
+'MẬT MÃ'
+     {sp}
+   {sp}{f8 0B 22}OK {f8 0B 25}THOÁT{end}
+
+{:L1014}
+LÁ BÀI SỐ{f8 03 0C 56 1D 80 C3}
+{f8 0B 26}x{f8 03 08 56 1D 80 06}{end}
+
+[00E3]
+{choice 64}{call L1014}{cont}
+
+{:L1039}
+
+ ĐỔI BÀI
+{f8 0A 00} RA
+{choose 80 0 0}
+
+[00E4]
+{choice 6C 02}{call L1014}{f8 0A 04}{jump L1039}
+
+[00E5]
+{call L1014}
+{f8 0A 01}     'MẬT MÃ' này
+      đã được
+      nhập rồi!{end}
+
+[00EE]
+{f8 0A 84}Âm thanh
+{f8 01 04}{f8 02 60}{f8 0A 80}STEREO      MONO{end}
+
+[00EF]
+{f8 0A 84}Âm thanh
+{f8 01 04}{f8 02 60}{f8 0A 80}STEREO      MONO{end}
+
+[00F4]
+
+{f8 02 28}Nhập tên bạn!{end}
+
+[00F5]
+{choice 53}Tên bạn là{f8 0A 01}{call L125A}{f8 0A 00}-
+CÓ
+KO
+{choose 80 L1191 L118E}
+
+{:L1191}
+{f8 1A}Mã đấu sĩ của bạn
+đã được lưu lại.{page}Không thể ĐẤU hay ĐỔI BÀI
+với cùng một MÃ ĐẤU SĨ.{end}
+
+[00F6]
+{choice 53}KẾT QUẢ ĐẤU
+WIN
+LOSE
+{choose 80 0 0}
+
+[00F7]
+ĐANG CHIẾU PHIM{end}
+
+[0546]
+{state 05 00 41}{f8 10 03 80 87 00}{f8 15 A0}{page}{jump L128B}
+
+[0500]  {:L128B}
+{state 05 01 01}Chính nó...{page}Cuối cùng cũng tìm ra...{page}Bảo vật cấm của các
+pháp sư cổ đại...{page}{state 05 00 02}{state 0B C0 00 00 00 2C 01}Hahahahaha!{page}Hahahahaha...
+Hahahahaha!!!
+{state 0A}{f8 0E 20 70}{state 0F 3C 00}{f8 16}{end}
+
+[0501]
+Hoàng tử ơi!
+Người lại ra phố
+chơi bài nữa sao!?{page}Người là dòng dõi vua chúa!
+Lại ăn mặc như thường dân
+đi dạo ngoài phố...{page}...Người không thấy ngại sao!?
+Thần thật xấu hổ quá!{page}{choice 02}«Bỏ chạy»
+«Nghe tiếp»
+{choose 80 L15DE L140F}
+
+{:L140F}
+Pharaoh đã nghe tin
+về việc Người làm...
+Ngài rất lo lắng đấy!{page}{choice 02}«Bỏ chạy»
+«Nghe tiếp»
+{choose 80 L15DE L147F}
+
+{:L147F}
+Thần biết lỗi ở thần vì
+đã dạy Người chơi bài...
+Nhưng Người mê quá rồi!{page}{choice 02}«Bỏ chạy»
+«Nghe tiếp»
+{choose 80 L15DE L14FC}
+
+{:L14FC}
+Đã đến lúc Người gác lại
+trò tiêu khiển vô bổ này
+mà lo học hành.{page}{choice 02}«Bỏ chạy»
+«Nghe tiếp»
+{choose 80 L15DE L1571}
+
+{:L1571}
+Người không nên làm Pharaoh
+và Hoàng hậu lo lắng!{page}Hoàng tử ơi...
+Xin Người về phòng.{page}{fx 01 80}{set 406E}{jump L446E}
+
+{:L15DE}
+{fx 01 41}Khoan! Hoàng tử ơi!{page}{fx 01 40}Chết thật!
+Người đi mất rồi...{end}
+
+[0502]
+{fx 01 00}Hoàng tử{sp}{call L125A}.
+Người về rồi...{page}Đã khuya lắm rồi...
+Xin Người về cung.{page}Hoàng tử ơi...
+Nếu Người vẫn muốn
+chơi bài...{page}...thì hãy đấu
+với thần.{page}Nếu thua, Người phải
+về phòng ngay.{page}Thần chắc Người sẽ thấy
+thần là đối thủ xứng tầm.{page}{choice 02}«Đấu»
+«Thôi»
+{choose 80 L172A L17AF}
+
+{:L172A}
+Hô hô hô. Hoàng tử ơi...
+Chính thần dạy Người mà.{page}Người không nghĩ là
+sẽ thắng được thần chứ?{page}Chuẩn bị đi!{page}{f8 11 00}{f8 0D 01 60 61 00 00 72}{end}
+
+{:L17AF}
+{if 006F L1805}Nào, chàng trai...
+Về phòng đi!{page}E hèm... xin Người.{page}{choice 02}«Không đi»
+«Đi»
+{choose 80 L186C L1819}
+
+{:L1805}
+{fx 01 41}Khoan!
+Quay lại!{end}
+
+{:L1819}
+Hừm...
+Người nghe lời là khôn.{page}Đã khuya rồi.
+Chúc Người ngủ ngon.{page}{fx 01 80}{set 406E}{jump L446E}
+
+{:L186C}
+{fx 01 41}Khoan!
+Quay lại đây!{end}
+
+[0503]
+Người thắng rồi...{page}Xem ra thần
+đã dạy Người rất tốt...
+Người mạnh lên rồi.{page}Người thắng đường hoàng.
+Như đã hứa, Người được đi.
+Thần không còn gì để nói...{page}{f8 19 01}{f8 16}{end}
+
+[0504]
+Hừm...
+Xem ra thần thắng rồi.{page}Đã lâu rồi kể từ khi
+thần dạy Người chơi...
+Nhưng Người còn phải học nhiều.{page}Giờ thì...
+Xin Người về cung!{end}
+
+[0505]
+{fx 01 00}Người chơi đủ chưa,
+Hoàng tử?{page}Thần chưa kể với Người,
+nhưng có một câu chuyện
+về những lá bài ấy...{page}Người có muốn
+nghe không?{page}{choice 02}«Có»
+«Ko»
+{choose 80 L1A67 L1D45}
+
+{:L1A67}
+Vậy xin nghe kỹ...{page}Ngày nay, bộ bài Yu-Gi-Oh
+chỉ được dùng làm
+trò tiêu khiển.{page}Nhưng xưa kia, lá bài là
+công cụ vô giá giúp
+khơi dậy sức mạnh phép thuật.{page}{f8 15 A1}{fx 01 82}{state 05 02 82 32 00 00}{f8 15 A0}{fx 41 00}{state 0B C0 00 32 00 58 02}Pháp sư dùng sức mạnh
+của mình để triệu hồi
+thế lực vẽ trên lá bài.{page}Có kẻ lập nên vương quốc.
+Có kẻ gây ra chiến tranh.{page}Nhưng chiến tranh giữa
+pháp sư càng khốc liệt...{page}...cho đến khi phép thuật
+bị cấm sử dụng.{page}Giờ trong vương quốc
+chỉ còn lại lá bài.{page}Chúng nhắc nhở chúng ta về
+thời đại phép thuật xa xưa...
+{state 0A}{page}{fx 41 80}{state 05 01 00}{fx 01 00}Vì thế,
+Hoàng tử{sp}{call L125A}...{page}Hãy nhớ chuyện này
+khi Người đối đầu
+bằng bộ bài của mình.{page}Đừng bao giờ quên rằng loài người
+đã từng vượt quá giới hạn
+và bước lên con đường hủy diệt.{page}{set 4048}{f8 16}{end}
+
+{:L1D45}
+Thần hiểu rồi...{page}Người đi đi, nhưng cố
+về sớm một chút...{page}{fx 01 80}{f8 16}{end}
+
+[0506]
+Chẳng có ai ở đây cả...{end}
+
+[0507]
+{if 006F L28C4}{fx 03 00}Tớ đợi cậu mãi đấy...{sp}{call L125A}.{page}Jono cũng vừa ở đây
+mấy phút trước.
+Nhưng giờ đi rồi...{page}Đấu một ván nhé?{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L257F L1E49 L24EF}
+
+{:L1E49}
+Được thôi...
+Gặp lại sau.{page}{fx 03 80}{jump L1F34}
+
+[0508]  {:L1E6B}
+{call L1267}{if 0021 L1EC2}{jump L1E76}
+
+[0509]  {:L1E76}
+{fx 03 00}Chơi một ván nhé?{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L257F L1F0D L24EF}
+
+[050A]  {:L1EC2}
+{fx 03 00}Cậu vẫn chưa đi sao?{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L1F0D L24EF}
+
+[050B]  {:L1F0D}
+Gặp lại sau nhé.{page}{fx 03 80}{fx 31 80}{if 0023 L207D}{if 0049 L2017}{jump L1F34}
+
+[050C]  {:L1F34}
+{fx 2B 00}Nè, hình như có lễ hội
+ở quảng trường thị trấn đó.{page}Nhưng tụi tôi thích chơi
+ở đây như mọi khi hơn.{page}Đấu với tôi không?{page}Nào... chơi một ván đi.{page}{set 4049}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L26A0 L2100 L2456}
+
+[050D]  {:L2017}
+{fx 2B 00}Đấu với tôi không?{page}Nào... chơi một ván đi.{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L26A0 L2100 L2456}
+
+[050E]  {:L207D}
+{fx 2B 00}Chơi nữa?{page}Tôi vừa thua cậu mà... Cho tôi chút
+thời gian nghĩ chiến thuật.{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L2100 L2456}
+
+[050F]  {:L2100}
+{call L1267}{if 0024 L2286}{if 004A L2201}{jump L2110}
+
+[0510]  {:L2110}
+{fx 2C 00}Nè. Cậu có tìm được
+lá bài hiếm nào không?{page}Tôi vừa kiếm được một
+lá khá xịn đấy!{page}Muốn có nó thì
+phải thắng tôi.{page}Nhưng nếu thua, cậu phải
+đưa tôi một lá của cậu.{page}{set 404A}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L2734 L22FE L2456}
+
+[0511]  {:L2201}
+{fx 2C 00}Cậu thắng thì tôi
+cho cậu lá này.{page}Nếu thua, cậu phải đưa
+tôi một lá của cậu.{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L2734 L22FE L2456}
+
+[0512]  {:L2286}
+{fx 2C 00}Ối...
+Hôm nay thế đủ rồi.{page}Thua nữa là tôi
+hết sạch bài mất.{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L22FE L2456}
+
+[0513]  {:L22FE}
+{call L1267}{if 0025 L23EF}{if 004B L239C}{jump L230E}
+
+[0514]  {:L230E}
+{fx 2D 00}Nói chuyện với tao hả nhóc?
+Tao bận việc khác rồi.{page}Trừ khi mày muốn thách đấu...{page}{set 404B}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L27E6 L1E6B L2456}
+
+[0515]  {:L239C}
+{fx 2D 00}Mày muốn chơi bài hả?{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L27E6 L1E6B L2456}
+
+[0516]  {:L23EF}
+{fx 2D 00}Tao nghĩ thế
+là đủ rồi nhóc...{page}Thua chẳng
+vui gì cả!{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L1E6B L2456}
+
+{:L2456}
+{call L1267}{fx 31 80}{fx 03 00}Nè, cậu biết không,
+đang có lễ hội ở
+quảng trường thị trấn?{page}Đi nào! Ra xem thử đi!{page}Chắc sẽ gặp Jono
+ở đó đấy!{page}{f8 15 A1}{f8 11 82}{state 0F 3C 00}{jump L3882}
+
+{:L24EF}
+Nè, cậu biết không,
+đang có lễ hội ở
+quảng trường thị trấn?{page}Đi nào! Ra xem thử đi!{page}Chắc sẽ gặp Jono
+ở đó đấy!{page}{f8 15 A1}{f8 11 82}{state 0F 3C 00}{jump L3882}
+
+{:L257F}
+Được, chơi thôi!
+Mong là cậu không cay cú!{page}{f8 11 00}{f8 0D 02 62 63 00 00 72}{end}
+
+[0517]
+Ui da!
+Hình như tớ thua.
+Thôi kệ...{page}Khi nào giỏi hơn chút nữa,
+tớ sẽ đấu lại cậu.{page}{f8 19 02}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L1F0D L2456}
+
+[0518]
+Tớ thắng! Tớ thắng rồi!
+Chắc lần đầu tớ
+thắng cậu đó,{sp}{call L125A}!{page}Mong cậu không
+cố tình nhường tớ...{end}
+
+{:L26A0}
+Được, chơi thôi!{page}{f8 11 00}{f8 0D 04 64 65 00 00 72}{end}
+
+[0519]
+Chà chà...
+Lần sau chơi tiếp nhé...{page}{f8 19 04}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L2100 L2456}
+
+[051A]
+Thấy sao?
+Không tệ, nhỉ?{end}
+
+{:L2734}
+Được rồi, chơi thôi!{page}{f8 11 00}{f8 0D 05 66 67 00 00 72}{end}
+
+[051B]
+Cậu thắng...
+Tôi nợ cậu một lá bài.{page}{f8 19 05}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L22FE L2456}
+
+[051C]
+Tuyệt!!! Tôi thắng!!! Vậy là
+tôi được một lá của cậu!
+Đúng không?{end}
+
+{:L27E6}
+Được, nhóc. Chơi thôi!{page}{f8 11 00}{f8 0D 06 68 69 00 00 72}{end}
+
+[051D]
+Hừ! Tao thua rồi...{page}Xem ra hôm nay
+không phải ngày của tao...{page}{f8 19 06}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L1E6B L2456}
+
+[051E]
+Nè nhóc...
+Xem ra tao thắng rồi.{page}Để lại một lá bài
+của mày ở đó đi...{end}
+
+[0523]  {:L28C4}
+{fx 02 00}Trời... Tay pháp sư đó
+tưởng mình là ai chứ!?{page}Phải công nhận là...
+gã đó mạnh thật...{page}Nè,{sp}{call L125A},
+chơi một ván trong lúc
+chờ gã đó về nhé?{page}{choice 02}«Đấu»
+«Thôi»
+{choose 80 L2976 L2A9B}
+
+[0524]  {:L2976}
+Được! Chơi thôi!{page}Ván trước tớ thua thật...
+Nhưng tay nghề vẫn còn đó!{page}{f8 11 00}{f8 0D 03 6A 6B 00 00 72}{end}
+
+[0525]
+Trời,{sp}{call L125A}!
+Cậu đè bẹp tớ rồi!
+Cậu giỏi thật đấy!{page}Giúp tớ đánh bại
+gã pháp sư đó nhé?{page}{f8 19 03}{jump L2C2D}
+
+[0526]
+Có chuyện gì vậy,{sp}{call L125A}?
+Cậu làm tốt hơn thế mà!{page}Nếu chỉ có vậy thì cậu
+không thắng nổi gã đâu!{end}
+
+[0527]  {:L2A9B}
+Sợ khởi đầu không
+suôn sẻ hả?
+Tớ hiểu mà.{page}Chờ gã pháp sư thôi.{page}Gã đó mạnh thật đấy...{page}Nghe này. Tớ chơi ở đây
+ngày này qua ngày khác.
+Cậu biết tớ giỏi mà...{page}Thật ra chẳng có mấy
+đấu sĩ tớ không thắng nổi.{page}Nhưng gã pháp sư đó...
+Trời...! Gã giỏi thật!{page}Tớ chẳng có cơ hội nào!{page}Nè,{sp}{call L125A}...
+Đừng xem thường gã đó.{page}Tớ biết cậu giỏi.
+Nhưng đừng chủ quan...{page}{jump L2C2D}
+
+[0528]  {:L2C2D}
+Gã đó kìa...
+Gã quay lại rồi.{page}{fx 02 80}{fx 30 80}Nhìn kìa...
+{state 05 03 82 3C 00 00}{state 0B 00 00 00 00 87 00}{fx 02 80}{fx 42 00}Có cả đám hâm mộ riêng...{page}Giúp tớ
+hạ gục gã đi.{page}{fx 42 80}{fx 43 00}Lên đi,{sp}{call L125A}!{page}{fx 43 80}{state 0A}{state 05 02 00}{fx 04 00}Ta không biết ngươi giỏi cỡ nào...
+Nhưng mong ngươi làm ta vui.{page}Để ngươi biết,
+ta rất thích một ván hay...{page}Đừng làm ta thất vọng!{page}{f8 11 00}{f8 0D 07 6C 6D 00 40 72}{end}
+
+[0529]
+Ta...
+Không thể tin ta thua...{page}{fx 32 80}{fx 04 00}Nhưng... khoan đã.
+Ngươi... ngươi là...{page}Hừm... ra vậy...{page}Đủ rồi.
+Hôm nay đến đây thôi.{page}Ta có linh cảm chúng ta
+sẽ còn gặp lại...{page}Tới lúc đó... xin cáo biệt.{page}{fx 32 80}{fx 04 80}{f8 19 07}{jump L2E8C}
+
+[052A]
+Ngươi thua!{page}Ngươi cần bài tốt hơn
+nếu muốn thắng ta!{end}
+
+[052B]  {:L2E8C}
+{fx 02 12}Hay quá!
+{call L125A}.{page}Thấy mặt gã lúc đó không!?
+Cậu tuyệt quá!!!{page}{fx 02 21}{fx 03 13}{call L125A}...
+Cậu giỏi quá đi!{page}{fx 02 20}{fx 03 21}"Xin cáo biệt"...
+Ha! Đồ thua cuộc!{page}{jump L2F2A}
+
+{:L2F2A}
+{call L125A},
+giờ làm gì đây?{page}Cậu còn thời gian không?{page}{choice 02}«Chơi»
+«Ra ngoài»
+{choose 80 L2F74 L2FC3}
+
+{:L2F74}
+{fx 03 80}Được!
+Chơi nhanh một ván nhé?{page}{choice 02}«Đấu»
+«Nói với người khác»
+{choose 80 L354A L30E3}
+
+{:L2FC3}
+Vậy à? Lúc nào rảnh
+thì ghé lại nhé...{page}Tụi tớ ở đây.{end}
+
+[052C]
+{fx 02 00}Nè,{sp}{call L125A}! Cậu về rồi!
+Chơi không?{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L354A L319E L30CB}
+
+{:L3057}
+{call L1267}{fx 02 00}Muộn lắm rồi đó,
+{call L125A}.{page}Đấu thêm ván nữa không?{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L354A L319E L30CB}
+
+{:L30CB}
+Ừ. Gặp lại sau...{end}
+
+[052D]  {:L30E3}
+Được. Gặp sau nhé...{page}{jump L30FE}
+
+{:L30FE}
+{call L1267}{fx 02 80}{fx 30 80}{fx 03 00}Lúc nãy cậu chơi hay đấy.
+{call L125A}.{page}Biết đâu một ngày nào đó
+tớ sẽ giỏi như cậu,
+{call L125A}.{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L3248 L3190}
+
+{:L3190}
+Gặp lại sau!{end}
+
+{:L319E}
+Ừ. Gặp lại sau...{page}{call L1267}{fx 02 80}{fx 30 80}{fx 03 00}Chắc tớ về nhà đây...{page}Mải xem lễ hội,
+tớ quên cả giờ giấc.{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L3248 L3190}
+
+[052E]  {:L3248}
+{fx 03 80}{if 004E L3301}{fx 2B 00}Trận đấu ghê thật...{page}Tôi chưa từng thấy
+cái gì như thế!{page}Cho tôi một cơ hội nhé?
+Nào, chơi một ván đi...{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L3602 L336F L335F}
+
+[052F]  {:L3301}
+{fx 2B 00}Nghe này... tôi cần nghỉ.
+Mai chơi nhé.{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L336F L335F}
+
+{:L335F}
+Gặp lại nhé...{end}
+
+[0530]  {:L336F}
+{call L1267}{if 004F L34A9}{fx 2C 00}Cậu có kiếm được
+lá bài hiếm nào không?{page}Nếu cậu muốn, tôi sẽ đấu
+để giành chúng.{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 L36BE L340F L33FC}
+
+{:L33FC}
+Hẹn lần sau nhé!{end}
+
+[0531]  {:L340F}
+{call L1267}{fx 2D 00}Mày muốn đấu hả?{page}Nghe này nhóc. Lần trước tao
+biết mày giỏi cỡ nào rồi.{page}Tao ghét thua lắm!{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L3057 L3542}
+
+[0532]  {:L34A9}
+{call L1267}{fx 2D 00}Nếu tìm thằng nhóc mày
+đánh bại thì nó về rồi.{page}Tao không chơi nữa đâu.
+Mày về nhà đi...{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L3057 L3542}
+
+{:L3542}
+Chào.{end}
+
+[0533]  {:L354A}
+Được, chơi thôi!{page}{f8 11 00}{f8 0D 03 6E 6F 00 00 72}{end}
+
+[0534]
+Trời...
+Cậu giỏi quá đi!{page}...hay tại tôi dở quá.{page}{f8 19 03}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L30FE L3547}
+
+[0535]
+Oa!{page}Hôm nay đúng là
+ngày may của tôi!
+{call L125A}.{end}
+
+[0536]  {:L3602}
+Được... Chơi thôi!{page}{f8 11 00}{f8 0D 04 70 71 00 00 72}{end}
+
+[0537]
+Hừm...
+Tôi thắng mãi không được.{page}Chắc đến lúc tôi phải
+nghĩ chiến thuật khác.{page}{f8 19 04}{set 404E}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L336F L3547}
+
+[0538]
+Thấy sao?
+Không tệ, nhỉ?{end}
+
+[0539]  {:L36BE}
+Được, chơi thôi!{page}{f8 11 00}{f8 0D 05 72 73 00 00 72}{end}
+
+[053A]
+Trời...
+Cậu giỏi quá đi...{page}Tôi về nhà đây...
+Gặp lại sau.{page}{fx 3D 80}{f8 19 05}{set 404F}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L340F L3547}
+
+[053B]
+Tôi làm được! Thắng rồi!{page}Lá này là của tôi!{end}
+
+[051F]
+{if 006F L3839}Nhiều người tụ tập
+ở quảng trường thị trấn...{page}...nhưng chẳng có gì thú vị.{end}
+
+[05F8]  {:L37DB}
+Hình như lễ hội tàn rồi.
+Chẳng còn mấy người...{page}...và chẳng có gì thú vị.{end}
+
+{:L3839}
+{if 0026 L37DB}Lễ hội đang lúc nhộn nhịp...{page}...nhưng chẳng có gì thú vị.{end}
+
+[0520]  {:L3882}
+{state 05 36 00}{f8 0E 40 73}{f8 15 A0}Oa... đông người
+quá đi.{page}Nhìn kìa, các pháp sư sắp
+bắt đầu diễu hành...{page}{f8 15 A1}{fx 03 82}{state 05 37 01}{f8 15 A0}{fx 43 00}Tuyệt...{page}...nhưng hơi rợn người.{page}Chắc đây là trò của
+tên pháp sư tối cao
+đáng ghét, Heishin.{page}Hồi tớ còn nhỏ, nơi này
+lành mạnh hơn nhiều.{page}Ngay cả thái độ pháp sư
+cũng tệ đi nhiều...{page}Thế giới này rồi
+sẽ ra sao...?{page}{fx 43 80}{state 05 36 00}{fx 03 00}Muốn đi chỗ khác không?{page}{f8 15 A1}{fx 03 82}{state 05 00 00}{f8 15 C0}{fx 43 00}Nhìn kìa! Là Jono!
+Không thể tin nổi,
+cậu ấy đang đấu ở đó!{page}{fx 43 80}{f8 15 A0}{state 05 38 01}{fx 42 00}Tớ...
+Thua...{page}{fx 42 80}{fx 44 00}Ta nghĩ ta đã
+phí công vào
+một hạt bụi tầm thường.{page}{fx 44 80}{fx 42 00}Ngươi nói gì!{page}{fx 42 80}{fx 44 00}Thứ lỗi cho ta. Ngươi cũng...
+có chút thú vị.{page}{fx 44 80}{fx 43 00}Nè! Jono!{page}{fx 43 80}{fx 42 00}Teana và{sp}{call L125A}...{page}{fx 42 80}{state 05 37 00}{fx 02 00}{fx 43 00}{fx 02 21}Chuyện gì vậy?{page}{fx 43 80}{fx 02 20}Thấy sao?
+Rõ ràng quá mà?{page}{fx 02 21}{fx 43 00}Cậu thua...{page}{fx 43 80}{fx 02 20}Đừng nói thẳng thế! Tớ không
+thua... chỉ là vấp ngã thôi...{page}{fx 02 80}{fx 04 00}Ta chán con sâu này rồi...{page}Không ai trong các ngươi
+đáng để ta chú ý sao?{page}{fx 04 21}{fx 42 00}Trời!
+Gã này láo thật!{page}{fx 42 80}{fx 43 00}Nè,{sp}{call L125A}...
+Sao cậu không thách gã?{page}Cậu là đấu sĩ giỏi
+nhất tớ từng thấy mà!{page}Tớ cá cậu thắng được!{page}{fx 43 80}{fx 42 00}Đúng,{sp}{call L125A}!
+Lên đi! Cho gã biết
+ai là trùm ở đây!{page}{fx 42 80}{fx 04 20}Chào...
+Ngươi là con mồi kế?{page}{choice 02}«Đấu»
+«Thôi»
+{choose 80 L3D49 L3F7B}
+
+[0521]  {:L3D49}
+Mong ngươi giỏi hơn
+kẻ trước.
+Nào! Đấu thôi.{page}{fx 04 21}{fx 45 00}Ngài Seto! Ngài Heishin
+cho gọi ngài.{page}{fx 45 80}{fx 04 20}Vậy à...{page}Thôi được. Hoãn trận đấu.{page}Ta đoán ngươi hay lui tới
+sân đấu của thị trấn?{page}{fx 04 21}{fx 42 00}Đúng vậy.{page}{fx 42 80}{fx 04 20}Vậy chờ ở đó...
+Ta sẽ ghé thăm ngươi.{page}Ta tên là Seto.
+Hãy nhớ lấy...{page}{fx 04 80}{fx 02 00}Tin nổi gã đó không!?
+Pháp sư gì mà hống hách!!!{page}{fx 02 21}{fx 43 00}Ừ... Đáng yêu ghê.{page}{fx 43 80}{fx 02 20}Tớ có linh cảm{sp}{call L125A}{sp}
+sẽ dạy cho gã một bài.
+Phải không, bạn?{page}Nào, đi dạo một vòng rồi
+ra sân đấu nhé.{page}{fx 02 80}{set 406F}{f8 11 00}{f8 14 0A}{end}
+
+[0522]  {:L3F7B}
+A! Kẻ hèn lộ
+bản chất...
+Ta chẳng ngạc nhiên.{page}Lũ sâu các ngươi như nhau...{page}{fx 04 21}{fx 42 00}Khoan!{sp}{call L125A}{sp}
+chỉ không muốn
+đấu với ngươi ở đây!{page}{fx 42 80}{fx 04 20}Thế sao...{page}{fx 04 21}{fx 42 00}Có sân đấu nơi tụi này
+hay chơi. Đó mới là
+chỗ đấu thật sự!{page}{fx 42 80}{fx 04 20}Sân đấu thị trấn...{page}{fx 04 21}{fx 45 00}Ngài Seto!
+Ngài Heishin cho gọi!{page}{fx 45 80}{fx 04 20}Ra vậy...
+Thôi được. Có việc...{page}Sân đấu à?
+Chờ ở đó, ta sẽ
+hạ cố ghé thăm các ngươi.{page}Ta tên là Seto.
+Hãy nhớ lấy...{page}{fx 04 80}{fx 02 00}Tin nổi gã đó không!?
+Pháp sư gì mà hống hách!!!{page}{fx 02 21}{fx 43 00}Ừ... Đáng yêu ghê.{page}{fx 43 80}{fx 02 20}Xin lỗi{sp}{call L125A}...
+Tớ biết cậu không
+muốn đấu với gã.{page}Nhưng gã gọi cậu là đồ hèn,
+{call L125A}! Tớ không thể
+tha cho gã được!{page}Nào, ra sân đấu
+chờ gã đó thôi!{page}{fx 02 80}{set 406F}{f8 11 00}{f8 14 0A}{end}
+
+[053C]
+{fx 06 00}Nơi thiêng liêng này được
+Pháp sư Tối cao Heishin giữ!
+Thường dân không được vào!{page}Cút khỏi đây!{end}
+
+[053D]
+{fx 4E 00}Seto đâu rồi?{page}{fx 4E 80}{fx 4F 00}Bắt ta phải chờ sao!?{page}{fx 4F 80}{fx 50 00}Lúc này hắn
+ở đâu chứ!?{page}Xem ra kẻ được ngài Heishin
+sủng ái muốn chế giễu ta...{page}{fx 50 80}{fx 51 00}Ngài Heishin đánh giá
+Seto rất cao...{page}...dù hắn chỉ là trẻ con.{page}{fx 51 80}{fx 52 00}Ta chờ đủ rồi.
+Đi thôi. Ngài Heishin
+đang đợi...{page}{fx 52 80}{set 404D}{f8 16}{end}
+
+[053E]
+Chào!{end}
+
+[053F]
+{fx 01 00}Chà, về rồi đấy à!{page}Mau lên! Về phòng
+đi!{page}{fx 01 80}{jump L446E}
+
+[0540]  {:L446E}
+{state 05 05 00}{fx 01 00}Mong Người đã sẵn sàng
+nghỉ ngơi rồi...{page}{f8 15 A1}{fx 01 82}{f8 11 00}{jump L44B0}
+
+[0541]  {:L44B0}
+{state 05 02 01}{f8 15 A0}{fx 41 00}Đôi khi thần tự hỏi có phải
+Hoàng tử cố tình chọc tức thần...{page}{fx 41 80}{fx 53 00}Ngài Simon Muran!
+Có chuyện rồi!{page}P-pháp sư tối cao...
+Pháp sư Tối cao Heishin
+và lính...{page}Chúng dùng sức mạnh lạ...
+Chúng đang tấn công cung điện!!!{page}{fx 53 80}{fx 01 20}{fx 41 00}{f8 0E B0 71}Sao!?{page}{fx 41 80}{fx 01 21}{fx 53 00}Hình như là tà thuật, thưa ngài!
+E rằng chúng ta không
+thể chống đỡ nổi...{page}{fx 53 80}{fx 01 20}{fx 41 00}Pháp sư tối cao đâu rồi!?{page}{fx 41 80}{fx 53 00}Ở Chính điện, thưa ngài!{page}{fx 53 80}{state 05 00 00}{fx 41 00}Heishin... Heishin!
+Tên chó đó định làm gì?{page}{fx 41 80}{fx 01 80}{state 05 04 82 60 00 00}{fx 41 00}{state 0B 5C 00 00 00 B4 00}C... Cái gì...{page}{state 0A}{fx 41 80}{fx 07 00}Rất vui được gặp lại ông,
+Simon Muran...{page}{fx 07 21}{fx 41 00}Ngươi dám tạo phản...
+Ngươi điên rồi sao!?{page}{fx 41 80}{fx 07 20}Điên?
+Ta?{page}Ta không nghĩ vậy...
+Ta chỉ đến lấy
+ngai vàng của ta.{page}{fx 07 21}{fx 41 00}Ngai vàng!?{page}{fx 41 80}{fx 07 20}Phải, ngai vàng. Vì giờ
+ta có 'Sức mạnh'...{page}{fx 07 21}{fx 41 00}'Sức mạnh'...
+Không... Không thể...{page}{fx 41 80}{fx 07 20}Ta thấy ông đã nhận ra.
+Dù sao cả hai ta đều có gốc
+từ tổ tiên pháp sư...{page}{fx 07 21}{fx 41 00}Sức mạnh bóng tối...!?{page}{fx 41 80}{fx 07 20}Đúng vậy. Ta đã tìm ra
+bảo vật bị cấm...{page}{f8 15 A1}{fx 07 82}{state 05 03 01}{f8 15 A0}Đây! Nếm thử sức mạnh
+bóng tối bị cấm đi!!!{page}{jump L48DF}
+
+[0542]  {:L48DF}
+{state 05 05 00}{f8 10 27 00}{state 10 28 00}{state 0F 3C 00}{f8 16}!?{page}{fx 09 00}Hoàng tử{sp}{call L125A}!{page}Pháp sư Tối cao Heishin
+đã chiếm cung điện!{page}Nơi này quá nguy hiểm!
+Chúng ta phải đi ngay!{page}{fx 09 80}{f8 15 A1}{f8 11 83}{state 0F 0A 00}{f8 0E 80 71}{state 05 04 01}{f8 15 A0}{fx 47 00}Không...{page}{fx 47 80}{fx 44 00}Hoàng tử{sp}{call L125A}...
+Ngươi định trốn ta sao?{page}{if 006E L49CE}Lại gặp nhau...{page}{jump L49CE}
+
+{:L49CE}
+Các ngươi...
+Bắt tên hầu này đi!{page}Ta muốn nói chuyện với hoàng tử.{page}{fx 44 80}{fx 04 21}{fx 45 00}Tuân lệnh!{page}{fx 45 80}{fx 47 00}Hoàng tử{sp}{call L125A}!{page}{fx 47 80}{fx 45 00}Im lặng và đi với bọn ta!{page}{fx 45 80}{fx 04 20}{state 05 06 00}{fx 04 00}Sao lại chạy?
+{call L125A}.{page}Heishin đã bắt giữ
+Nhà vua và Hoàng hậu.{page}Bỏ chạy chỉ khiến
+Heishin nổi giận
+mà giết họ...{page}Ngươi muốn vậy sao?{page}Được... Ta nói ngươi nghe ta muốn
+gì. Điều chỉ người có
+dòng máu hoàng gia biết...{page}...vị trí của
+Bảo Vật Ngàn Năm.{page}Nói nó ở đâu, ta sẽ
+tha cho Vua và Hoàng hậu!{page}Ngươi biết nó ở đâu!
+Vậy... nói đi!{page}{choice 02}«Từ chối»
+«Nói»
+{choose 80 L4C19 L4C03}
+
+{:L4C03}
+Tốt... Giờ nói đi!{page}{jump L4C4E}
+
+{:L4C19}
+Đừng coi ta là đồ ngốc!
+Ngươi biết nó ở đâu!!!{page}{jump L4C4E}
+
+{:L4C4E}
+{fx 04 21}{fx 48 00}Hoàng tử...!{page}{fx 48 80}{fx 04 20}Simon Muran!{page}{fx 04 80}{state 05 05 01}{fx 48 00}Hoàng tử ơi...
+Đây là Bảo Vật Ngàn Năm...{page}Cầm lấy... cầm lấy và chạy!!!{page}{fx 48 80}{call L125A} có Trò Chơi Ngàn Năm!{page}{state 05 06 00}{fx 0A 00}Người phải giữ bảo vật này
+không để rơi vào
+tay lũ sâu bọ này!!!{page}Bảo vật là chìa khóa cuối cùng
+mở phong ấn sức mạnh vĩ đại.{page}Nếu nó rơi vào tay
+kẻ ác thì sẽ là
+ngày tận thế...{page}{fx 0A 21}{fx 44 00}Chà chà... Ông mang nó đến
+đúng lúc lắm.{page}Đưa chìa khóa cho ta ngay,
+biết đâu ta sẽ giúp hai
+người thoát khỏi Heishin.{page}{fx 44 80}{fx 0A 21}Đừng nghe tên chó này! Hắn
+vẫy đuôi theo lệnh Heishin!
+Không thể tin hắn!{page}Để hắn cho thần, Hoàng tử!
+Người chạy đi!{page}{fx 0A 21}{fx 44 00}Tránh ra, lão già!{page}{fx 44 80}{fx 0A 21}Đi đi, Hoàng tử! Chạy đi!{page}{choice 02}«Chạy»
+«Ở»
+{choose 80 L4F32 L4F3F}
+
+{:L4F32}
+{f8 15 A1}{f8 11 00}{state 0F 3C 00}{jump L4F7D}
+
+{:L4F3F}
+Nghe lời thần...
+Mau rời khỏi đây!{page}{choice 02}«Chạy»
+«Ở»
+{choose 80 L4F32 L4F3F}
+
+{:L4F7D}
+{f8 0E B0 71}{fx 0A 82}{state 05 06 00}{f8 15 A0}{fx 07 00}Đứng yên! Ngươi là của ta!{page}Ngươi tìm thấy chúng rồi, Seto.
+Giỏi lắm.{page}{fx 07 21}{fx 44 00}Vâng, thưa ngài...{page}{fx 44 80}{fx 07 20}Ngươi nghĩ có thể
+thoát khỏi ta sao?{page}Kháng cự vô ích thôi.
+Chấp nhận thất bại đi...{page}...và giao nó ra.
+Đưa ta Bảo Vật Ngàn Năm!!!{page}{fx 07 21}{fx 48 00}Chỉ còn một cách, Hoàng tử.{page}Người phải chiến đấu với Heishin.
+Thách hắn đấu bằng bộ bài
+và Bảo Vật Ngàn Năm!{page}{fx 48 80}{choice 02}«Đấu»
+«Thôi»
+{choose 80 L5127 L516D}
+
+[0543]  {:L5127}
+{fx 07 20}Vô ích thôi, nhóc!
+Ngươi không đủ sức
+đánh bại ta!{page}{f8 11 00}{f8 0D 08 74 75 06 30 72}{end}
+
+{:L516D}
+{fx 48 00}Hoàng tử ơi!
+Người phải đối đầu hắn!{page}Bảo Vật Ngàn Năm sẽ
+giải phóng sức mạnh bóng
+tối của bộ bài.{page}Đối mặt đi!
+Phải hạ Heishin!{page}{fx 48 80}{choice 02}«Đấu»
+«Thôi»
+{choose 80 L5127 L516D}
+
+[0544]
+Thằng nhóc ngu ngốc!
+Phí thời gian của ta!{page}Nếu ngươi cứ giữ
+Trò Chơi Ngàn Năm, ta sẽ giật nó
+từ bàn tay lạnh ngắt của ngươi!{page}{f8 15 C1}{f8 19 08}{fx 07 82}{state 05 06 01}{f8 0E A0 71}{f8 15 C0}{fx 46 00}!!!{page}Tránh ra, lão già!
+Không thì...{page}{fx 46 80}{fx 48 00}Hoàng tử!
+Hãy đập vỡ Trò Chơi Ngàn Năm...{page}Người không được giao nó
+cho kẻ đê tiện này!{page}{fx 48 80}{fx 46 00}Tránh ra, lão già!
+Buông ta ra!{page}{fx 46 80}{fx 48 00}Hoàng tử...
+Trò Chơi Ngàn Năm...{page}...đừng đưa cho
+chúng Trò Chơi Ngàn Năm...{page}{fx 48 80}{choice 02}«Không đập vỡ»
+«Đập vỡ nó»
+{choose 80 L5407 L53E6}
+
+{:L53E6}
+{f8 11 03}{state 05 07 01}{f8 10 2A 00}{fx 46 00}Không!!!{page}{fx 46 80}{f8 15 91}{state 0F 78 00}{f8 16}{end}
+
+{:L5407}
+{fx 48 00}Xin Người...
+Trò Chơi Ngàn Năm...{page}...đập vỡ đi...{page}{fx 48 80}{choice 02}«Không đập»
+«Đập vỡ»
+{choose 80 L5407 L53E6}
+
+[0545]
+Khá đấy, nhóc.{page}Nhưng ngươi lầm nếu
+nghĩ ta đã thua!{page}{f8 0D 08 74 75 06 30 72}{end}
+
+[0547]
+{f8 15 90}{fx 01 08}{call L125A}...{page}{fx 01 21}!?{page}{fx 01 20}Tạ ơn trời! Người tỉnh rồi! Chúng ta
+đang ở trong Trò Chơi Ngàn Năm.{page}Chính xác hơn, linh hồn Người đã bị
+phong ấn trong Trò Chơi Ngàn Năm.{page}Thần xin lỗi, Hoàng tử. Nhưng đây
+là cách duy nhất để cứu
+Người và Trò Chơi Ngàn Năm.{page}Thần không thể để Người
+giao Trò Chơi Ngàn Năm cho
+kẻ như Heishin.{page}Sức mạnh bóng tối mà Heishin
+muốn khai mở chỉ có
+thể dẫn tới hủy diệt.{page}Một ngày nào đó, khi có người
+ghép lại Trò Chơi Ngàn Năm, Người sẽ
+sống lại giữa loài người.{page}Cho đến ngày ấy...
+Hãy ngủ đi, Hoàng tử.{page}Thần tin rằng có một người
+định mệnh sẽ
+ghép lại Trò Chơi Ngàn Năm.{page}Cuối cùng, người đó cùng
+Trò Chơi Ngàn Năm sẽ dẫn
+Người về thế giới của chúng ta.{page}Giờ hãy nghỉ, Hoàng tử...
+Nhắm mắt lại...{page}{f8 11 00}{f8 15 91}{fx 01 82}{jump L5774}
+
+[0548]  {:L5774}
+{state 0F 0F 00}{state 05 00 00}{f8 15 90}{fx 4B 00}Nè! Yugi!{page}Dậy đi, Yugi!{page}{fx 4B 80}{fx 49 00}Hả...?{page}{fx 49 80}{state 05 08 00}{f8 0E 40 70}{fx 0D 00}Cậu ngủ gật đó!{page}{fx 0D 21}{fx 49 00}Vậy à...? Xin lỗi...{page}{fx 49 80}{fx 0D 20}Sao thế? Hồi hộp quá
+nên đêm qua mất ngủ à?{page}{fx 0D 21}{fx 49 00}Tớ... đã...
+nằm mơ...{page}{fx 49 80}{fx 0D 20}Cậu nằm mơ!? Trời!
+Chẳng gì làm cậu run nhỉ?{page}Nào. Sắp đến lễ
+khai mạc rồi. Đi thôi.{page}{fx 0D 80}{fx 49 00}(... ... ... ...){page}{fx 49 80}{jump L58D6}
+
+[0549]  {:L58D6}
+{f8 15 A1}{f8 11 83}{f8 0E 30 70}{state 05 05 82 00 A2 00}{f8 15 A0}{state 0B A2 00 60 00 78 00}{state 0A}{fx 54 00}Chào mừng đến giải đấu
+Yu-Gi-Oh! Thế giới do
+Tập đoàn Kaiba tài trợ!{page}Chúng ta đang ở THỊ TRẤN DOMINO,
+nơi các đấu sĩ được chọn
+tụ họp để tìm ra người
+số một!{page}{fx 54 80}{fx 4B 00}Đến lúc rồi, Yugi.{page}{fx 4B 80}{fx 49 00}Ừ...{page}{fx 49 80}{f8 15 81}{state 05 05 82 00 00 00}{fx 2A 00}{f8 15 80}Các trận đấu sắp
+bắt đầu...{page}Nhưng trước khi bắt đầu,
+xin giải thích vài luật...{page}Luật giải chia thành
+vòng loại và vòng chung
+kết. Ví dụ như...{page}{fx 2A 80}{fx 4B 00}Ai quan tâm luật chứ.
+Cứ thắng liên tục là được!{page}Nhỉ, Yugi?{page}{fx 4B 80}{fx 49 00}Hả?
+Ừ. Chắc vậy...{page}{fx 49 80}{fx 2A 00}...và giờ là đôi lời từ
+nhà tài trợ, ông Kaiba!{page}{fx 2A 80}{fx 0E 00}Cảm ơn các bạn đã cùng
+tìm ra vua của các vua...{page}Hôm nay ta đấu để tìm ra
+ai là Vua Trò Chơi...
+đấu sĩ tối thượng!{page}Và tôi cũng quyết tâm
+giành lấy vinh dự đó...{page}{fx 42 00}{fx 0E 21}Gã Kaiba đó làm tớ bực mình!{page}Nếu ai loại được gã khỏi
+giải, mong người đó là tớ!{page}Yugi, mong được gặp cậu
+ở chung kết... Nhé?{page}{fx 4B 80}{fx 49 00}Ừ!{page}{fx 49 80}{fx 0E 80}{fx 2A 00}Được rồi, thưa quý
+vị!
+Chúc người giỏi nhất thắng!
+Các trận đấu bắt đầu!!!{page}{f8 15 A1}{fx 2A 82}{f8 16}{end}
+
+[054A 056B]
+Chào Yugi!{page}Tớ làm thêm ở tiệm bài
+này trong mùa giải.{page}Cậu muốn làm gì?{end}
+
+[054B]
+Chúc may mắn!{page}{f8 15 A1}{fx 16 82}{f8 11 83}{jump L5D72}
+
+{:L5D72}
+{f8 0E 60 70}{state 05 09 00}{fx 54 00}Vòng loại trận 1
+Yugi đấu Rex Raptor!{page}{fx 54 80}{fx 10 00}Lâu rồi không gặp, Yugi...{page}Chắc mày sẽ xem tao
+thi đấu ở chung kết!{page}{f8 11 00}{f8 0D 09 76 77 00 D0 71}{end}
+
+[054C]
+{f8 19 09}Mày... Mày thắng!!!{page}Không thể tin nổi!!!{page}{fx 35 80}{f8 15 21}{state 0F 1E 00}{f8 16}{end}
+
+[054D]
+Hahaha!
+Xem ra kẻ giỏi
+nhất đã thắng... TAO!!!{page}Tiếc nhé, nhóc!{end}
+
+[056C]
+Trông ổn đấy, Yugi.
+Ổn lắm!{page}Cậu muốn làm gì?{end}
+
+[054E]
+{f8 15 A1}{f8 11 83}{fx 16 82}{f8 0E 60 70}{state 05 09 00}{fx 54 00}Vòng loại trận 2
+Yugi đấu Weevil Underwood!{page}{fx 54 80}{fx 11 00}Hehehe...
+Nói trước cho công bằng...
+Mày không có cửa đâu{page}Đội quân côn trùng của tao
+sẽ băm vằm mày!{page}{f8 11 00}{f8 0D 0A 78 79 00 D0 71}{end}
+
+[054F]
+{f8 19 0A}Tao thua... TAO THUA!!!{page}Đội quân côn trùng...
+Thua một kẻ
+như mày...{page}{fx 36 80}{f8 15 21}{state 0F 1E 00}{f8 16}{end}
+
+[0550]
+Hahaha!!!
+Tao thắng! Tao thắng!{page}Còn mày... Đồ thua cuộc!
+Biến đi, đồ thua cuộc!
+Cút!!!{end}
+
+[056D]
+Nghe nói cậu đấu khá lắm!{page}Cậu muốn làm gì?{end}
+
+[0551]
+{f8 15 A1}{f8 11 83}{fx 16 82}{state 05 09 00}{f8 0E 60 70}{fx 54 00}Vòng loại trận 3
+Yugi đấu Mai Valentine!{page}{fx 54 80}{fx 12 00}Lẽ ra cậu nên bỏ cuộc
+trước khi gặp tôi.{page}Cậu sẽ hối hận đấy!{page}{f8 11 00}{f8 0D 0B 7A 7B 00 D0 71}{end}
+
+[0552]
+{f8 19 0B}Tôi thua rồi...{page}Thôi... Tôi chỉ còn
+biết chúc cậu may mắn!{page}{fx 37 80}{f8 15 21}{state 0F 1E 00}{f8 16}{end}
+
+[0553]
+Chà...
+Dễ quá...{page}Vậy mà tôi tưởng cậu giỏi!{end}
+
+[056E]
+Cậu chơi cứng lắm, Yugi!{page}Cậu muốn làm gì?{end}
+
+[0554]
+{f8 15 A1}{f8 11 83}{fx 16 82}{f8 0E 60 70}{state 05 09 00}{fx 54 00}Vòng loại trận 4
+Yugi đấu Bandit Keith!{page}{fx 54 80}{fx 13 00}Lâu rồi không gặp...
+Tao đến chôn mày,
+Yugi...{page}Chuẩn bị ăn đòn đi!{page}{f8 11 00}{f8 0D 0C 7C 7D 00 D0 71}{end}
+
+[0555]
+{f8 19 0C}Tao... tao...ôi...{page}Tao... Giáo sư Bài...
+Thua thằng... thằng nhóc này!{page}{fx 38 80}{f8 15 21}{state 0F 1E 00}{f8 16}{end}
+
+[0556]
+Nghe này, nhóc.
+Mày chẳng có cửa đâu.{page}Tao giỏi quááá mà!{end}
+
+[056F]
+Nghe nói cậu vào chung
+kết! Tuyệt quá!
+Cố lên!{page}Giờ cậu muốn làm gì?{end}
+
+[0557]
+{f8 15 A1}{f8 11 83}{fx 16 82}{f8 0E 40 70}{state 05 11 00}{fx 0D 00}Chào Yugi!
+Nghe nói cậu thắng...{page}{fx 0D 21}{fx 49 00}Ừ.
+Còn cậu thì sao?{page}{fx 49 80}{fx 0D 20}Tớ? À, tớ vẫn chưa
+bị loại!{page}Biết đâu lần này tớ sẽ
+đấu với cậu ở chung kết!{page}{fx 0D 21}{fx 49 00}Mong vậy!
+Nhưng...{page}{f8 11 02}!!!{page}{fx 49 80}{fx 0D 20}Hả? Sao thế, Yugi?{page}{fx 0D 21}{fx 49 00}Đằng kia...
+Là Shadi...{page}{fx 49 80}{fx 0D 20}Gì!?{page}{fx 0D 80}{f8 0E 41 70}{fx 0F 00}Lại gặp nhau, Yugi.{page}{fx 0F 21}{fx 4B 00}Anh làm gì ở đây?
+Anh đang tìm gì à?{page}{fx 4B 80}{fx 0F 20}Bảo Vật Ngàn Năm của
+Yugi gọi tôi tới...{page}{fx 0F 21}{fx 49 00}Trò Chơi Ngàn Năm?{page}{fx 49 80}{fx 0F 20}Đúng như vậy.{page}Bảo Vật Ngàn Năm của tôi phản ứng
+như muốn ở đây...
+Ngay tại đây, lúc này.{page}Tôi tin rằng mọi Bảo Vật
+Ngàn Năm đều đang tụ
+hội ở giải đấu này.{page}Nhiệm vụ của tôi là khám phá
+bí mật của các Bảo Vật.{page}Đó là lý do tôi tới đây.{page}{fx 0F 21}{fx 49 00}Shadi...{page}Tôi có một giấc mơ lạ
+về Trò Chơi Ngàn Năm.{page}Trong mơ có một người giống
+tôi, bị nhốt trong Trò Chơi
+Ngàn Năm... ở thế giới khác.{page}Giấc mơ thật kỳ lạ!{page}{fx 49 80}{fx 0F 20}Ra vậy... Có thể nó liên
+quan đến Yami Yugi...
+bản ngã thứ hai của cậu.{page}{fx 0F 21}{fx 49 00}Bản ngã thứ hai của tôi...{page}{fx 49 80}{fx 0F 20}Yugi... Cậu từng nghĩ đến
+việc gặp con người thứ hai ấy chưa?{page}{fx 0F 21}{fx 49 00}Tôi ư? Gặp anh ấy?{page}{fx 49 80}{fx 4B 00}Làm cách nào chứ?{page}{fx 4B 80}{fx 0F 20}Tôi có thể dùng Chìa Khóa
+Ngàn Năm mở tâm trí cậu.{page}Đi sâu vào tâm trí mình,
+cậu có thể gặp con người
+khác ẩn trong cậu.{page}Yami Yugi sinh ra từ sức
+mạnh của Trò Chơi Ngàn Năm.
+Anh ấy xuất hiện từ cậu.{page}Giấc mơ của cậu... có lẽ
+anh ấy muốn nói điều gì...{page}Có lẽ đã đến lúc
+gặp và nói chuyện...{page}{fx 0F 21}{fx 49 00}...
+Tôi hiểu ý anh rồi.{page}Tôi sẽ gặp anh ấy nếu
+anh sẵn lòng giúp.{page}{fx 49 80}{fx 0F 20}{f8 11 01}Được...
+Chạm vào Chìa Khóa Ngàn Năm.{page}{f8 15 A1}{fx 0F 82}{state 05 08 01}{f8 15 A0}{fx 4C 00}Giờ nhắm mắt lại...{page}Thư giãn... Hãy mở rộng tâm trí...{page}{fx 4C 80}{f8 15 91}{jump L69E4}
+
+[0558]  {:L69E4}
+{f8 0E 50 70}{state 05 07 00}{f8 15 90}{fx 49 00}Đây là... tâm trí tôi...{page}{fx 49 80}{fx 0C 08}{fx 0C 21}{fx 49 00}Còn anh... là tôi...{page}Đây là lần đầu tôi
+gặp anh... Thật là...
+kỳ lạ...{page}Tôi nhìn thấy được tâm trí anh.{page}Không cần lời nói...
+Tôi hiểu anh...{page}...chỉ cần đối diện...{page}...{page}...{page}Anh muốn trở về...
+thế giới của anh...{page}...tôi muốn giúp...
+Tôi phải làm gì...?{page}{fx 49 80}{f8 15 A1}{fx 0C 82}{state 05 09 01}{f8 15 A0}{fx 49 00}Lá... bài...?{page}{f8 15 A1}{fx 0C 00}{state 05 07 00}{f8 15 A0}{fx 0C 21}Mặt bài...
+Trống trơn...{page}{fx 0C 81}Khoan!
+Lá bài này là gì!?{page}{fx 49 80}{f8 11 00}{f8 15 91}{jump L6BA1}
+
+[0559]  {:L6BA1}
+{f8 0E 40 70}{state 05 11 00}{f8 15 90}{fx 49 00}!!{page}{fx 49 80}{fx 0D 00}Yugi?
+Cậu ổn chứ?{page}{fx 0D 21}{fx 49 00}À... ừ.{page}{fx 49 80}{fx 0D 80}{fx 0F 00}Được chưa? Gặp anh ấy chưa?{page}{fx 0F 21}{fx 49 00}Tôi đã gặp anh ấy...{page}Nhưng... chỉ nói
+đôi lời...{page}Anh ấy nói mình là hoàng tử
+bị nhốt trong Trò Chơi Ngàn Năm...
+từ rất lâu.{page}Anh ấy nói phải trở về
+thế giới của mình...{page}Anh ấy nhờ tôi giúp
+anh ấy trở về.{page}Nhưng tôi không biết cách...{page}{fx 49 80}{fx 4B 00}Yugi? Cậu đang cầm
+gì trong tay vậy?{page}{fx 4B 80}{fx 49 00}Hả?{page}{f8 15 A1}{fx 0F 82}{state 05 10 01}{f8 15 A0}Lá bài này...!
+Anh ấy đưa tớ lá này
+trong tâm trí!{page}Anh ấy bảo tớ dùng nó để giải
+thoát anh ấy... đưa anh ấy trở
+về thế giới của mình!{page}{fx 49 80}{fx 4B 00}Đó là gì, Shadi?{page}{fx 4B 80}{state 05 11 00}{fx 0F 00}E rằng tôi không biết...{page}Nhưng có lẽ nó liên quan
+đến Bảo Vật Ngàn Năm.{page}{fx 0F 21}{fx 49 00}Sáu lá bài trắng...
+Tớ không hiểu...{page}{fx 49 80}{fx 0F 80}{fx 0D 00}Đến lúc quay lại rồi.{page}Để chuyện này tính sau.
+Tụi mình còn phải thi đấu.{page}{fx 0D 80}{jump L6EBA}
+
+[055A]  {:L6EBA}
+{f8 15 A1}{f8 11 83}{f8 0E 70 70}{state 05 09 00}{f8 15 A0}{fx 54 00}Vòng chung kết trận 1!
+Yugi đấu Shadi!{page}{fx 54 80}{fx 0F 00}Yugi... Bảo Vật Ngàn Năm
+đã dẫn chúng ta tới trận này.{page}Chúng ta định sẵn phải đấu!{page}{f8 11 00}{f8 0D 0D 7E 7F 00 E0 71}{end}
+
+[055B]
+{f8 19 0D}Hình như tôi thua...
+Hả?{page}{f8 15 A1}{fx 0F 82}{state 05 11 01}{f8 15 A0}{fx 4C 00}Gì thế...?! Chìa Khóa và
+Cán Cân Ngàn Năm của tôi!!!{page}{fx 4C 80}{f8 10 2D 00}{f8 15 91}{state 05 12 01}{f8 15 90}{fx 4C 00}Chúng bị hút vào lá bài...{page}Ra đây là lý do các Bảo Vật
+Ngàn Năm bị hút về
+nhau hôm nay...{page}{fx 4C 80}{state 05 09 00}{fx 0F 00}Yugi, có vẻ người bạn của cậu
+đã triệu tập các Bảo Vật
+để hút chúng vào lá bài.{page}{fx 0F 80}{f8 15 21}{state 0F 28 00}{f8 16}{end}
+
+[055C]
+Sao vậy, Yugi?
+Chỉ được thế thôi sao?{page}Cậu không được thua! Cậu là Người
+được Trò Chơi Ngàn Năm chọn!{end}
+
+[0570]
+Nghe nói cậu đấu hay lắm!
+Cố lên!{page}Cậu muốn làm gì?{end}
+
+[055D]
+{f8 15 A1}{f8 11 83}{fx 16 82}{f8 0E 70 70}{state 05 09 00}{fx 54 00}Vòng chung kết trận 2!
+Yugi đấu Bakura!{page}{fx 54 80}{fx 14 00}Lạ thật... tôi vốn không
+có ý định tham
+gia giải đấu này...{page}Nhưng Vòng Tròn Trí Tuệ Ngàn Năm...
+nó gọi tôi ra trận...{page}...{page}{state 0F 14 00}{fx 14 41}Rất vui được gặp cậu, Yugi!{page}Đến lúc chứng tỏ
+ai mới thật sự là
+Vua Trò Chơi!!!{page}{f8 11 00}{f8 0D 0E 80 81 00 E0 71}{end}
+
+[055E]
+{f8 19 0E}Chắc tôi không giành được
+danh hiệu Vua Trò Chơi rồi...{page}{f8 15 A1}{fx 14 82}{state 05 13 01}{f8 15 A0}{fx 55 00}Cái gì thế...!?{page}{f8 10 2D 00}{f8 15 91}{state 05 14 01}{f8 15 90}Vòng Tròn Trí Tuệ Ngàn Năm! Nó đang
+bị hút vào lá bài!{page}{fx 55 80}{state 05 09 00}{fx 14 00}Chiếc vòng... nó...
+đã... lợi dụng tôi...{page}Cảm ơn Yugi...
+Tôi đã thoát khỏi
+Vòng Tròn Trí Tuệ Ngàn Năm.{page}{fx 14 80}{f8 15 A1}{state 0F 28 00}{f8 16}{end}
+
+[055F]
+Hết rồi! Kết thúc!{page}Cậu không có đủ bản
+lĩnh để thắng đâu!{end}
+
+[0571]
+Tập trung, Yugi...
+Nghĩ: CHIẾN THẮNG!{page}Giờ cậu muốn làm gì?{end}
+
+[0560]
+{f8 15 A1}{f8 11 83}{fx 16 82}{f8 0E 70 70}{state 05 09 00}{fx 54 00}Tứ kết!
+Yugi đấu Pegasus!{page}{fx 54 80}{fx 15 00}Chà chà... Yugi-boy.
+Cậu đã đi một chặng dài.
+Nhưng giờ là lúc thua.{page}{f8 11 00}{f8 0D 0F 82 83 00 E0 71}{end}
+
+[0561]
+{f8 19 0F}Thất bại thật đắng...{page}{f8 15 A1}{fx 3A 82}{state 05 15 01}{f8 15 A0}{fx 56 00}Ôi trời!{page}{f8 10 2D 00}{f8 15 91}{state 05 16 01}{f8 15 90}Không thể tin nổi!
+Con Mắt Ngàn Năm của ta...{page}{fx 56 80}{f8 15 21}{state 0F 28 00}{f8 16}{end}
+
+[0562]
+Yugi-boy...
+Chiến thắng thật ngọt ngào!{page}Cậu thật dại khi
+thách đấu ta...{end}
+
+[0572]
+Thêm một trận nữa, Yugi! Rồi
+là trận chung kết!{page}Cậu muốn làm gì?{end}
+
+[0563]
+{f8 15 A1}{f8 11 83}{fx 16 82}{f8 0E 70 70}{state 05 09 00}{fx 54 00}Bán kết
+Yugi đấu Isis!{page}{fx 54 80}{fx 2F 00}Tôi rất vinh dự được
+đấu với cậu, Yugi.{page}Nhưng chỉ một người sẽ
+chiến thắng... là TÔI!!!{page}{f8 11 00}{f8 0D 10 84 85 00 E0 71}{end}
+
+[0564]
+{f8 19 10}Sao...
+Sao tôi lại thua...{page}{f8 15 A1}{fx 40 82}{state 05 17 01}{f8 15 A0}{fx 57 00}!!!{page}{f8 10 2D 00}{f8 15 91}{state 05 18 01}{f8 15 90}Gì...? Vòng Cổ Ngàn Năm của tôi...
+Đang bị hút vào lá bài!?{page}{fx 57 80}{f8 15 21}{state 0F 28 00}{f8 16}{end}
+
+[0565]
+Ôi!
+Hình như tôi thắng...
+Phải không?{page}Nghe nói cậu mạnh...
+Nhưng chưa đủ mạnh!!!{end}
+
+[0573]
+Cậu vào chung kết rồi!
+Tớ cổ vũ cậu!!!{page}Cậu muốn làm gì?{end}
+
+[0566]
+{f8 15 A1}{f8 11 83}{fx 16 82}{f8 0E 80 70}{state 05 09 00}{fx 54 00}Giây phút quyết định đã đến!!!{page}Hai người vào chung kết
+là Kaiba tuyệt vời...{page}...và Yugi bất bại!!!{page}{fx 54 80}{fx 0E 00}Ta đã nghĩ có thể sẽ
+đấu với cậu, Yugi...{page}Quyền Trượng Ngàn Năm của ta là
+bảo vật cuối cùng...{page}Nhưng Quyền Trượng thì thầm với ta
+rằng ta phải đánh bại cậu.{page}Yugi!
+Chuẩn bị thua đi!!{page}{f8 11 00}{f8 0D 11 86 87 00 F0 71}{end}
+
+[0567]
+{f8 19 11}Không thể nào...
+Ta...? Thua...?{page}{fx 49 00}...{page}{fx 49 80}{f8 15 A1}{fx 34 82}{state 05 19 01}{f8 15 A0}{fx 58 00}Gì thế...!?
+Ánh sáng...! Chói quá...!{page}{f8 10 2D 00}{f8 15 91}{state 05 20 01}{f8 15 90}Quyền Trượng Ngàn Năm... bị hút
+vào... vào lá bài!?{page}{fx 58 80}{jump L79B1}
+
+[0568]
+HAHAHAHAHAHAHA!!!
+Yugi!!!
+Ta đã chờ ngày này!!!{page}Ngày hôm nay ta
+sẽ không quên!!!{page}HAHAHAHAHAHAHA!!!{end}
+
+[0569]  {:L79B1}
+{f8 11 00}{state 05 21 01}{fx 49 00}Giờ tôi đã có mọi lá bài
+chứa Bảo Vật Ngàn Năm...{page}{fx 49 80}{f8 15 91}{state 05 07 82 60 00 00}{f8 15 90}{f8 10 02 80 1E 00}{state 0B 8C 00 00 00 04 01}{state 0A}{call L125A}...{page}Đây là điều anh muốn...?{page}{f8 15 A1}{f8 16}{end}
+
+[056A]
+{fx 01 08}{call L125A}... Làm được rồi!{page}Giờ Người có thể về
+thế giới của mình.{page}Người phải cảm ơn
+cậu bé đó...{page}Yugi... Thần xin mạn phép,
+thần tin cậu bé ấy chính
+là hình ảnh Người sẽ trở thành.{page}Giờ, khi các Bảo Vật Ngàn Năm
+hút lấy nhau xuyên thời gian...{page}Cánh cổng về thế giới
+chúng ta có thể mở ra.{page}{f8 15 A1}{fx 01 82}{state 05 22 01}{f8 15 A0}{fx 41 00}Heishin giờ có sáu
+Bảo Vật Ngàn Năm và cai
+trị cả một vùng rộng lớn.{page}Dùng các bảo vật, hắn
+đã giải phóng một phần
+sức mạnh bóng tối.{page}Hắn đặt mỗi bảo vật trong đền
+ở từng vùng bị chiếm
+để bảo vệ lãnh thổ.{page}Hoàng tử{sp}{call L125A}...
+Người phải thu hồi
+mọi Bảo Vật Ngàn Năm...{page}Và phong ấn chúng mãi
+mãi.{page}Vị trí các ngôi đền
+chứa Bảo Vật Ngàn Năm
+có trong khu tàn tích...{page}{fx 41 80}{f8 15 A1}{fx 01 00}{state 05 07 00}{f8 15 A0}Đến lúc thần đi...{page}Thần đã làm
+hết sức rồi.{page}Thể xác thần không còn...
+Đây là lời cuối cùng
+thần nói với Người,{sp}{call L125A}.{page}Còn lại là ở Người.{page}Chúc Người thành công.{page}{f8 11 01}{fx 01 81}{set 4047}{f8 15 91}{f8 16}{state 0F 50 00}{end}
+
+[05F7]
+Người muốn làm gì?{end}
+
+[057B]
+Về được rồi...{page}Trông như tàn tích của
+một ngôi đền.{page}Không có ai ở đây...{end}
+
+[057C]
+Trông như tàn tích đền...{end}
+
+[057D]
+Không có ai ở đây...{page}{choice 02}«Vào»
+«Không vào»
+{choose 80 L7EA2 L8106}
+
+{:L7EA2}
+{state 05 14 00}{if 0031 L7FF6}Mọi thứ đã bị phá hủy...{page}{fx 18 00}Ngươi là ai!?
+Không ai được vào đây!
+Cút! Cút ra!{page}{choice 02}«Đấu»
+«Thôi»
+{choose 80 L7F16 L7FD9}
+
+{:L7F16}
+Ngươi dám chống ta!{page}Ta sẽ cho ngươi một bài
+học nhớ đời!{page}{f8 11 00}{f8 0D 12 88 89 00 10 72}{end}
+
+[057E]
+{f8 19 12}Ngươi hiểu bài
+khá đấy, nhóc...{page}Ta đã xem nhẹ ngươi...{page}{fx 18 81}{jump L7FF6}
+
+[057F]
+Ngu!{page}Ngươi không có cửa
+thắng ta đâu, nhóc!{end}
+
+{:L7FD9}
+Giờ thì...
+Cút khỏi đây!!{page}{f8 16}{end}
+
+{:L7FF6}
+Căn phòng này... từng là
+phòng của Simon...{page}{if 0051 L802F}{if 0050 L804E}{jump L802F}
+
+[0580]  {:L802F}
+Mọi thứ đã bị phá hủy...{end}
+
+[0581]  {:L804E}
+{choice 02}«Tìm kiếm»
+«Không tìm»
+{choose 80 L806E L80EE}
+
+{:L806E}
+!{page}{state 05 24 01}{call L125A} tìm thấy
+cuộn giấy cói cổ!{page}Là bản đồ tới Tàn Tích Cấm.{page}Bản đồ này sẽ dẫn tới
+Tàn Tích Cấm...{page}{set 4051}{f8 16}{end}
+
+{:L80EE}
+Chắc mình về thôi...{end}
+
+[0582]
+Mọi thứ bị phá hủy...{page}Chẳng có ai quanh đây...{end}
+
+[0583]
+Không có ai...
+Có vẻ bị bỏ hoang...{page}{fx 42 00}Nè!
+{call L125A}!{page}{fx 42 80}{set 405A}{fx 02 00}Trời!
+Cậu còn sống!!{page}Tớ không ngờ còn được
+gặp lại cậu,{sp}{call L125A}!{page}Tớ vẫn không tin nổi!{page}Cậu biết không, tớ đã rất bất ngờ
+khi biết cậu thật ra
+là hoàng tử!{page}Gặp lại cậu vui quá!
+Tớ không ngờ cậu
+thoát được!!!{page}{call L125A}... Nơi này đã thay đổi
+kể từ khi cậu biến mất.{page}Thật đáng buồn, nhưng các
+trận đấu vẫn diễn ra... ở
+một nơi bí mật gần đây.{page}Nào, tớ dẫn cậu tới đó.{page}Đi thôi!{page}{fx 02 80}{jump L8ACD}
+
+[0574 0584]
+Không có ai...
+Có vẻ bị bỏ hoang...{end}
+
+[0575 0585]
+{if 0053 L89FE}{if 0051 L88F3}{if 0052 L879F}{fx 17 00}Ai đó!?{page}Không ai được vào Thung Lũng
+các Vị Vua! Đi!{page}{fx 17 41}!?{page}Hoàng... Hoàng tử!
+Người còn sống!!!{page}{fx 17 40}Thần là Sadin! Bao đời nay, dòng
+họ thần giữ thung lũng này!{page}Xin Người yên tâm rằng thần
+đã không để Heishin vào
+thung lũng này.{page}Thần rất tiếc về chuyện đã xảy
+ra với Pharaoh và Hoàng hậu...{page}Lũ độc ác đã chiếm
+vùng đất này.{page}Nhưng giờ...
+Giờ Người còn sống...{page}...mọi người lại có
+hy vọng.{page}{jump L8702}
+
+{:L8505}
+Thi hài của Pharaoh và
+Hoàng hậu không ở đây...{page}Thần rất tiếc, Heishin
+không cho phép.{page}Người còn cần gì nữa không?{page}{jump L8702}
+
+{:L85D9}
+{set 4050}Tàn Tích Cấm ư?{page}Simon Muran nói nó
+ở đây?{page}Thần xin lỗi, thần chưa từng
+thấy nơi nào như vậy...{page}Có quá nhiều lăng mộ
+hoàng gia, không ai biết
+đường hầm nào dẫn đi đâu...{page}Nếu có Lăng Mộ Cấm,
+thần cũng không biết ở đâu...{page}Thần xin lỗi, Hoàng tử...{page}Còn gì nữa, Hoàng tử?{page}{jump L8702}
+
+{:L8702}
+{choice 03}«Tới lăng phụ mẫu»
+«Tới Tàn Tích Cấm»
+«Rời khỏi đây»
+{choose 80 L8505 L85D9 L8760}
+
+{:L8760}
+Nếu Người cần thần,
+Người luôn tìm được thần ở đây.{page}{set 4052}{f8 16}{end}
+
+[0576 0586]  {:L879F}
+{fx 17 00}Thần giúp gì được, Hoàng tử?{page}{choice 02}«Tới Tàn Tích Cấm»
+«Rời khỏi đây»
+{choose 80 L87F6 L88B1}
+
+{:L87F6}
+{set 4050}Thần xin lỗi Hoàng tử.
+Thần không biết Phòng
+Cấm nằm ở đâu.{page}Có lẽ nếu Người có chút
+manh mối từ ngài Simon...{page}{choice 02}«Tới Tàn Tích Cấm»
+«Rời khỏi đây»
+{choose 80 L87F6 L88B1}
+
+{:L88B1}
+Thần hiểu...
+Nếu Người cần thần,
+Người luôn tìm được thần ở đây.{end}
+
+[0577 0587]  {:L88F3}
+{fx 17 00}Thần giúp gì được?{page}{choice 02}«Đưa bản đồ»
+«Rời khỏi đây»
+{choose 80 L8931 L89C5}
+
+{:L8931}
+Vậy ngài Simon đã để lại
+manh mối về vị trí
+của khu tàn tích...{page}Để thần xem...{page}Phải! Thần biết chỗ này.
+Xin mời theo thần...{page}{fx 17 80}{f8 11 00}{jump LABDC}
+
+{:L89C5}
+Nếu Người cần thần,
+Người luôn tìm được thần ở đây.{end}
+
+[0578 0588]  {:L89FE}
+{fx 17 00}Có chuyện gì sao, Hoàng tử?{page}{choice 02}«Tới Tàn Tích Cấm»
+«Quay về»
+{choose 80 L8A49 L89C5}
+
+{:L8A49}
+Thần hiểu...
+Xin Người cẩn thận.{page}{fx 17 80}{f8 15 A1}{f8 11 83}{f8 0E 90 71}{jump LB5AD}
+
+[0579 057A 0589]  {:L8ACD}
+{f8 15 A1}{f8 11 83}{f8 0E F0 70}{state 05 19 00}{f8 15 A0}{fx 02 00}Tới rồi... Đây là nơi tụi tớ
+lập sân đấu mới.{page}{call L125A}, bọn pháp sư đã mất
+nhiều ngày tìm xem
+cậu trốn đi đâu.{page}Khi tụi tớ nói không biết,
+chúng phá hủy sân
+đấu cũ của tụi tớ...{page}Vì thế tớ và ông chủ
+tiệm bài dời sân đấu
+xuống đây.{page}{fx 02 21}{fx 43 00}{call L125A}!
+Cậu còn sống!{page}{fx 43 80}{fx 03 01}{fx 03 21}{fx 02 20}Cậu nghĩ sao chứ!?
+{call L125A} không ngốc tới
+mức bị bắt đâu!{page}{fx 02 21}{fx 03 20}Cậu biết không, thật kỳ diệu
+là cậu thoát được chúng.{page}{fx 03 21}{fx 02 20}Ừ. Bọn chúng đã chiếm cả
+vương quốc. Chúng muốn làm
+gì thì làm... kiểm soát mọi thứ...{page}Chúng dùng một thứ
+phép thuật kỳ lạ...{page}Không ai chống lại nổi!{page}Cứ đà này, tụi tớ sẽ
+phải sống dưới này
+cả đời mất...{page}{call L125A}...{page}Muốn đấu không?{page}Còn hơn là ngồi
+lo lắng không yên...{page}{choice 03}«Đấu với Jono»
+«Đấu với Teana»
+«Từ chối»
+{choose 80 L8E1E L8E21 L8E4F}
+
+[05C0]  {:L8E1E}
+{jump LA3C1}
+
+[05C1]  {:L8E21}
+{fx 02 21}{fx 03 20}Tớ sẽ làm cậu bất ngờ!{page}{f8 11 00}{f8 0D 14 B3 B4 00 00 72}{end}
+
+[05C2]  {:L8E4F}
+{fx 03 21}{fx 02 20}Được...
+Để lần sau vậy.{page}Ông lão mở tiệm bài
+ở dưới này. Rảnh
+thì ghé qua nhé.{page}{fx 02 21}{fx 03 20}Gặp lại sau!{end}
+
+[05D8]
+{if 005E L8F3C}Lâu rồi mới gặp cậu...{page}Cậu thấy đấy, tôi vẫn
+còn đây...{page}{set 405E}{choice 02}«Tiệm bài»
+«Sân đấu»
+{choose 80 LCCBC L8F79}
+
+{:L8F3C}
+Tôi giúp gì được cậu?{page}{choice 02}«Tiệm bài»
+«Sân đấu»
+{choose 80 LCCBC L8F79}
+
+{:L8F79}
+{f8 15 A1}{fx 08 80}{state 05 19 00}{f8 15 A0}{jump L8FA7}
+
+[05F9]
+Chào. Tôi giúp gì được cậu?{end}
+
+[05DA]  {:L8FA7}
+{fx 02 00}{if 005D L93D7}{if 005C L9255}{jump L8FB7}
+
+{:L8FB7}
+{if 0035 L8FD3}{if 0037 L8FEA}{if 0039 L8FFC}{if 003B L9009}{if 003D L9090}{jump L902A}
+
+{:L8FD3}
+{if 0037 L9161}{if 0039 L9161}{if 003B L9161}{if 003D L9161}{jump L9090}
+
+{:L8FEA}
+{if 0039 L9161}{if 003B L9161}{if 003D L9161}{jump L9090}
+
+{:L8FFC}
+{if 003B L9161}{if 003D L9161}{jump L9090}
+
+{:L9009}
+{if 003D L9161}{jump L9090}
+
+{:L902A}
+Chào,{sp}{call L125A}.
+Trông cậu khỏe đấy...{page}{jump L904F}
+
+{:L904F}
+Đấu không?{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3C1 L94FB LA3BD}
+
+{:L9090}
+{if 005B L902A}{set 405B}Nè! Tớ nghe hết rồi!
+Cậu hạ pháp sư tối cao!?{page}Cậu làm bọn pháp sư
+và lính của chúng
+sững sờ cả rồi!{page}Ngầu thật đấy...
+{call L125A}!{page}{choice 03}«Đấu với Jono»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3C1 L94FB LA3BD}
+
+{:L9161}
+{set 405B}{call L125A}!
+Có chuyện rồi!{page}Seto và bọn pháp sư tới đây
+lúc tớ đi vắng... Chúng
+bắt Teana đi rồi!{page}Chúng muốn cậu,{sp}{call L125A}...
+Chúng định dùng Teana
+làm mồi nhử cậu ra!!!{page}Nào,{sp}{call L125A}.
+Tới Đền thờ cứu
+Teana thôi!{page}{fx 02 80}{set 405C}{jump LB718}
+
+{:L9255}
+{if 005F L92FF}{set 405F}Trời, vất vả thật!{page}Ít ra tụi mình đã cứu
+được Teana về...{page}Cậu biết không, bọn đó
+cư xử lạ lắm...{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3C1 L94FB LA3BD}
+
+{:L92FF}
+{if 8035 L931B}{if 8037 L9332}{if 8039 L9344}{if 803B L9351}{if 803D L9359}{jump L93D7}
+
+{:L931B}
+{if 8037 L902A}{if 8039 L902A}{if 803B L902A}{if 803D L902A}{jump L9359}
+
+{:L9332}
+{if 8039 L902A}{if 803B L902A}{if 803D L902A}{jump L9359}
+
+{:L9344}
+{if 803B L902A}{if 803D L902A}{jump L9359}
+
+{:L9351}
+{if 803D L902A}{jump L9359}
+
+{:L9359}
+Còn một pháp sư tối cao nữa?{page}{call L125A},
+cẩn thận nhé...
+Tụi tớ trông cậy cậu.{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3C1 L94FB LA3BD}
+
+{:L93D7}
+Làm được rồi!{page}Cậu hạ gục hết bọn chúng rồi!
+Giờ chỉ còn đánh bại
+Heishin và Seto thôi, nhỉ?{page}Tớ biết cậu làm được!{page}Khi cậu thành vua,{sp}{call L125A}...
+và mọi thứ trở lại bình thường,
+mong cậu đừng quên
+tụi mình là bạn...{page}...bạn thật thân.{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L94FB LA3BD}
+
+[05DB]  {:L94FB}
+{fx 02 80}{fx 30 80}{fx 03 00}{if 005D L977A}{if 005C L9614}{if 0035 L9581}{if 0037 L9581}{if 0039 L9581}{if 003B L9581}{if 003D L9581}{jump L952A}
+
+{:L952A}
+Sao rồi,{sp}{call L125A}?{page}Muốn đấu không?{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3ED L9831 LA3BD}
+
+{:L9581}
+{if 0061 L952A}{set 4061}Nghe nói cậu hạ được một pháp sư tối
+cao... Bọn pháp sư khác sợ rồi!{page}Giỏi lắm,{sp}{call L125A}!{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3ED L9831 LA3BD}
+
+{:L9614}
+{if 0062 L9698}Cảm ơn đã giúp tớ...{page}{call L125A}... Tớ biết mà,
+cậu sẽ đến cứu tớ.
+{set 4062}{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3ED L9831 LA3BD}
+
+{:L9698}
+{if 8035 L96B4}{if 8037 L96CB}{if 8039 L96DD}{if 803B L96EA}{if 803D L96F2}{jump L977A}
+
+{:L96B4}
+{if 8037 L952A}{if 8039 L952A}{if 803B L952A}{if 803D L952A}{jump L96F2}
+
+{:L96CB}
+{if 8039 L952A}{if 803B L952A}{if 803D L952A}{jump L96F2}
+
+{:L96DD}
+{if 803B L952A}{if 803D L952A}{jump L96F2}
+
+{:L96EA}
+{if 803D L952A}{jump L96F2}
+
+{:L96F2}
+Hạ thêm một pháp sư tối cao nữa là
+cậu sẽ đối đầu Heishin.{page}Chúc cậu may mắn,{sp}{call L125A}!{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3ED L9831 LA3BD}
+
+{:L977A}
+Giờ chỉ còn lại Heishin...{page}Nghe nói Heishin là đấu sĩ
+rất mạnh...
+Cẩn thận nhé.{page}{call L125A}...
+Tớ cá là cậu sẽ
+chiến thắng!{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L9831 LA3BD}
+
+[05DC]  {:L9831}
+{fx 03 80}{fx 31 80}{fx 2B 00}{if 8063 L9860}{if 005D L9BAC}{if 0035 L9A13}{if 0037 L9A13}{if 0039 L9A13}{if 003B L9A13}{if 003D L9A13}{jump L99C2}
+
+{:L9860}
+{call L125A}... Vui vì thấy cậu
+vẫn còn sống.{page}Hoàng tử{sp}{call L125A}...
+cậu là hoàng tộc à?{page}Thấy lạ thật, sau bao
+chuyện tụi tôi trải qua...{page}Mọi thứ như không có thật...{page}Vì thế tụi tôi cứ đấu bài.
+Chỉ có vậy mới giữ tỉnh táo.{page}Mong cậu không phiền nếu
+tụi tôi đối xử như trước.{page}Nào, chơi thôi!
+{set 4063}{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA410 L9CD4 LA3BD}
+
+{:L99C2}
+Nè,{sp}{call L125A}!
+Chơi một ván nhé?{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA410 L9CD4 LA3BD}
+
+{:L9A13}
+{if 0064 L9ABC}{set 4064}Cậu có để ý dạo này
+bọn pháp sư xuống sắc không?...{page}Tất cả là nhờ cậu,
+{call L125A}...
+Nào, chơi thôi!{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA410 L9CD4 LA3BD}
+
+{:L9ABC}
+{if 8035 L9AD8}{if 8037 L9AEF}{if 8039 L9B01}{if 803B L9B0E}{if 803D L9B16}{jump L9BAC}
+
+{:L9AD8}
+{if 8037 L99C2}{if 8039 L99C2}{if 803B L99C2}{if 803D L99C2}{jump L9B16}
+
+{:L9AEF}
+{if 8039 L99C2}{if 803B L99C2}{if 803D L99C2}{jump L9B16}
+
+{:L9B01}
+{if 803B L99C2}{if 803D L99C2}{jump L9B16}
+
+{:L9B0E}
+{if 803D L99C2}{jump L9B16}
+
+{:L9B16}
+Ha! Cậu hạ bọn pháp sư
+tối cao! Tuyệt vời!{page}Nghe nói còn một tên
+nữa... Chúc cậu may mắn!{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA410 L9CD4 LA3BD}
+
+{:L9BAC}
+Tuyệt!!!{page}Nghe nói cậu hạ hết
+bọn pháp sư tối cao!!!{page}Tin vui!!!{page}Ối! Khi cậu dẹp xong hết
+bọn chúng, chắc tôi phải
+gọi cậu là Vua{sp}{call L125A}.{page}Tôi nên giữ mồm, nhỉ?{page}Mong cậu không quên tụi tôi
+khi đã làm Pharaoh...{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L9CD4 LA3BD}
+
+[05DD]  {:L9CD4}
+{fx 2B 80}{fx 3C 80}{fx 2C 00}{if 8065 L9D03}{if 005D L9F91}{if 0035 L9DE7}{if 0037 L9DE7}{if 0039 L9DE7}{if 003B L9DE7}{if 003D L9DE7}{jump L9D98}
+
+{:L9D03}
+{set 4065}Dạo này kiếm bài hiếm
+khó lắm...
+Khó thật đấy.{page}Cậu muốn chơi không?{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA43D LA011 LA3BD}
+
+{:L9D98}
+Cậu muốn đấu với tôi?{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA43D LA011 LA3BD}
+
+{:L9DE7}
+{if 0066 L9EBE}{set 4066}Cậu hạ pháp sư tối cao rồi à!?{page}Biết đâu mọi thứ sẽ trở lại
+như xưa! Khi đó, có lẽ
+tôi lại sưu tầm bài hiếm
+như trước!!!
+Cậu muốn đấu không?{page}{choice 03}«Đấu»
+«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA43D LA011 LA3BD}
+
+{:L9EBE}
+{if 8035 L9EDA}{if 8037 L9EF1}{if 8039 L9F03}{if 803B L9F10}{if 803D L9F18}{jump L9F91}
+
+{:L9EDA}
+{if 8037 L9D98}{if 8039 L9D98}{if 803B L9D98}{if 803D L9D98}{jump L9F18}
+
+{:L9EF1}
+{if 8039 L9D98}{if 803B L9D98}{if 803D L9D98}{jump L9F18}
+
+{:L9F03}
+{if 803B L9D98}{if 803D L9D98}{jump L9F18}
+
+{:L9F10}
+{if 803D L9D98}{jump L9F18}
+
+{:L9F18}
+Cậu làm được thật!!!{page}Cứ tiếp tục, có lẽ mọi
+thứ sẽ trở lại bình thường...{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA011 LA3BD}
+
+{:L9F91}
+Cậu làm được rồi!{page}Cậu cho bọn pháp sư biết tay!
+Khi làm Pharaoh,
+đừng quên tụi tôi nhé?{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA011 LA3BD}
+
+[05DE]  {:LA011}
+{fx 2C 80}{fx 3D 80}{fx 2D 00}{if 8067 LA040}{if 005D LA2F1}{if 0035 LA19B}{if 0037 LA19B}{if 0039 LA19B}{if 003B LA19B}{if 003D LA19B}{jump LA141}
+
+{:LA040}
+{set 4067}Lâu rồi đấy, nhóc...
+Ngày nào tao cũng ở đây.
+Tao chẳng còn chỗ nào để đi.{page}Nơi này thay đổi nhiều rồi...{page}Mày biết không, dạo này tao
+chẳng còn hứng đấu bài...{page}Giờ tao chỉ tới đây
+để đổi bài.{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3AB LA3BD}
+
+{:LA141}
+Sao nào? Muốn đổi
+bài với tao không,
+nhóc?{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3AB LA3BD}
+
+{:LA19B}
+{if 0068 LA205}{set 4068}Khá đấy,{sp}{call L125A}...{page}Đưa tao lá bài
+hiếm đó thì sao?{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3AB LA3BD}
+
+{:LA205}
+{if 8035 LA221}{if 8037 LA238}{if 8039 LA24A}{if 803B LA257}{if 803D LA25F}{jump LA2F1}
+
+{:LA221}
+{if 8037 LA141}{if 8039 LA141}{if 803B LA141}{if 803D LA141}{jump LA25F}
+
+{:LA238}
+{if 8039 LA141}{if 803B LA141}{if 803D LA141}{jump LA25F}
+
+{:LA24A}
+{if 803B LA141}{if 803D LA141}{jump LA25F}
+
+{:LA257}
+{if 803D LA141}{jump LA25F}
+
+{:LA25F}
+Mày biết không... đấu bài
+không chỉ là thắng thua...{page}...sưu tầm bài cũng
+vui không kém.{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3AB LA3BD}
+
+{:LA2F1}
+Có vẻ lại có cơ hội
+cho hòa bình rồi...{page}Mày biết không, nếu mọi thứ
+trở lại như xưa, chắc tao
+sẽ nhớ đời dưới lòng đất.{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA3B4 LA3BD}
+
+{:LA3AB}
+{fx 2D 80}{fx 02 00}{jump L904F}
+
+{:LA3B4}
+{fx 2D 80}{fx 02 00}{jump L93D7}
+
+[05DF]  {:LA3C1}
+Tớ có linh cảm hôm nay may!{page}{f8 11 00}{f8 0D 13 B1 B2 00 00 72}{end}
+
+[05E0]  {:LA3ED}
+Coi chừng! Tớ giỏi lắm đó...{page}{f8 11 00}{f8 0D 14 B3 B4 00 00 72}{end}
+
+[05E1]  {:LA410}
+Thắng hay thua... đừng giận.{page}{f8 11 00}{f8 0D 04 B5 B6 00 00 72}{end}
+
+[05E2]  {:LA43D}
+Đừng nương tay... không
+thì cậu sẽ hối hận.{page}{f8 11 00}{f8 0D 05 B7 B8 00 00 72}{end}
+
+[05E3]
+{if 0035 LA56D}{if 0037 LA56D}{if 0039 LA56D}{if 003B LA56D}{if 003D LA56D}{jump LA4AF}
+
+[05E4]
+{if 0035 LA610}{if 0037 LA610}{if 0039 LA610}{if 003B LA610}{if 003D LA610}{jump LA541}
+
+{:LA4AF}
+Trời! Tớ cứ chắc là lần
+này tớ sẽ thắng!{page}Xem ra tớ phải
+cố gắng hơn nữa...{page}{f8 19 13}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L94FB LA3BD}
+
+{:LA541}
+Trời... tớ thắng rồi.{page}Chắc cậu lụt
+nghề rồi...{end}
+
+{:LA56D}
+Phù! Cậu giỏi quá đi!
+Tớ không thắng nổi!{page}Tớ hứa lần sau
+sẽ không dễ thắng
+tớ vậy đâu...{page}{f8 19 13}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L94FB LA3BD}
+
+{:LA610}
+Có chuyện gì vậy,{sp}{call L125A}?
+Cậu làm tốt hơn thế mà!{page}Chơi thế mà đấu với bọn
+pháp sư thì bị đánh tơi tả!{page}Tập trung vào ván bài đi!{end}
+
+[05E5]
+{if 0035 LA793}{if 0037 LA793}{if 0039 LA793}{if 003B LA793}{if 003D LA793}{jump LA6D5}
+
+[05E6]
+{if 0035 LA82B}{if 0037 LA82B}{if 0039 LA82B}{if 003B LA82B}{if 003D LA82B}{jump LA74B}
+
+{:LA6D5}
+{f8 19 14}Chết! Thua...{page}Tớ biết tớ đã chơi hay
+hơn bao giờ hết...{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L9831 LA3BD}
+
+{:LA74B}
+Tuyệt!
+Tớ thắng rồi!{page}Không tệ nhỉ?
+Chắc cậu bất ngờ
+lắm!{end}
+
+{:LA793}
+{f8 19 14}Ui! Thua rồi...{page}Thôi kệ... Mà nếu tớ
+thắng được người giỏi{sp}{call L125A}, thì mới
+là chuyện đáng lo đấy.{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L9831 LA3BD}
+
+{:LA82B}
+Oa!
+Tớ thắng!!!{page}{call L125A}...
+Cậu phải chơi hay hơn
+mới hạ được pháp sư tối cao...{end}
+
+[05E7]
+{if 0035 LA962}{if 0037 LA962}{if 0039 LA962}{if 003B LA962}{if 003D LA962}{jump LA8B6}
+
+[05E8]
+{if 0035 LA9D8}{if 0037 LA9D8}{if 0039 LA9D8}{if 003B LA9D8}{if 003D LA9D8}{jump LA90B}
+
+{:LA8B6}
+Phù...
+Tớ không thắng nổi cậu.{page}{f8 19 04}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L9CD4 LA3BD}
+
+{:LA90B}
+Cuối cùng!
+Tớ đã thắng cậu
+đường hoàng,{sp}{call L125A}!{page}Xem ra tập luyện
+đã có kết quả!{end}
+
+{:LA962}
+Phù...
+Tớ không thắng nổi cậu.{page}{f8 19 04}Cảm ơn đã cho tớ luyện tập...{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 L9CD4 LA3BD}
+
+{:LA9D8}
+Chà chà...
+Tớ làm được thật... Tớ thắng cậu,
+{call L125A}!{page}Nhưng nếu vậy, ai sẽ
+cứu thế giới đây?{end}
+
+[05E9]
+{if 0035 LAB2F}{if 0037 LAB2F}{if 0039 LAB2F}{if 003B LAB2F}{if 003D LAB2F}{jump LAA7F}
+
+[05EA]
+{if 0035 LABA3}{if 0037 LABA3}{if 0039 LABA3}{if 003B LABA3}{if 003D LABA3}{jump LAAEA}
+
+{:LAA7F}
+{f8 19 05}Tớ thua rồi...{page}Xem ra tớ cần những
+lá bài mạnh hơn.{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA011 LA3BD}
+
+{:LAAEA}
+Tớ thắng rồi!{page}Không tin nổi!
+Tớ thắng bằng
+mấy lá bài này!!!{end}
+
+{:LAB2F}
+{f8 19 05}Vậy là tớ thua...{page}Với mấy lá bài này,
+tớ không ngạc nhiên lắm...{page}{choice 02}«Nói với người khác»
+«Ra ngoài»
+{choose 80 LA011 LA3BD}
+
+{:LABA3}
+Ồ! Tớ thắng!!!{page}Chắc cậu không vui
+lắm nhỉ!{end}
+
+[058A]  {:LABDC}
+{set 4053}{f8 15 A1}{state 05 00 00}{f8 15 A0}{fx 4D 00}Đi tiếp... Người sẽ thấy
+phòng đánh dấu trên bản đồ.{page}{f8 0E 90 71}Ôi...{page}{fx 4D 80}{f8 15 A1}{state 05 18 00}{f8 15 A0}{fx 4D 00}Thần từng nghe kể
+về nơi này...{page}Các pháp sư cổ đại... đã
+giấu bí mật phép thuật
+trong Lăng Mộ Hoàng Gia...{page}Đồn rằng một số
+bí mật đã được truyền
+cho con cháu họ.{page}Vậy ra đây là nơi đó...{page}{fx 4D 80}{fx 17 00}Có một bức vẽ trên tường
+mô tả quá khứ...{page}Và đằng kia...
+...có một tấm bản đồ...{page}{choice 02}«Xem bản đồ»
+«Xem bức vẽ»
+{choose 80 LADB2 LB357}
+
+{:LADB2}
+{if 0054 LB3F0}{set 4054}{fx 17 80}{state 05 25 01}{fx 4D 00}Bản đồ...{page}Có một dấu hiệu gì đó...{page}{fx 4D 80}{fx 44 00}Bức vẽ trên tường đánh dấu
+vị trí Bảo Vật Ngàn Năm.{page}Và giờ, nó cho thấy những chỗ
+trong đền nơi Heishin giấu
+các Bảo Vật Ngàn Năm.{page}Pháp sư vẫn còn mạnh chừng
+nào Bảo Vật Ngàn Năm
+còn ở trong đền...{page}...cung cấp nguồn
+phép thuật cho chúng.{page}{f8 11 02}{fx 44 80}{fx 4D 00}Ngươi!{page}{fx 4D 80}{state 05 18 00}{f8 0E 80 71}{fx 04 00}Ta theo các ngươi tới đây.
+Ta cũng đang tìm
+Tàn Tích Cấm.{page}Ta cũng tin Heishin đã
+tìm ra nơi này.{page}Nhờ bức vẽ trên tường
+dẫn đường, hắn đã tìm
+ra Bảo Vật Ngàn Năm.{page}Hắn là pháp sư, nhưng là
+con cháu các pháp sư cổ đại.{page}Hắn định tìm hết Bảo Vật Ngàn
+Năm để một ngày nào đó
+cai trị thế giới...{page}{fx 04 21}{fx 4D 00}Sao tay sai của Heishin
+lại kể cho chúng ta những điều này!?{page}{fx 4D 80}{fx 04 20}Sao?{page}Rồi các ngươi sẽ biết...{page}Nhưng trước hết, xem Hoàng tử
+{call L125A} làm được gì.{page}Giờ ngươi đã biết chỗ
+của bọn pháp sư tối cao...{page}Nếu ngươi giỏi bằng nửa ngươi tưởng,
+hãy dùng Bảo Vật Ngàn Năm của ngươi
+đánh bại chúng!{page}{fx 04 21}{fx 4D 00}Chúng ta chẳng cần nghe ngươi...{page}{fx 4D 80}{fx 04 20}Ta không nói với ngươi, kẻ giữ mộ!
+Ta nói với hoàng tử của ngươi!{page}Tạm biệt!{page}{fx 04 80}{fx 4D 00}{f8 11 02}Khoan!{page}{f8 0E 90 71}{fx 4D 80}{fx 17 00}Có mùi mờ ám...{page}Seto... Hắn là cánh tay phải của
+Heishin. Sao hắn lại
+muốn giúp Người chứ?{page}Hoàng tử, xin hãy thận trọng.
+Chuyện này không đơn
+giản như vẻ ngoài.{page}{jump LB324}
+
+{:LB2FC}
+{choice 02}«Xem bản đồ»
+«Xem bức vẽ»
+{choose 80 LADB2 LB357}
+
+{:LB324}
+{choice 03}«Xem bản đồ»
+«Xem bức vẽ»
+«Quay về»
+{choose 80 LADB2 LB357 LB4B5}
+
+{:LB357}
+{if 0060 LB464}{f8 15 A1}{fx 17 80}{state 05 00 82 00 C0 00}{f8 15 A0}{fx 4D 00}Trông như hình vẽ
+một loại phép thuật...{page}Có thể nó mô tả một
+trong các bảo vật bị cấm?{page}{fx 4D 80}{set 4060}{f8 15 A1}{fx 17 00}{state 05 18 00}{f8 15 A0}{if 0054 LB324}{jump LB2FC}
+
+{:LB3F0}
+{f8 15 A1}{fx 17 82}{state 05 25 01}{f8 15 A0}Bản đồ đánh dấu vị trí các
+ngôi đền nơi giấu
+Bảo Vật Ngàn Năm.{page}{f8 15 A1}{fx 17 00}{state 05 18 00}{f8 15 A0}{if 0054 LB324}{jump LB2FC}
+
+{:LB464}
+{f8 15 A1}{fx 17 82}{state 05 00 82 00 C0 00}{f8 15 A0}Trông như hình vẽ
+một phép cổ xưa...{page}{f8 15 A1}{fx 17 00}{state 05 18 00}{f8 15 A0}{if 0054 LB324}{jump LB2FC}
+
+{:LB4B5}
+Chúng ta về thôi...{page}{fx 17 80}{f8 11 00}{state 05 17 00}{f8 0E 00 71}{fx 17 00}Thần cảm thấy trong căn phòng
+đó còn nhiều bí mật khác...{page}Hoàng tử... Hãy cảnh giác
+âm mưu của Heishin và
+bọn tay sai.{page}Thần luôn ở đây vì Người.
+Nếu cần thần, Người chỉ
+cần gọi thần.{end}
+
+[058B]  {:LB5AD}
+{state 05 18 00}{choice 03}«Xem bản đồ»
+«Xem bức vẽ»
+«Quay về»
+{choose 80 LB5E4 LB63E LB679}
+
+{:LB5E4}
+{state 05 25 01}Bản đồ đánh dấu vị trí
+các ngôi đền nơi có
+Bảo Vật Ngàn Năm.{page}{jump LB5AD}
+
+{:LB63E}
+{state 05 00 82 00 C0 00}Trông như hình vẽ
+một phép cổ xưa...{page}{jump LB5AD}
+
+{:LB679}
+{f8 15 A1}{f8 11 83}{f8 0E 00 71}{state 05 17 00}{fx 17 00}Thần sẽ ở đây nếu
+Người cần, Hoàng tử.{end}
+
+[05D9]
+{if 005D LC940}{fx 18 00}Nhóc, đây là đền thiêng
+của ngài Heishin...{page}Không dành cho kẻ như ngươi!
+Cút!{end}
+
+[05EC]  {:LB718}
+{f8 15 A1}{f8 11 83}{f8 0E 60 71}{state 05 21 00}{f8 15 A0}{fx 42 00}Đây rồi...
+Nơi này làm tớ nổi da gà...{page}Thật lòng, tớ không
+thích ở đây chút nào.{page}Không có pháp sư nào
+cản đường, chắc là
+chúng đang chờ tụi mình.{page}Nào, đi thôi...{page}{fx 42 80}{jump LB7F7}
+
+[05ED]  {:LB7F7}
+{jump LB7FA}
+
+[05F1]  {:LB7FA}
+{f8 15 A1}{if 006C LBA2E}{if 006B LB9B5}{if 006A LB922}{if 0069 LB89A}{state 05 38 00}{fx 2E 00}{f8 15 A0}Ta rất hân hạnh chào
+đón lũ ngốc
+tới đám tang của chính các ngươi!{page}{fx 2E 21}{fx 42 00}Biến!
+Tụi tao còn việc lớn hơn!{page}{fx 42 80}{fx 2E 20}{f8 11 00}{f8 0D 1F B9 BA 00 10 72}{end}
+
+{:LB89A}
+{state 05 38 00}{fx 2E 00}{f8 15 A0}Chào mừng...
+Mong các ngươi đã sẵn sàng
+gặp tổ tiên!{page}{fx 2E 21}{fx 42 00}Lại là tụi bây à!?
+{call L125A}! Cho chúng biết tay!{page}{fx 42 80}{f8 11 00}{f8 0D 1F B9 BA 00 10 72}{end}
+
+{:LB922}
+{state 05 38 00}{fx 2E 00}{f8 15 A0}Chào mừng...
+Mong các ngươi đã sẵn sàng
+gặp tổ tiên!{page}{fx 2E 21}{fx 42 00}Chúng không chịu thôi!
+Phải hạ gã này thôi!{page}{fx 42 80}{f8 11 00}{f8 0D 1F B9 BA 00 10 72}{end}
+
+{:LB9B5}
+{state 05 38 00}{fx 2E 00}{f8 15 A0}Chào mừng...
+Mong các ngươi đã sẵn sàng
+gặp tổ tiên!{page}{fx 2E 21}{fx 42 00}Nè... tớ nghĩ mình lạc rồi...{page}{fx 42 80}{f8 11 00}{f8 0D 1F B9 BA 00 10 72}{end}
+
+{:LBA2E}
+{state 05 38 00}{fx 2E 00}{f8 15 A0}Chào mừng...
+Mong các ngươi đã sẵn sàng
+gặp tổ tiên!{page}{fx 2E 21}{fx 42 00}Lại nữa!
+Nào, xử gã này thôi!{page}{fx 42 80}{f8 11 00}{f8 0D 1F B9 BA 00 10 72}{end}
+
+[05F2]
+{if 006C LBD2A}{if 006B LBC98}{if 006A LBC05}{if 0069 LBB86}{set 4069}Các ngươi không thể
+thoát khỏi mê cung...{page}{f8 19 1F}{fx 3F 81}{fx 42 00}Kệ gã đi....
+Đi tiếp thôi!{page}{fx 42 80}{choice 02}«Rẽ phải»
+«Rẽ trái»
+{choose 80 LBDB7 LB7FA}
+
+[05F3]
+Seto và Heishin...
+Chủ nhân sẽ hài lòng!
+Hahahahaha...!{end}
+
+{:LBB86}
+{set 406A}Các ngươi không thể
+thoát khỏi mê cung...{page}{fx 3F 81}{fx 42 00}Nào, đi thôi!
+Teana đang chờ tụi mình!{page}{fx 42 80}{choice 02}«Rẽ phải»
+«Rẽ trái»
+{choose 80 LBDB7 LB7FA}
+
+{:LBC05}
+{set 406B}Các ngươi không thể
+thoát khỏi mê cung...{page}{fx 3F 81}{fx 42 00}Sao tớ có cảm giác
+đã từng ở đây rồi...?{page}Đi đường nào đây?{page}{fx 42 80}{choice 02}«Rẽ phải»
+«Rẽ trái»
+{choose 80 LBDB7 LB7FA}
+
+{:LBC98}
+{set 406C}Các ngươi không thể
+thoát khỏi mê cung...{page}{fx 3F 81}{fx 42 00}Trời! Bọn này ở
+khắp nơi!!!{page}Nào, đi tiếp thôi!{page}{fx 42 80}{choice 02}«Rẽ phải»
+«Rẽ trái»
+{choose 80 LBDB7 LB7FA}
+
+{:LBD2A}
+Các ngươi không thể
+thoát khỏi mê cung...{page}{fx 3F 81}{fx 42 00}Nè, chọn đường nào mà
+dẫn tới đâu đó đi...{page}{fx 42 80}{choice 02}«Rẽ phải»
+«Rẽ trái»
+{choose 80 LBDB7 LB7FA}
+
+{:LBDB7}
+{state 05 38 00}{fx 42 00}Tớ chịu hết nổi rồi...{page}{fx 42 80}{choice 02}«Rẽ phải»
+«Rẽ trái»
+{choose 80 LBE00 LB7FA}
+
+{:LBE00}
+{state 05 38 00}{fx 42 00}Giờ đi đâu?{page}{fx 42 80}{choice 02}«Rẽ phải»
+«Rẽ trái»
+{choose 80 LB7FA LBE36}
+
+{:LBE36}
+{state 05 38 00}{fx 42 00}Chỗ nào cũng như nhau!
+Mình đang ở đâu vậy!?{page}{fx 42 80}{choice 02}«Rẽ phải»
+«Rẽ trái»
+{choose 80 LBE8E LB7FA}
+
+{:LBE8E}
+{state 05 39 00}{fx 42 00}Hình như cuối cùng tới rồi...{page}Đi thôi...{page}{fx 42 80}{jump LBEC8}
+
+[05EE]  {:LBEC8}
+{if 006D LC57E}{state 05 40 01}{fx 44 00}Cuối cùng ngươi đã tới...{page}{fx 44 80}{fx 42 00}Tụi tao tới vì Teana!{page}{fx 42 80}{fx 46 00}Hừm. Ta không ngờ
+hoàng tử còn sống...{page}Sức mạnh của Trò Chơi Ngàn Năm
+quả là đáng nói...{page}Thật ra ta nên cảm tạ trời
+đất vì Trò Chơi Ngàn Năm vẫn còn
+để ta chiếm lấy.{page}Seto... Tiêu diệt hoàng tử.{page}Hạ hắn, ta sẽ phong ngươi
+làm người giữ Trò Chơi Ngàn Năm.{page}{fx 46 80}{fx 44 00}Cảm tạ ngài.
+Mạng hắn cứ để thần lo...{page}{fx 44 80}{fx 46 00}Được thôi...
+Hắn là của ngươi!{page}Ta sẽ gặp lại ngươi
+ở Đền Bóng Tối.{page}{fx 46 80}{f8 15 A1}{state 05 41 01}{f8 15 A0}{fx 44 00}Chà chà... Ta ngạc nhiên đấy,
+các ngươi vượt được
+thử thách mê cung...{page}{fx 44 80}{fx 42 00}Đùa à!
+Tụi tao bị trói cả hai tay
+vẫn làm được!{page}Chỉ được thế thôi sao?!{page}{fx 42 80}{f8 15 A1}{fx 04 00}{state 05 22 00}{f8 15 A0}À, con tin...
+Các ngươi mang về đi.{page}{if 006E LC1FD}{call L125A}...
+Ta đã chờ cơ hội này để
+đấu với ngươi lần nữa!!!{page}{jump LC23F}
+
+{:LC1FD}
+{call L125A}...
+Ngươi không biết ta mong
+đấu với ngươi thế nào...{page}{jump LC23F}
+
+{:LC23F}
+Chẳng vui gì khi chỉ đổi
+con tin lấy bảo vật...{page}Niềm vui là trận đấu,{sp}{call L125A}!{page}{f8 11 00}{f8 0D 20 BB BC 00 40 72}{end}
+
+[05F4]
+{f8 19 20}Không tệ... Không tệ.{page}Cứ đà này, ta e bọn
+pháp sư không cản nổi ngươi...{page}Ngươi thắng...
+Lấy lá bài và cô ta đi.{page}Hẹn gặp lại...{page}{fx 04 80}{jump LC3DF}
+
+[05F5]
+Thật thất vọng...{page}Ngươi không có cửa với
+bọn pháp sư nếu chỉ
+được đến vậy.{page}Bảo Vật Ngàn Năm của ngươi...
+Là của ta!
+Hahaha...{end}
+
+[05F0]  {:LC3DF}
+{fx 02 00}Teana...
+Cậu ổn chứ?{page}{fx 02 21}{fx 43 00}Ừ, tớ ổn...
+Cảm ơn,{sp}{call L125A}...
+Cả Jono nữa.{page}{fx 43 80}{fx 02 20}Nghe này. Tớ chán chỗ này rồi.
+Tụi mình ra khỏi đây thôi.{page}{fx 02 80}{f8 11 00}{state 05 19 00}{f8 0E F0 70}{fx 02 00}Cậu biết không, gã Seto đó
+có gì đó lạ lắm...{page}{fx 02 21}{fx 43 00}Tớ biết...
+Như thể gã không thật sự
+muốn thắng{sp}{call L125A} cả.{page}Như thể gã có ý
+đồ khác...{page}{fx 43 80}{fx 02 20}Tớ hiểu ý cậu...{page}Này,{sp}{call L125A}...
+Cẩn thận với gã đó nhé.{page}Gã nguy hiểm.{end}
+
+{:LC57E}
+{state 05 41 01}{f8 15 A0}{fx 42 00}Tụi tao tới vì Teana!{page}{fx 42 80}{fx 44 00}Chà chà... Ta ngạc nhiên đấy,
+các ngươi vượt được
+thử thách mê cung...{page}{fx 44 80}{fx 42 00}Đùa à!
+Tụi tao bị trói cả hai tay
+vẫn làm được!{page}Chỉ được thế thôi sao?!{page}{fx 42 80}{f8 15 A1}{fx 04 00}{state 05 22 00}{f8 15 A0}À, con tin...
+Các ngươi mang về đi.{page}Ta không dùng cô ta làm
+mồi để lấy bảo vật
+quý giá của ngươi...{page}Ta làm vậy để dẫn ngươi
+tới phòng của Heishin.{page}Hắn ở trong ngôi đền phía trước.
+Đối mặt hắn! Đánh bại hắn!{page}{fx 04 21}{fx 42 00}Đừng nghe lời gã,{sp}{call L125A}!
+Đó là bẫy!!!{page}{fx 42 80}{fx 04 20}Đừng ngốc thế...{page}Ta cho ngươi cơ hội đánh bại
+Heishin... Ngươi dám bỏ
+qua cơ hội này sao?{page}{choice 02}«Đi tiếp»
+«Bỏ qua cơ hội»
+{choose 80 LC808 LC8DD}
+
+{:LC808}
+Lựa chọn sáng suốt,
+hoàng tử.{page}{fx 04 21}{fx 42 00}Cậu muốn đi tiếp,{sp}{call L125A}?{page}Nếu cậu muốn vậy,
+tớ không cản đâu...{page}Nhưng cẩn thận nhé?
+Tụi tớ sẽ chờ cậu!{page}{fx 42 80}{fx 43 00}Ừ. Tụi tớ sẽ chờ...{page}{fx 43 80}{jump LC9AE}
+
+{:LC8DD}
+Không đi bây giờ, ngươi sẽ
+không còn cơ hội nào khác...{page}{choice 02}«Đi tiếp»
+«Bỏ qua cơ hội»
+{choose 80 LC808 LC8DD}
+
+[05F6]  {:LC940}
+{choice 02}«Đi tiếp»
+«Bỏ qua cơ hội»
+{choose 80 LC96A LCCBC}
+
+{:LC96A}
+{state 05 22 00}{fx 04 00}Đây...
+Đây là lối đi bí mật...{page}Ta sẽ mở cho ngươi.{page}{jump LC9AE}
+
+{:LC9AE}
+{f8 15 A1}{f8 10 00 80 00 00}{fx 04 82}{state 05 26 01}{f8 15 A0}{fx 44 00}Đền Bóng Tối Heishin
+ở ngay phía trước...{page}Dọc đường ngươi sẽ gặp các
+pháp sư đã thề bảo vệ hắn.{page}Nên thận trọng thì hơn...{page}{fx 44 80}{f8 15 A1}{jump LE1D9}
+
+[058C]
+{if 0034 LCBE1}{if 0037 LCAF8}{if 0039 LCAF8}{if 003B LCAF8}{if 003D LCAF8}Ngươi! Là ai...?{page}Khoan! Ngươi... là...
+Hoàng tử{sp}{call L125A}...!{page}Sao ngươi vào đây!?{page}Không quan trọng...
+Ngươi sẽ chết ở đây!{page}{f8 11 00}{f8 0D 15 8A 8B 05 10 72}{end}
+
+{:LCAF8}
+Ngươi tới rồi!{page}E rằng ta không thể để
+ngươi vào Đền Biển.{page}Nhiệm vụ của bọn ta là bảo vệ
+Bảo Vật Ngàn Năm -- nguồn
+sức mạnh huyền bí của bọn ta.{page}Đền Biển này sẽ là nơi
+ngươi yên nghỉ vĩnh hằng!{page}Chuẩn bị thua đi!{page}{f8 11 00}{f8 0D 15 8A 8B 05 10 72}{end}
+
+[058E]  {:LCBE1}
+Lại tới à!?{page}Lần này đừng hòng thoát!{page}{f8 11 00}{f8 0D 15 8A 8B 05 10 72}{end}
+
+[058F]
+Ngu ngốc khi mong
+đánh bại bọn ta...{page}Hahahaha...!{end}
+
+[0590]
+Không...{page}Không thể nào...
+Lẽ ra ngươi phải thua...{page}Ngài Secmeton...
+Xin ngài thứ lỗi...{page}{f8 19 15}{fx 19 81}{choice 02}«Đi tiếp»
+«Về»
+{choose 80 LCCBF LCCBC}
+
+[0593]  {:LCCBF}
+{f8 15 A1}{state 05 24 00}{fx 1A 00}{f8 15 A0}Ta là Pháp sư Tối cao
+Secmeton...{page}Từ thuở xa xưa, nhiệm vụ của
+bọn ta là bảo vệ
+Bảo Vật Ngàn Năm...{page}Và bọn ta sẽ không bao giờ
+để chúng rơi vào tay ngươi!{page}Hãy đối mặt Bộ Bài Biển!
+Chuẩn bị đón nhận số phận!{page}Ngươi sẽ trả giá
+cho sự ngu ngốc!{page}{f8 11 00}{f8 0D 16 8C 8D 05 20 72}{end}
+
+[0594]
+Ta tin ngươi đã học được bài học!{page}Tiếc là đã quá muộn!{end}
+
+[0595]
+{f8 19 16}Ngươi... thật... mạnh...{page}Nhưng ngươi không có cửa trước
+sức mạnh của ngài Heishin!{page}{fx 1A 81}{f8 15 A1}{f8 0E 60 73}{state 05 17 01}{f8 15 A0}{call L125A} có được
+Vòng Cổ Ngàn Năm.
+{state 0F 1E 00}{page}{if 8035 LE10C}{if 8039 LE10C}{if 803B LE10C}{if 803D LE10C}{if 8037 LE10C}{if 805C LE1D3}{state 05 24 00}{jump LE10F}
+
+[058D]
+Không có ai ở đền này...{end}
+
+[0596]
+{if 0036 LD03A}{if 0035 LCF89}{if 0039 LCF89}{if 003B LCF89}{if 003D LCF89}Ai!?{page}Ngươi...!?
+Hoàng tử{sp}{call L125A}!{page}Không ngờ ngươi lại
+đến được tận đây!{page}Tiếc thay...
+Ngươi sẽ bỏ mạng ở đây!!!{page}{f8 11 00}{f8 0D 17 8E 8F 01 10 72}{end}
+
+{:LCF89}
+Chào mừng tới Đền Rừng...{page}Tiếc là ngươi sẽ không
+đi xa hơn chỗ này.{page}Đúng vậy...
+Đây là nơi an nghỉ của ngươi...{page}Ta đảm bảo thế!!!{page}{f8 11 00}{f8 0D 17 8E 8F 01 10 72}{end}
+
+[0598]  {:LD03A}
+Ngươi!
+Hôm nay ngươi đừng hòng
+chạm vào Bảo Vật Ngàn Năm...{page}Ta đảm bảo thế!!!{page}{f8 11 00}{f8 0D 17 8E 8F 01 10 72}{end}
+
+[0599]
+Bộ Bài Rừng của ta mạnh lắm!
+Thất bại có vị
+thế nào hả!?{page}Hahaha...!!!{end}
+
+[059A]
+Ta thua rồi...{page}Nhưng Pháp sư Tối cao của bọn ta
+không dễ xơi vậy đâu...{page}{f8 19 17}{fx 1B 81}{choice 02}«Đi tiếp»
+«Về»
+{choose 80 LD16D LD16A}
+
+[059D]  {:LD16D}
+{f8 15 A1}{state 05 26 00}{fx 1C 00}{f8 15 A0}Ta là chúa tể rừng xanh...
+Pháp sư Tối cao Anubisius!{page}Ta đứng đây bảo vệ Bảo
+Vật Ngàn Năm mà ngài
+Heishin giao phó...{page}Đây là nơi Bảo Vật Ngàn Năm
+thuộc về. Và nó sẽ
+mãi ở lại đây!!!{page}Định mệnh của bọn ta là bảo vệ
+bảo vật tạo nên phép thuật!{page}Hãy đối mặt Bộ Bài Rừng
+của ta! Chuẩn bị đấu!{page}Và chuẩn bị thua đi!!!{page}{f8 11 00}{f8 0D 18 90 91 01 20 72}{end}
+
+[059E]
+Thằng nhóc ngu ngốc...{page}Ngươi đã sai lầm khi
+chọn đối đầu với ta!!!{end}
+
+[059F]
+{f8 19 18}Không... Không thể...{page}Ngài Heishin sẽ
+báo thù cho ta...!{page}Hẹn... gặp... ngươi... ở...{page}{fx 1C 81}{f8 15 A1}{f8 0E 60 73}{state 05 27 01}{f8 15 A0}{call L125A} có
+Chìa Khóa Ngàn Năm!!!{page}{if 8035 LE10C}{if 8039 LE10C}{if 803B LE10C}{if 803D LE10C}{if 8037 LE10C}{if 805C LE1D3}{state 05 26 00}{jump LE10F}
+
+[0597]
+Không có ai ở đền này...{end}
+
+[05A0]
+{if 0038 LD54D}{if 0037 LD489}{if 0035 LD489}{if 003B LD489}{if 003D LD489}Ai!?{page}Ngươi...!?
+Hoàng tử{sp}{call L125A}!{page}Không ngờ ngươi lại
+tới được tận đây!{page}Tiếc thay...
+Ngươi sẽ bỏ mạng ở đây!!!{page}{f8 11 00}{f8 0D 19 92 93 03 10 72}{end}
+
+{:LD489}
+Ta chúc mừng ngươi...{page}Nhưng ngươi sẽ hối hận vì đã
+tới được Đền Núi này!{page}Phía trước là nơi yên nghỉ
+của một Bảo Vật Ngàn Năm.{page}Ta đã thề bảo vệ nó
+bằng cả mạng sống!{page}{f8 11 00}{f8 0D 19 92 93 03 10 72}{end}
+
+[05A2]  {:LD54D}
+Ngươi thật ngu khi quay
+lại đây đối mặt ta...{page}Chuẩn bị thua đi!!{page}{f8 11 00}{f8 0D 19 92 93 03 10 72}{end}
+
+[05A3]
+Ngốc!{page}Ngươi nghĩ thắng được
+pháp sư của núi sao?{end}
+
+[05A4]
+Gì!?
+Không thể nào...{page}Không thể tin nổi...{page}{f8 19 19}{fx 1D 81}{choice 02}«Đi tiếp»
+«Về»
+{choose 80 LD623 LD620}
+
+[05A7]  {:LD623}
+{f8 15 A1}{state 05 28 00}{fx 1E 00}{f8 15 A0}Ta là người bảo vệ
+núi non...
+Pháp sư Tối cao Atenza...{page}Bảo Vật Ngàn Năm ngươi tìm
+đang được ta bảo vệ.{page}Muốn có nó, ngươi phải
+đối mặt cơn thịnh nộ của
+Bộ Bài Núi hùng mạnh!{page}Chuẩn bị chiến đấu!!!{page}{f8 11 00}{f8 0D 1A 94 95 03 20 72}{end}
+
+[05A8]
+Ta đã nói với ngươi rồi...
+Ngươi không thể thắng.{page}Ngươi chỉ là kẻ bò dưới đất...
+...số phận lang thang trên mặt đất.
+Và bị chôn dưới nó!!!{end}
+
+[05A9]
+{f8 19 1A}Sao lại thế này...?{page}Ta...?
+Thua...?{page}{fx 1E 81}{f8 15 A1}{f8 0E 60 73}{state 05 13 01}{f8 15 A0}{call L125A} có
+Vòng Tròn Trí Tuệ Ngàn Năm!!!{page}{if 8035 LE10C}{if 8039 LE10C}{if 803B LE10C}{if 803D LE10C}{if 8037 LE10C}{if 805C LE1D3}{state 05 28 00}{jump LE10F}
+
+[05A1]
+Không có ai ở đền này...{end}
+
+[05AA]
+{if 003B LDC08}{if 003A LD9A5}{if 0037 LD8CF}{if 0039 LD8CF}{if 0035 LD8CF}{if 003D LD8CF}Ai!?{page}Ngươi...!?
+Hoàng tử{sp}{call L125A}!{page}Không ngờ ngươi lại
+tới được tận đây!{page}Tiếc thay...
+Ngươi sẽ bỏ mạng ở đây!!!{page}{f8 11 00}{f8 0D 1B 96 97 02 10 72}{end}
+
+{:LD8CF}
+Ngươi đã bắt ta
+chờ đủ lâu rồi...{page}Bảo Vật Ngàn Năm là nguồn
+sức mạnh huyền bí của bọn ta...
+và sẽ luôn như thế!{page}Chúng sẽ không bao giờ
+là của ngươi!!!{page}Đền Sa Mạc này sẽ là
+nơi an nghỉ cuối của ngươi!!!{page}{f8 11 00}{f8 0D 1B 96 97 02 10 72}{end}
+
+[05AC]  {:LD9A5}
+Ngươi quay lại à...
+Ngươi sẽ hối hận đấy.{page}Ta sẽ cho ngươi biết vì sao!!!{page}{f8 11 00}{f8 0D 1B 96 97 02 10 72}{end}
+
+[05AD]
+Tiếc là ngài Heishin
+không ở đây xem
+ngươi chết...{page}Tiếc thay.{end}
+
+[05AE]
+Không...
+Ta không thể... thua...{page}Không thể nào...{page}{f8 19 1B}{fx 1F 81}{choice 02}«Đi tiếp»
+«Về»
+{choose 80 LDA87 LDA84}
+
+[05B1]  {:LDA87}
+{f8 15 A1}{state 05 30 00}{fx 20 00}{f8 15 A0}Ta là Pháp sư Tối cao Martis...
+Chúa tể Sa Mạc.{page}Ta đã thề bảo vệ
+Bảo Vật Ngàn Năm.{page}Định mệnh của ta là diệt ngươi!!!{page}Hãy để sa mạc làm mồ ngươi...{page}Phòng thủ đi!!!{page}{f8 11 00}{f8 0D 1C 98 99 02 20 72}{end}
+
+[05B2]
+Đây là số phận ngươi...{page}Sa mạc ôm lấy xác ngươi...{end}
+
+[05B3]
+{f8 19 1C}Hôm nay sa mạc đón lấy ta...{page}{fx 20 81}{f8 15 A1}{f8 0E 60 73}{state 05 28 01}{f8 15 A0}{call L125A} có được
+Cán Cân Ngàn Năm!{page}{if 8035 LE10C}{if 8039 LE10C}{if 803B LE10C}{if 803D LE10C}{if 8037 LE10C}{if 805C LE1D3}{state 05 30 00}{jump LE10F}
+
+[05AB]  {:LDC08}
+Không có ai ở đền này...{end}
+
+[05B4]
+{if 003C LDD6E}{if 0037 LDCBE}{if 0039 LDCBE}{if 003B LDCBE}{if 0035 LDCBE}Ai!?{page}Ngươi...!?
+Hoàng tử{sp}{call L125A}!{page}Không ngờ ngươi lại
+tới được tận đây!{page}Tiếc thay...
+Ngươi sẽ bỏ mạng ở đây!!!{page}{f8 11 00}{f8 0D 1D 9A 9B 04 10 72}{end}
+
+{:LDCBE}
+Phải chúc mừng ngươi
+vì đã tới được tận đây...{page}Nhưng ngươi chỉ đi được tới đây.
+Pháp sư Tối cao Kepura không
+bận tâm tới kẻ như ngươi!{page}Chuẩn bị thua đi!!{page}{f8 11 00}{f8 0D 1D 9A 9B 04 10 72}{end}
+
+[05B6]  {:LDD6E}
+{call L125A}...?{page}Lần này đừng hòng thắng!{page}{f8 11 00}{f8 0D 1D 9A 9B 04 10 72}{end}
+
+[05B7]
+Ha!
+Đây là nơi mọi thứ
+kết thúc!{page}Hahaha...{end}
+
+[05B8]
+{call L125A}...
+Ngươi sẽ hối hận...{page}Vì ngươi sẽ đối mặt sức mạnh của
+Pháp sư Tối cao Kepura...{page}{f8 19 1D}{fx 21 81}{choice 02}«Đi tiếp»
+«Về»
+{choose 80 LDE4D LDE4A}
+
+[05BB]  {:LDE4D}
+{f8 15 A1}{state 05 32 00}{fx 22 00}{f8 15 A0}Ta là người canh giữ đồng bằng...
+Pháp sư Tối cao Kepura.{page}Ngươi là người bảo vệ ánh sáng...
+Chủ nhân Trò Chơi Ngàn Năm.{page}Bảo Vật Ngàn Năm không
+dành cho kẻ như ngươi...
+Nó không phải của ngươi!{page}Bảo Vật Ngàn Năm là chìa
+khóa để ngài Heishin và
+bọn ta thống trị thế giới.{page}Trước hết, ta sẽ đánh bại ngươi...
+Rồi ta sẽ lấy Trò Chơi
+Ngàn Năm dâng lên
+ngài Heishin.
+Chuẩn bị phòng thủ đi!!!{page}{f8 11 00}{f8 0D 1E 9C 9D 04 20 72}{end}
+
+[05BC]
+Ngươi thật sự mong
+đấu với ngài Heishin...?{page}Nhóc ngu ngốc...{end}
+
+[05BD]
+{f8 19 1E}Vậy... đây... là sức
+mạnh ánh sáng...{page}Heishin... thưa ngài...
+Thần đã phụ lòng ngài...{page}{fx 22 81}{f8 15 A1}{f8 0E 60 73}{state 05 15 01}{f8 15 A0}{call L125A} có được
+Con Mắt Ngàn Năm!!!{page}{if 8035 LE10C}{if 8039 LE10C}{if 803B LE10C}{if 803D LE10C}{if 8037 LE10C}{if 805C LE1D3}{state 05 32 00}{jump LE10F}
+
+[05B5]
+Không có ai ở đền này...{end}
+
+[05BF]  {:LE10F}
+{f8 11 00}{f8 0E 80 71}{fx 04 00}{call L125A}...
+Ngươi đã đánh bại được
+các Pháp sư Tối cao...{page}Chỉ còn lại Đền Bóng Tối
+của Heishin. Nhưng ngươi
+không thể tới thẳng đó.{page}Ngươi phải quay về...
+Trở lại Đền Rộng Lớn.{page}{fx 04 80}{set 405D}{f8 16}{end}
+
+[05C3]  {:LE1D9}
+{f8 15 A1}{f8 11 83}{f8 0E 70 71}{state 05 33 00}{fx 23 00}Dừng lại!!!{page}{fx 24 01}{fx 23 21}Ngươi không được phép
+đi tiếp nữa!{page}{fx 24 21}{fx 23 20}Lời của hai Pháp sư Hoàng gia:
+Sebek Hùng Mạnh và...{page}{fx 23 21}{fx 24 20}Neku Khéo Léo!
+Đây là nơi mọi thứ kết thúc...{page}{fx 24 80}{fx 23 20}Chuẩn bị thua đi!!{page}{f8 11 00}{f8 0D 21 9E 9F 06 20 72}{end}
+
+[05C4]
+Hahaha!
+Bọn ta là đấu sĩ được chọn...
+Cao thủ tối thượng...{page}Ngươi chẳng có cửa nào...
+Hahaha!!!{end}
+
+[05C5]
+{f8 19 21}Khốn kiếp,{sp}{call L125A}...
+Lần này ngươi thắng...{page}Nhưng Neku...
+Sẽ đánh bại ngươi!!!{page}{fx 23 81}{fx 24 01}Ta không ngờ lại
+thấy Sebek bại trận...{page}Xem ngươi có gì nào!!!{page}{f8 11 00}{f8 0D 22 A0 A1 06 20 72}{end}
+
+[05C6]
+Hừ!
+Hôm nay ngươi gặp đối thủ!{page}Vậy mà ngươi mong đối
+đầu ngài Heishin... HA!!!{end}
+
+[05C7]
+{f8 19 22}Vậy ra...
+Đây là... sức mạnh của ngươi...{page}Ta đã xem nhẹ ngươi...{page}{fx 24 81}{f8 15 A1}{f8 11 83}{state 0F 28 00}{f8 16}{end}
+
+[05C8]
+Lâu rồi mới gặp
+lại đấy, nhóc!{page}Ta phục ngươi vì
+đã tới được tận đây...{page}Nhưng mọi thứ kết thúc tại đây.{page}Ta tới được đây không phải
+để thua một đứa trẻ!!!{page}{f8 11 00}{f8 0D 23 A2 A3 06 30 72}{end}
+
+[05C9]
+Giờ ngươi biết rồi chứ, nhóc...{page}Giờ ngươi biết sức mạnh thật sự!!!{end}
+
+[05CA]
+Vô lý...
+Ta... thua một...
+đứa trẻ thế này!!!{page}Không...
+Ta sẽ không để kết thúc thế này...{page}{fx 33 81}{f8 19 23}{f8 11 00}{fx 44 00}Giỏi lắm...{page}{state 05 08 82 00 00 00}Giờ mọi bảo vật đã
+tụ lại thành một...{page}{fx 44 80}{f8 15 A1}{state 05 34 00}{fx 04 00}{f8 15 A0}Chúng ta hãy tới
+Tàn Tích Cấm...{page}{f8 15 A1}{fx 04 82}{f8 11 00}{f8 16}{end}
+
+[05CB]
+{fx 04 00}{f8 0E 80 71}{call L125A}...
+Đến lúc kết thúc trò hề này.{page}Giờ ta sẽ đánh bại ngươi
+một lần cho xong.
+Và mọi bảo vật sẽ là của ta!{page}Đừng ngạc nhiên thế...
+Ta giúp ngươi chỉ vì ta cần
+ngươi cho kế hoạch của ta.{page}Ta làm cánh tay phải cho Heishin,
+mong một ngày sẽ đoạt
+được Bảo Vật Ngàn Năm.{page}Rồi ngươi xuất hiện. Ngươi
+tìm ra ngôi đền, và giành
+từng bảo vật quý giá...{page}...đỡ cho ta phải tự
+làm việc đó!!!{page}Nói gọn lại, ngươi chỉ là
+quân cờ trong kế hoạch của ta!{page}Ta không thể để hạng người
+thấp kém như ngươi hay
+Heishin nắm giữ bảo vật...{page}Chúng thuộc về dòng dõi cao quý...
+Chỉ quý tộc mới được giữ...
+Như chính ta.{page}{f8 15 A1}{fx 04 82}{state 05 32 01}{f8 15 A0}{fx 44 00}Nơi này là quê hương
+của tổ tiên ta...{page}Lăng mộ hoàng gia của những kẻ
+thịnh vượng nhờ sức mạnh bóng tối...{page}Ngươi có biết vì sao nơi này
+được gọi là Tàn Tích Cấm?{page}Là vì... THỨ NÀY!!!{page}{fx 44 80}{f8 15 A1}{f8 10 2E 00}{state 0F 28 00}{state 05 09 82 60 00 00}{f8 15 A0}{state 0B 00 00 FB FF B4 00}{state 0A}{fx 44 00}Bảo Vật Ngàn Năm tượng trưng
+cho giao ước... thỏa thuận
+để khai thác sức mạnh bóng tối.{page}Các vị vua và pháp sư cổ
+đại nhận sức mạnh tối cao
+từ Chúa Tể Bóng Tối...{page}Và giờ ta sẽ triệu hồi hắn...
+Ngay tại đây, trong căn phòng này...{page}Ta sẽ lập lại giao ước và
+lấy lại quyền năng cai trị tất cả!!!{page}{fx 44 80}{f8 15 A1}{state 05 35 00}{fx 04 00}{f8 15 A0}Và giờ... trận chiến cuối!{page}Ta sẽ diệt ngươi một lần cho
+xong. Bảo vật sẽ là của ta!!!{page}{f8 11 00}{f8 0D 24 A4 A5 00 40 72}{end}
+
+[05CC]
+Hahahahahahaha!!!{page}Cuối cùng...
+Ta đã có tất cả.
+Hôm nay sức mạnh là của ta!!!{page}{call L125A}... Đa tạ ngươi!{end}
+
+[05CD]
+{f8 19 24}Không thể nào...{page}Tới gần thế này...
+Mà lại thua ngươi...{page}Xin đừng... Không thể...{page}{fx 32 81}{f8 16}{end}
+
+[05CE]
+{choice 02}«Phá hủy bảo vật»
+«Không phá»
+{choose 80 LEC3D LEC3D}
+
+[05CF]  {:LEC3D}
+{fx 46 00}Đứng yên đó!!!{page}{fx 46 80}{state 05 33 01}{f8 0E B0 71}Nếu muốn Seto sống,
+hãy giao Bảo Vật Ngàn Năm.{page}{fx 46 00}Ngươi nghĩ ta ngu tới mức
+sa vào bẫy của tên khốn này?{page}Ta biết từ lâu hắn thuộc
+dòng dõi Gia Tộc Bóng Tối.{page}Ta nhắm mắt làm ngơ sự phản bội,
+và giả vờ thua để tìm ra
+ý đồ thật của hắn!{page}Ngươi nghĩ ta lẩm cẩm sao? Không
+nhìn ra kế hoạch thảm hại của ngươi?{page}Nhờ ngươi, giờ ta đứng trong
+Phòng Cấm chỉ người của
+Bóng Tối mới mở được.{page}Nào... Giao bảo vật ra,
+ta sẽ tha cho tên ngốc này.{page}{jump LEE5C}
+
+[05D0]  {:LEE5C}
+{choice 02}«Giao bảo vật»
+«Từ chối»
+{choose 80 LEEAA LEE83}
+
+[05D1]  {:LEE83}
+Nhóc con... Ngươi thử thách lòng
+kiên nhẫn của ta!{page}{jump LEE5C}
+
+[05D2]  {:LEEAA}
+{fx 46 80}{fx 44 00}Không...{page}{fx 44 80}{f8 15 A1}{state 05 35 00}{fx 07 00}{f8 15 A0}Hahah!!! Thành công! Cuối cùng chúng
+đã thuộc về ta!!!{page}Giờ ta có thể gọi
+DarkNite!!!{page}Các hoàng tử của triều đại đã mất...
+Các ngươi có vinh dự chứng kiến sự
+ra đời của vua mới! Kỷ nguyên mới!{page}Đến với ta, Bóng Tối!!!
+Ban ta sức mạnh!!!
+Ban ta thế giới!!!{page}{f8 15 A1}{f8 11 82}{fx 07 82}{state 05 34 01}{f8 15 A0}{state 0F 14 00}{f8 10 01 80 78 00}{f8 15 91}{state 0F 8C 00}{f8 0E C0 71}{fx 25 00}{state 05 35 00}{state 0F 23 00}{f8 15 90}{fx 25 21}{fx 46 00}Hỡi Chúa Tể Bóng Tối, ta chào đón
+ngài... Theo giao ước cổ xưa...
+Ta ra lệnh ngài phải tuân phục!!!{page}{fx 46 80}{fx 25 20}Hehehe... Ta trở lại sau hàng nghìn
+năm, và ta thấy gì đây...?{page}Ngươi ra lệnh cho ta làm gì?{page}{fx 25 21}{fx 46 00}Tuân phục! Ngài phải nghe...
+Đó là giao ước cổ!{page}{fx 46 80}{fx 25 20}Ta chưa từng giao ước
+với hạng như ngươi...{page}Sao ta lại phải
+nghe lời ngươi...?{page}{fx 25 21}{fx 46 00}Bảo vật... Bảo Vật Ngàn Năm!
+Ta có tất cả!!!{page}{fx 46 80}{fx 25 20}Bảo Vật Ngàn Năm?
+Ta chẳng thấy gì...{page}{fx 25 21}{fx 46 00}Tất nhiên là không!
+Ta đã dùng chúng... dùng
+để gọi ngài!{page}Giờ ngài phải giữ giao
+ước! Ngài phải nghe ta!!!{page}{fx 46 80}{fx 25 20}Ta chán cuộc nói chuyện này...{page}{fx 25 21}{fx 46 00}Không... Không!!!
+Đừng! Đừừng!!!{page}{fx 46 80}{f8 15 91}{f8 10 2C 00}{fx 25 82}{state 05 35 01}{f8 15 90}{fx 59 00}Thế tốt hơn...
+Ngươi làm lá bài thì coi được hơn.{page}{fx 59 80}{fx 46 00}Cứu!
+Cứu tôiiiiii!!!{page}{fx 46 80}{fx 59 00}Đây là lá bài ồn ào
+nhất ta từng tạo ra...{page}...chưa kể còn là
+lá xấu xí nhất.{page}Thật lòng, nó không đáng
+có chỗ trong bộ bài của ta...{page}{fx 59 80}{f8 10 28 00}{state 05 29 01}{fx 46 00}Khôôôôôôôôôôôông!!!{page}{fx 46 80}{fx 59 00}Ối...{page}{fx 59 80}{f8 15 A1}{state 05 35 00}{fx 25 00}{f8 15 A0}Từ lâu ta chia sẻ sức mạnh
+qua những lá bài ta tạo ra...{page}Giờ là lúc ta thu cái giá
+cho sức mạnh của ta.{page}Và nơi tốt nhất để bắt đầu là
+hành tinh khốn khổ này...
+những sinh vật khốn khổ này...{page}{fx 25 21}{fx 44 00}{call L125A}!!!
+Bộ bài của ngươi! Vẫn còn
+Lá Bài Ngàn Năm...{page}Lá bài ngươi dùng để
+trở về thế giới này...{page}Dùng chúng! Dùng lá bài
+đưa thứ đó về chỗ cũ...{page}{fx 44 80}{fx 25 20}Hehehe... Ta nghĩ hai ngươi
+sẽ là bổ sung tuyệt vời
+cho bộ bài riêng của ta...{page}{f8 15 A1}{fx 25 82}{state 05 36 01}{f8 15 A0}{fx 59 00}Gì!?{page}{fx 59 80}{fx 44 00}Chúng ta vẫn giữ một lá bài
+tượng trưng giao ước với ngươi.{page}{fx 44 80}{f8 15 A1}{fx 25 00}{state 05 35 00}{f8 15 A0}Ta thấy rồi. Nhưng ta không
+định về tay trắng sau khi
+đã đi xa tới vậy...{page}Thế này nhé...
+Ta cho ngươi một cơ hội.{page}Thật công bằng nếu giao ước
+giữa chúng ta được quyết định
+bằng lá bài.{page}Thắng ta một trận, ta sẽ
+ra về... êm thấm.{page}Nào...
+Chơi thôi...{page}{f8 11 00}{f8 0D 25 A6 A7 00 50 72}{end}
+
+[05D3]
+Thảm hại!!!{page}Lẽ ra ta phải biết ngươi quá
+kém cỏi để làm đối thủ!{page}Ngươi biết luật rồi đấy...{page}Ta thắng...
+Thế giới là của ta!
+Hehe...{page}{fx 25 41}Hehehehehehehehehehe!!!
+Hehehehehehehehehehe!!!
+Hehehehehehehehehehe!!!{page}Hehehehehehehehehehe!!!
+Hehehehehehehehehehe!!!
+Hehehehehehehehehehe...{end}
+
+[05D4]
+{f8 19 25}Th...thế này không công bằng!
+Ta...!? TA!? Ta không thể thua!!!
+Ta đã tạo ra lá bài mà!!!{page}Không...
+Không...{page}TA KHÔNG THỂ THUA!!!{page}{f8 15 91}{fx 25 80}{fx 26 00}{f8 15 90}LẠI ĐÂY, NHÓC!!!
+MỘT LẦN NỮA!!!
+MỘT VÁN NỮA!!!{page}{f8 11 00}{f8 0D 26 A8 A9 00 60 72}{end}
+
+[05D5]
+VÀ NGƯỜI THẮNG LÀÀÀÀ...
+TA!!!{page}TUYỆỆỆỆT!!!
+THẾ GIỚI LÀ CỦA TA!!!{page}CỦA TA HẾT!{end}
+
+[05D6]
+{f8 19 26}KHÔNG!
+LẠI NỮA!!{page}{f8 10 2B 00}KHÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔ
+ÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔ
+ÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔ{page}ÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔ
+ÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔ
+ÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔ{page}{f8 15 91}{fx 26 81}{state 0F 3C 00}{f8 15 90}{state 0F 3C 00}......{page}{f8 15 A1}{state 05 01 82 60 00 00}{f8 15 A0}{state 0B 00 00 0F 00 04 01}{state 0A}{page}{jump LF9DC}
+
+[05D7]  {:LF9DC}
+{state 05 00 00}{f8 0E 20 73}Ngày hôm đó, Seto rời tàn tích...
+Và không bao giờ trở lại.{page}{state 05 06 82 60 00 00}{f8 15 A0}{state 0B 00 00 00 00 30 02}Ai Cập lại được thống nhất
+dưới sự trị vì của{sp}{call L125A}.
+Để bảo vệ nhân loại, ngài ra lệnh...{page}...chôn vùi Tàn Tích Cấm.{page}{call L125A} trở thành vị
+Pharaoh vĩ đại nhất, mang
+thịnh vượng cho muôn dân.{page}Bọn pháp sư độc ác không còn.
+Đây là câu chuyện về{sp}{call L125A},
+người mà chúng ta gọi là...{page}"Yu-Gi-Oh"{page}{state 0A}{f8 16}{end}
+
+[000F]
+XEM 3D  TÊN
+TRUYỆN  {f8 0A 02}MẬT MÃ
+{f8 0A 00}ĐẤU     PHIM
+CHI TIẾTTẢI
+ÂM THANHLƯU
+BÁN THÂNĐỔI BÀI
+BẢN ĐỒ  CÀI ĐẶT
+XẾP BÀI {f8 0A 06}LOSE
+{f8 0A 00}GIAO ĐẤU{f8 0A 01}HIRATA's
+{f8 0A 00}TIÊU ĐỀ THOÁT{end}
+
+[FE00]
+MỚI{end}
+
+[FE01]
+THÊM %d LÁ{end}
+
+[FE02]
+THÊM %d LÁ{end}
+
+[FE03]
+TRANG %d/%d{end}
+
+[FE10]
+KHO BỘ BÀI{end}
+
+[FE11]
+TRANG %d/%d{end}
+
+@bank descriptions
+
+[D101]
+Lá bài cực hiếm với
+công và thủ vô song.{end}
+
+[D102]
+Tiên tộc mảnh mai,
+công yếu nhưng thủ
+rất tốt nhờ sức mạnh
+huyền bí.{end}
+
+[D103]
+Gã khổng lồ một mắt
+với đôi tay to khỏe
+tung ra những đòn
+trời giáng.{end}
+
+[D104]
+Không chỉ là rồng
+con, nó ẩn chứa sức
+mạnh chưa được
+khai mở.{end}
+
+[D105]
+Sinh vật khó lường,
+trông như tượng đá
+vô hại cho tới khi
+tấn công.{end}
+
+[D106]
+Tiểu quỷ tinh nghịch
+ẩn trong bóng tối,
+chờ đánh úp kẻ
+sơ hở.{end}
+
+[D107]
+Rồng canh giữ các
+pháo đài trên núi.
+Tuyệt chiêu là lao
+xuống bất ngờ từ
+trời cao.{end}
+
+[D108]
+Sống ở nơi ẩm ướt,
+quái vật này phun
+bào tử độc vào
+kẻ thù.{end}
+
+[D109]
+Quái thú ma quái ở
+vùng hoang mạc, rất
+phiền phức khi xuất
+hiện đông.{end}
+
+[D10A]
+Rồng sống sâu trong
+bóng tối. Thị lực
+kém làm thủ của nó
+yếu đi.{end}
+
+[D10B]
+Thân phủ gai như
+kiếm, không gì dám
+cản đường khi nó
+lao tới.{end}
+
+[D10C]
+Cầm chùy gai có thể
+phá hủy mọi thứ trên
+đường đi. Đồn rằng
+nó có một người anh
+em cũng hung bạo
+như vậy.{end}
+
+[D10D]
+Bắn đạn pháo từ
+miệng để tấn công kẻ
+thù ở tầm xa.{end}
+
+[D10E]
+Quái vật bò rừng
+sống trong rừng. Húc
+kẻ thù bằng cặp sừng
+sắc lẹm.{end}
+
+[D10F]
+Kiếm sĩ mang sức
+mạnh lửa. Chém kẻ
+thù bằng thanh kiếm
+phun lửa.{end}
+
+[D110]
+Pháp sư bẻ cong thời
+gian theo ý mình.
+Trông không mạnh,
+nhưng vẻ ngoài có
+thể đánh lừa.{end}
+
+[D111]
+Chi bị phong ấn bằng
+ma thuật. Ai phá
+được phong ấn sẽ có
+sức mạnh vô hạn. Mỗi
+bộ bài chỉ được một
+lá này.{end}
+
+[D112]
+Chi bị phong ấn bằng
+ma thuật. Ai phá
+được phong ấn sẽ có
+sức mạnh vô hạn. Mỗi
+bộ bài chỉ được một
+lá này.{end}
+
+[D113]
+Chi bị phong ấn bằng
+ma thuật. Ai phá
+được phong ấn sẽ có
+sức mạnh vô hạn. Mỗi
+bộ bài chỉ được một
+lá này.{end}
+
+[D114]
+Chi bị phong ấn bằng
+ma thuật. Ai phá
+được phong ấn sẽ có
+sức mạnh vô hạn. Mỗi
+bộ bài chỉ được một
+lá này.{end}
+
+[D115]
+Khi hợp đủ tay và
+chân, quái vật này
+thoát khỏi xiềng
+xích ma thuật. Mỗi
+bộ bài chỉ được một
+lá này.{end}
+
+[D116]
+Thực thể hắc ám làm
+rối trí kẻ thù. Là
+lá khá hiếm trong hệ
+ÁC QUỶ.{end}
+
+[D117]
+Sâu quái do bóng tối
+tạo ra. Bất ngờ trồi
+lên từ lòng đất để
+tấn công.{end}
+
+[D118]
+Hồn ma xương xẩu,
+không mạnh nhưng rất
+phiền khi xuất
+hiện đông.{end}
+
+[D119]
+Tiểu quỷ sống trong
+bóng tối. Chiếc sừng
+đơn khiến nó thành
+đối thủ đáng gờm.{end}
+
+[D11A]
+Quái vật sức mạnh
+khủng khiếp. Hạ gục
+kẻ thù bằng một
+nhát rìu.{end}
+
+[D11B]
+Nhỏ bé nhưng bù lại
+có thủ tốt khi chiến
+đấu trên đồng cỏ.{end}
+
+[D11C]
+Được thân đá rắn
+chắc bảo vệ, nó tung
+cú đấm vỡ xương.{end}
+
+[D11D]
+Chiến binh vững
+chãi, di chuyển
+nhanh trên địa hình
+hiểm trở.{end}
+
+[D11E]
+Chiến binh xương
+trông mong manh
+nhưng nổi tiếng với
+đòn đánh nhanh
+và chuẩn.{end}
+
+[D11F]
+Rồng phun lửa hung
+dữ, ngọn lửa tà ác
+làm vẩn đục linh hồn
+nạn nhân.{end}
+
+[D120]
+Rồng hai đầu kỳ lạ,
+hiếm khi xuất hiện.{end}
+
+[D121]
+Với chiến binh cầm
+chùy này, trận đấu
+chỉ có thắng
+hoặc thua.{end}
+
+[D122]
+Gã hề xuất hiện từ
+hư không, né đòn
+bằng những động tác
+kỳ quặc.{end}
+
+[D123]
+Pháp sư tối thượng
+cả về công lẫn thủ.{end}
+
+[D124]
+Quái vật có đầu là
+rắn độc. Chỉ một ánh
+nhìn cũng hóa đá kẻ
+sơ hở.{end}
+
+[D125]
+Sức mạnh chiến binh
+kết hợp tốc độ của
+rồng tạo nên sức tấn
+công mãnh liệt.{end}
+
+[D126]
+Hiệp sĩ cưỡi ngựa
+nhanh hơn gió. Cú
+xung phong của hắn
+thật đáng sợ.{end}
+
+[D127]
+Rồng tà ác dùng sức
+mạnh hắc ám tung đòn
+tấn công uy lực.{end}
+
+[D128]
+Chiếc bình khắc hoa
+văn lạ. Chỉ số thủ
+đặc biệt cao.{end}
+
+[D129]
+Tiên tộc học dùng
+kiếm, khiến kẻ thù
+bối rối bằng đòn
+nhanh như chớp.{end}
+
+[D12A]
+Điều khiển đòn tấn
+công của địch bằng
+ảo thuật. Lá bài
+rất hiếm.{end}
+
+[D12B]
+Chiến binh trông rất
+bình thường nhưng có
+công cao bất ngờ.{end}
+
+[D12C]
+Búp bê độc đáo mang
+sức mạnh huyền bí.
+Đặc biệt mạnh khi
+đánh thế lực
+bóng tối.{end}
+
+[D12D]
+Tấn công kẻ thù bằng
+sấm sét.{end}
+
+[D12E]
+Lớp da dày của nó
+làm chệch gần như
+mọi đòn tấn công.{end}
+
+[D12F]
+Thủ không chắc như
+vẻ ngoài. Chiếc sừng
+nhọn giúp nó lợi thế
+khi tấn công.{end}
+
+[D130]
+Quái vật ba mắt nhỏ
+gọn, nguy hiểm khi
+gặp trong bóng tối.{end}
+
+[D131]
+Kiến khổng lồ sống
+trong rừng rậm. Mạnh
+cả về công lẫn thủ.{end}
+
+[D132]
+Thường di chuyển
+theo bầy, môi trường
+lý tưởng của nó
+là rừng.{end}
+
+[D133]
+Thằn lằn da rất dày
+và cú cắn rất hiểm.{end}
+
+[D134]
+Bọ cánh cứng khổng
+lồ, vỏ cứng và sừng
+nguy hiểm.{end}
+
+[D135]
+Ong khổng lồ sức
+mạnh phi thường. Đặc
+biệt nguy hiểm khi
+gặp cả bầy.{end}
+
+[D136]
+Gián tròn to lớn lăn
+đè lên kẻ thù. Thủ
+chắc khiến nó thành
+đối thủ khó nhằn.{end}
+
+[D137]
+Bọ chét hút máu
+khổng lồ, tấn công
+vô cùng tàn khốc.{end}
+
+[D138]
+Lúc là sâu thì chẳng
+đáng kể, nhưng khi
+thành bướm đêm khổng
+lồ thì rất đáng gờm.{end}
+
+[D139]
+Sinh vật mạnh mẽ của
+rừng, rắc bụi độc từ
+đôi cánh để
+tấn công.{end}
+
+[D13A]
+Một mình thì sinh
+vật nhỏ này chẳng là
+gì. Nhưng trong bóng
+tối, cả bầy của nó
+rất đáng sợ.{end}
+
+[D13B]
+Voi ma mút canh giữ
+mộ của bầy đàn.
+Không chút nương tay
+với kẻ trộm mộ.{end}
+
+[D13C]
+Cá mập trắng khổng
+lồ với hàm răng sắc
+như dao cạo.{end}
+
+[D13D]
+Sói hiếm gặp với
+chiếc mũi thính đánh
+hơi được kẻ thù.{end}
+
+[D13E]
+Sinh vật hình người
+có cánh. Đẹp khi
+ngắm nhìn nhưng chết
+người khi
+giao chiến.{end}
+
+[D13F]
+Ba chị em hung dữ
+tấn công không ngừng
+theo nhóm.{end}
+
+[D140]
+Thú chiến binh cầm
+rìu, nhanh nhẹn và
+mạnh mẽ.{end}
+
+[D141]
+Sói tuyết đẹp mắt
+nhưng vô cùng hung
+ác trong trận chiến.{end}
+
+[D142]
+Kẻ săn người với đôi
+tay có thể bóp nát
+đá tảng.{end}
+
+[D143]
+Hình thái cuối cùng
+của côn trùng tối
+thượng, Great Moth!{end}
+
+[D144]
+Thú chiến binh đầu
+rồng vung rìu.{end}
+
+[D145]
+Con rồng đã lớn lên
+và phát triển qua cả
+nghìn năm.{end}
+
+[D146]
+Mực khổng lồ bất ngờ
+trồi lên từ đáy biển
+tấn công kẻ sơ hở.{end}
+
+[D147]
+Sứa bán trong suốt
+gần như vô hình,
+trôi dạt trên biển.{end}
+
+[D148]
+Sinh vật có thể biến
+ấu trùng thành con
+trưởng thành
+tức thì.{end}
+
+[D149]
+Rồng biển được gọi
+là "Vua Đại Dương".
+Tấn công kẻ thù bằng
+sóng thần.{end}
+
+[D14A]
+Chiến binh khổng lồ
+bằng đá. Một cú đấm
+của nó làm rung
+chuyển mặt đất.{end}
+
+[D14B]
+Cây ăn thịt trông
+rất đẹp nhưng nguy
+hiểm khi lại gần.{end}
+
+[D14C]
+Cá sấu hung dữ và
+thông minh. Lớp vảy
+cứng là áo giáp
+tự nhiên.{end}
+
+[D14D]
+Rắn xảo quyệt thân
+to, quấn chặt quái
+vật địch và siết
+đến chết.{end}
+
+[D14E]
+Quái vật cầm rìu với
+sức mạnh và sự nhanh
+nhẹn đáng kinh ngạc.{end}
+
+[D14F]
+Không gì cản nổi con
+khủng long phủ
+gai này.{end}
+
+[D150]
+Nhanh nhẹn, con
+khủng long này xé
+xác kẻ thù bằng móng
+vuốt sắc.{end}
+
+[D151]
+Rồng mạnh mẽ với hàm
+răng nghiền nát gần
+như mọi thứ.{end}
+
+[D152]
+Lá bài rất hiếm với
+chỉ số công cao.{end}
+
+[D153]
+Sinh vật tạo ra bóng
+tối bao trùm mọi thứ
+xung quanh.{end}
+
+[D154]
+Quái vật thủ chắc
+với lưỡi hái khổng
+lồ chém xuyên gần
+như mọi thứ.{end}
+
+[D155]
+Dùng sức mạnh bóng
+tối để tiêu diệt
+kẻ thù.{end}
+
+[D156]
+Bay trong bóng tối,
+tấn công bằng đôi
+tay dài lông lá.{end}
+
+[D157]
+Quái vật phun lửa
+sống ở cõi âm.{end}
+
+[D158]
+Ác quỷ canh giữ kho
+báu cõi âm. Thủ đặc
+biệt cao trong
+bóng tối.{end}
+
+[D159]
+Được mai rùa bảo vệ,
+nó bắn đạn từ máy
+bắn đá.{end}
+
+[D15A]
+Dùng sức mạnh huyền
+bí để bảo vệ kẻ yếu
+và nâng đỡ
+tinh thần.{end}
+
+[D15B]
+Nửa người nửa ngựa,
+nổi tiếng với tốc độ
+cực nhanh.{end}
+
+[D15C]
+Kết hợp giữa bò và
+ngựa, mạnh mẽ và
+không thể cản.{end}
+
+[D15D]
+Thích đấu tay đôi.
+Lưỡi kiếm rút nhanh
+kết liễu đối thủ
+tức thì.{end}
+
+[D15E]
+Rồng yếu không còn
+bay được, nhưng vẫn
+là thế lực đáng gờm.{end}
+
+[D15F]
+Diễn viên của Rạp
+Xiếc Bóng Tối, gã hề
+hút cạn sức kẻ thù
+bằng điệu nhảy
+kỳ lạ.{end}
+
+[D160]
+Chiến binh sống lại
+từ cõi chết. Vung
+bừa lưỡi kiếm sắc
+với sức tàn phá
+khủng khiếp.{end}
+
+[D161]
+Rồng hồi sinh nhờ tà
+thuật. Hơi thở có
+tính ăn mòn
+cực mạnh.{end}
+
+[D162]
+Gã hề hồi sinh nhờ
+bóng tối. Điệu nhảy
+kỳ lạ đã tiễn nhiều
+quái vật về
+cõi chết.{end}
+
+[D163]
+Vua bí ngô tấn công
+kẻ thù bằng những
+xúc tu dài.{end}
+
+[D164]
+Chiến binh chiến đấu
+bằng tay không.{end}
+
+[D165]
+Bay trên kẻ thù với
+đôi cánh lửa đỏ rực,
+nó phun lửa từ
+thân mình.{end}
+
+[D166]
+Mặt nạ bóng tối do
+bàn tay pháp sư hắc
+ám tạo nên.{end}
+
+[D167]
+Tấm gương tà ác
+không thể phá hủy,
+chặn đòn tấn công
+của địch.{end}
+
+[D168]
+Tấm màn do pháp sư
+dệt nên. Đồn rằng nó
+tăng sức mạnh cho
+Pháp Sư.{end}
+
+[D169]
+Trông nhỏ bé vô hại
+nhưng hung dữ đến
+mức tấn công bừa cả
+bạn lẫn thù.{end}
+
+[D16A]
+Linh hồn của gió tự
+do bay lượn. Nổi bão
+khi tâm trạng
+không vui.{end}
+
+[D16B]
+Dùng cả thân xác lẫn
+bóng để tấn công,
+rất khó đánh bại.{end}
+
+[D16C]
+Nơi an nghỉ cuối
+cùng, tăng sức cho
+kẻ đã chết và hút
+sức kẻ còn sống.{end}
+
+[D16D]
+Nữ thần với con mắt
+nhìn thấu mọi điều.{end}
+
+[D16E]
+Samurai đến từ Viễn
+Đông với thanh kiếm
+sắc như dao cạo.{end}
+
+[D16F]
+Thiên thần cai quản
+người đã khuất và
+phán xử khi
+cần thiết.{end}
+
+[D170]
+Quái vật hèn hạ tăng
+sức bằng cách hút
+sinh lực của
+đối thủ.{end}
+
+[D171]
+Toàn thân xám xịt,
+loài thú này hiếm
+khi được người trần
+nhìn thấy.{end}
+
+[D172]
+Siêu trộm lịch lãm
+luôn thoát khỏi pháp
+luật dù rất nổi bật
+với mũ lụa và áo
+choàng trắng.{end}
+
+[D173]
+Pháp sư điều khiển
+hỗn loạn và cầm lưỡi
+liềm uy lực.{end}
+
+[D174]
+Sinh vật cực độc gây
+ác mộng, tấn công
+bằng bốn ngòi độc.{end}
+
+[D175]
+Linh hồn của sách
+với kiến thức vô tận
+và vô số
+chiến thuật.{end}
+
+[D176]
+Tiên tộc dễ thương
+giúp đánh kẻ thù mà
+vẫn ẩn mình.{end}
+
+[D177]
+Phán xử những kẻ thù
+bị nhốt trong
+quan tài.{end}
+
+[D178]
+Điệu nhảy bí ẩn của
+sinh vật này đưa kẻ
+thù vào giấc ngủ
+vĩnh hằng.{end}
+
+[D179]
+Thường thấy đang
+ngủ, nhưng rất nguy
+hiểm khi bị
+đánh thức.{end}
+
+[D17A]
+Rồng được triệu hồi
+từ cuộn tranh để tấn
+công. Thủ khá thấp.{end}
+
+[D17B]
+Bông hoa hung dữ mọc
+từ đất ô nhiễm, được
+bóng tối vun bón.{end}
+
+[D17C]
+Cỗ máy hủy diệt tìm
+thấy trong tàn tích
+nền văn minh cổ.{end}
+
+[D17D]
+Chim đuôi rất dài,
+tấn công bằng ánh
+sáng tỏa ra từ
+toàn thân.{end}
+
+[D17E]
+Được gọi là vua
+chiến binh, nhưng
+chưa ai sống sót để
+kể vì sao.{end}
+
+[D17F]
+Chiến binh lặng lẽ
+và nhanh nhẹn,
+chuyên đánh lén.{end}
+
+[D180]
+Pháp sư sống trên
+mặt trăng, tấn công
+bằng ánh trăng.{end}
+
+[D181]
+Sinh vật như trẻ
+con, điều khiển thần
+ngủ đưa kẻ thù vào
+giấc ngủ vĩnh hằng.{end}
+
+[D182]
+Quái vật điều khiển
+thời tiết. Đó là lý
+do khí hậu trên núi
+hay thay đổi.{end}
+
+[D183]
+Sinh vật kỳ lạ đầu
+cá, xúc tu bạch
+tuộc, tấn công
+bằng giáo.{end}
+
+[D184]
+Thây ma bỗng xuất
+hiện từ ngôi mộ số
+13, vốn được cho là
+mộ trống.{end}
+
+[D185]
+Chiến binh có lớp vỏ
+chịu được cả sức
+nóng của lửa.{end}
+
+[D186]
+Sợi xích huyền bí
+được cho là trói
+được kẻ thù và ngăn
+chúng tấn công.{end}
+
+[D187]
+Những cánh tay dài
+vươn ra từ Đầm Hỗn
+Mang kéo quái vật
+địch xuống.{end}
+
+[D188]
+Mặc áo đuôi tôm đen
+như đêm, sinh vật
+này cai quản kẻ
+đã chết.{end}
+
+[D189]
+Bẻ cong thực tại,
+những cánh tay vươn
+ra từ chiều không
+gian khác để
+tấn công.{end}
+
+[D18A]
+Chiến binh đá hoa
+cương mang linh hồn
+rồng, vung kiếm uy
+lực chống mọi
+kẻ thù.{end}
+
+[D18B]
+Đồn rằng tia sáng kỳ
+lạ từ mắt nó biến kẻ
+thù thành thây ma.{end}
+
+[D18C]
+Pháp sư ếch hàng
+nghìn tuổi tấn công
+bằng đội quân
+nòng nọc.{end}
+
+[D18D]
+Tiến hóa từ bóng
+tối, con ốc này có
+tay chân giúp tấn
+công nhanh.{end}
+
+[D18E]
+Tấn công bằng phép
+lửa như "Biển Lửa"
+và "Tường Lửa".{end}
+
+[D18F]
+Golem đầu tiên của
+dòng golem có thể
+xuất hiện ở bất cứ
+đâu từ vòng
+không gian.{end}
+
+[D190]
+Điều khiển luồng khí
+tạo cuồng phong và
+lốc xoáy thổi bay
+kẻ thù.{end}
+
+[D191]
+Tên trộm hào nhoáng
+khoác áo choàng đen,
+cầm gậy phép.{end}
+
+[D192]
+Ngôi đền quái dị
+bằng sọ và xương,
+hút sinh lực kẻ nào
+dám lại gần.{end}
+
+[D193]
+Chiến binh ẩn trong
+quả trứng, tấn công
+bằng cách ném
+vỏ trứng.{end}
+
+[D194]
+Cái bóng sống ở cõi
+bóng tối. Làm tê
+liệt kẻ thù để ngăn
+chúng tấn công.{end}
+
+[D195]
+Người khổng lồ hiện
+ra từ cây đèn thần,
+tuân lệnh chủ nhân
+của đèn.{end}
+
+[D196]
+Sinh vật bí ẩn sống
+dưới đáy biển.{end}
+
+[D197]
+Chiến binh cầm Kiếm
+Lửa Đỏ. Dùng lửa
+trói chân kẻ thù.{end}
+
+[D198]
+Tan vào lòng đất,
+nhập vào bóng đối
+thủ rồi tấn công từ
+bên dưới.{end}
+
+[D199]
+Linh hồn sống săn
+sinh lực của kẻ thù.{end}
+
+[D19A]
+Sinh vật trừng phạt
+bằng những mũi
+tên lửa.{end}
+
+[D19B]
+Sinh vật như chim,
+nhanh nhẹn, siết cổ
+quái vật địch bằng
+đôi tay dài mảnh.{end}
+
+[D19C]
+Bộ giáp sống tấn
+công bằng cú húc
+rung chuyển
+xương cốt.{end}
+
+[D19D]
+Cây phun lửa mọc gần
+núi lửa.{end}
+
+[D19E]
+Cây ăn thịt với xúc
+tu độc để tấn công.{end}
+
+[D19F]
+Cuộn thân như rắn,
+sinh vật này xoay
+tròn và mổ bằng
+chiếc mỏ.{end}
+
+[D1A0]
+Chuyên đánh phối
+hợp, dùng từ tính
+chặn đường thoát
+của địch.{end}
+
+[D1A1]
+Chuyên đánh phối
+hợp, khoác bộ giáp
+phủ từ tính
+chắc chắn.{end}
+
+[D1A2]
+Bộ não ký sinh ăn
+kiến thức và trí tuệ
+của đối thủ.{end}
+
+[D1A3]
+Sinh vật mắt ngọc
+bích tạo ảo ảnh làm
+rối trí kẻ thù.{end}
+
+[D1A4]
+Thực thể hèn hạ lừa
+kẻ thù bước vào con
+đường hủy diệt.{end}
+
+[D1A5]
+Bàn tay phán xét
+cuối cùng, tung đòn
+tấn công dữ dội.{end}
+
+[D1A6]
+Bậc thầy múa rối
+điều khiển kẻ thù
+trong trận chiến.{end}
+
+[D1A7]
+Chiếc bình cổ mỏng
+manh chứa một sinh
+vật bí ẩn.{end}
+
+[D1A8]
+Ngọn lửa thiêu đốt
+xóa sổ kẻ thù trong
+chớp mắt.{end}
+
+[D1A9]
+Vua cõi âm. Đồn rằng
+hắn từng có sức mạnh
+cai trị Bóng Tối.{end}
+
+[D1AA]
+Linh hồn xoa dịu tâm
+hồn bằng tiếng đàn
+hạc tuyệt diệu.{end}
+
+[D1AB]
+Toàn thân phủ mắt
+thôi miên để mê hoặc
+kẻ thù.{end}
+
+[D1AC]
+Chiến binh kỳ lạ
+dùng hai tay và đuôi
+điều khiển ba
+lưỡi kiếm.{end}
+
+[D1AD]
+Điều khiển ánh sáng
+để xóa mọi dấu vết
+của mình.{end}
+
+[D1AE]
+Cơn lốc hoành hành
+nơi hoang mạc, chém
+kẻ thù bằng
+lưỡi gió.{end}
+
+[D1AF]
+Bị trục xuất khỏi
+thực tại, nó giỏi
+chiến đấu trong
+bóng tối.{end}
+
+[D1B0]
+Con mắt có cánh bao
+bọc trong lửa, tấn
+công bằng lửa.{end}
+
+[D1B1]
+Rùa hung dữ có mai
+phủ gai.{end}
+
+[D1B2]
+Tay dài và móng sắc
+khiến nó thành đối
+thủ đáng gờm.{end}
+
+[D1B3]
+Pháp sư đóng băng
+hành động của kẻ thù
+chỉ bằng một
+lời nguyền.{end}
+
+[D1B4]
+Thiếu nữ trong hoa
+rắc phấn độc lên
+đối thủ.{end}
+
+[D1B5]
+Tỏa ánh sáng chói
+lòa từ viên pha lê
+làm mù kẻ thù.{end}
+
+[D1B6]
+Chiến binh vừa múa
+vừa băm vằm đối thủ
+bằng lưỡi hái sắc.{end}
+
+[D1B7]
+Sinh vật gầy gò được
+sức mạnh thiêng
+liêng bảo vệ.{end}
+
+[D1B8]
+Dùng ảo thuật tay
+điêu luyện để lừa và
+tiêu diệt kẻ thù.{end}
+
+[D1B9]
+Chiến binh làm rối
+và tiêu diệt kẻ thù
+bằng cách biến thành
+hình dạng của chúng.{end}
+
+[D1BA]
+Sinh vật nửa chim
+nửa thú gọi quân
+tiếp viện bằng một
+chiếc gương cầm tay.{end}
+
+[D1BB]
+Sinh vật có cánh
+cổng ở bụng để triệu
+hồi quái vật từ
+cõi âm.{end}
+
+[D1BC]
+Sinh vật xấu xí hai
+đầu, miệng bắn
+tia laser.{end}
+
+[D1BD]
+Mèo quái có cánh và
+cái đuôi dài
+để quất.{end}
+
+[D1BE]
+Pháp sư có câu thần
+chú làm tê liệt giác
+quan quái vật địch.{end}
+
+[D1BF]
+Được sấm sét bảo vệ,
+đám mây nguy hiểm
+này tấn công bằng
+mưa axit.{end}
+
+[D1C0]
+Thiên thần nhỏ dễ
+thương làm tan chảy
+trái tim kẻ thù.{end}
+
+[D1C1]
+Hổ nằm trong mai bảo
+vệ, tấn công bằng
+nanh sắc như
+dao cạo.{end}
+
+[D1C2]
+Kẻ sống ở đầm lầy,
+là tay sai của thế
+lực Bóng Tối.{end}
+
+[D1C3]
+Sinh vật khó đoán
+tách làm hai, tấn
+công kẻ thù từ
+hai phía.{end}
+
+[D1C4]
+Chiến binh cúc đá
+bảo vệ biển cả từ
+thuở hồng hoang.{end}
+
+[D1C5]
+Sinh vật bóng đêm
+tấn công bằng cánh
+tay gắn tên lửa.{end}
+
+[D1C6]
+Thiên thần nhỏ bắn
+tia hạnh phúc từ
+viên ngọc hình tim
+trên trán.{end}
+
+[D1C7]
+Sinh vật như chim
+cánh cụt trượt bằng
+bụng, chém bằng
+thanh kiếm chìa
+thẳng ra.{end}
+
+[D1C8]
+Rồng rất nhỏ nổi
+tiếng với đòn tấn
+công hung dữ.{end}
+
+[D1C9]
+Mãnh thú dã man cầm
+gậy tre to để đánh
+kẻ thù.{end}
+
+[D1CA]
+Hải ly có sừng và
+cánh, ném hạt dẻ tốc
+độ cao từ trên trời
+cực chuẩn.{end}
+
+[D1CB]
+Ác linh lang thang
+cõi người, không tìm
+được nơi yên nghỉ.{end}
+
+[D1CC]
+Quái vật như khẩu
+pháo bắn liên tục
+nhãn cầu vào kẻ thù.{end}
+
+[D1CD]
+Sinh vật xấu xí tan
+chảy, thở ra
+khí độc.{end}
+
+[D1CE]
+Vung đôi tay như roi
+để tấn công ở
+tầm trung.{end}
+
+[D1CF]
+Với tiếng thét làm
+đông máu đối thủ, nó
+tấn công bằng chiếc
+mỏ khổng lồ.{end}
+
+[D1D0]
+Thiên thần tí hon
+nhanh nhẹn, rất khó
+đánh trúng.{end}
+
+[D1D1]
+Tấn công bằng cách
+vung đôi tay như
+lưỡi liềm.{end}
+
+[D1D2]
+Sinh vật lửa cực
+nóng, húc vào mọi
+thứ cản đường.{end}
+
+[D1D3]
+Tích sét trong cơ
+thể để tung đòn
+điện giật.{end}
+
+[D1D4]
+Quái vật khổng lồ
+một mắt bắn tia
+cực mạnh.{end}
+
+[D1D5]
+Pháp sư nước tạo bức
+tường nước nghiền
+nát kẻ chống đối.{end}
+
+[D1D6]
+Thế thân của vị vua
+Lửa Xanh. Kiếm sĩ
+bậc thầy với thanh
+kiếm quý.{end}
+
+[D1D7]
+Linh hồn lửa thiêu
+rụi mọi thứ trên
+đường đi.{end}
+
+[D1D8]
+Linh hồn rừng được
+cây cỏ xung quanh
+bảo vệ.{end}
+
+[D1D9]
+Sinh vật rất hiếm,
+sinh ra từ dung hợp
+một mãnh thú lạ và
+một con rồng
+hung dữ.{end}
+
+[D1DA]
+Khủng long hai hàm
+nghiền nát. Tích
+điện trong sừng và
+phóng sét từ cái
+miệng trên lưng.{end}
+
+[D1DB]
+Thú chiến binh vung
+lưỡi hái khổng lồ
+hút tinh thần kẻ thù
+để tung đòn
+tàn khốc.{end}
+
+[D1DC]
+Pháp sư bí ẩn có
+khuôn mặt mãi ẩn sau
+chiếc mặt nạ lạ.{end}
+
+[D1DD]
+Nhện khổng lồ thông
+minh, bẫy kẻ thù
+bằng mạng tơ.{end}
+
+[D1DE]
+Sinh vật có cánh,
+đồn rằng xuất hiện
+lúc nửa đêm.{end}
+
+[D1DF]
+Rắn biển khổng lồ
+tạo sóng thần cuốn
+phăng kẻ thù.{end}
+
+[D1E0]
+Chiến binh giỏi đặt
+bẫy như hố không đáy
+để giam đối thủ
+mãi mãi.{end}
+
+[D1E1]
+Ít ai thoát được lời
+nguyền của nó. Kẻ
+thoát được thì có
+sức mạnh vô biên.{end}
+
+[D1E2]
+Nhanh và hung ác, nó
+kẹp nạn nhân bằng
+càng rồi chích bằng
+ngòi độc.{end}
+
+[D1E3]
+Sao biển hung dữ
+phun axit làm tan
+chảy kẻ thù.{end}
+
+[D1E4]
+Thây ma trỗi dậy từ
+di hài của chúa tể
+rừng xanh.{end}
+
+[D1E5]
+Sinh vật cho phép
+đổi mạng sống lấy
+sức mạnh.{end}
+
+[D1E6]
+Loài cá lạ và hung
+dữ có đầu thú.{end}
+
+[D1E7]
+Sinh vật cười khó
+chịu, vung lưỡi hái
+để né đòn.{end}
+
+[D1E8]
+Vũ khí sống bắn đạn
+từ miệng.{end}
+
+[D1E9]
+Linh hồn được cho là
+sống trong thế giới
+mộng. Tấn công kẻ
+thù khi chúng ngủ.{end}
+
+[D1EA]
+Nữ kiếm sư xinh đẹp
+với động tác vô cùng
+nhanh nhẹn.{end}
+
+[D1EB]
+Chiến binh sống lâu
+năm trong rừng, được
+Mẹ Thiên Nhiên
+che chở.{end}
+
+[D1EC]
+Chiến binh canh giữ
+lối vào cõi âm.{end}
+
+[D1ED]
+Tượng đất sét bảo vệ
+kho báu trong lăng
+mộ các vị vua cổ.{end}
+
+[D1EE]
+Cây dừa có ý chí
+riêng, tấn công bằng
+cách ném dừa.{end}
+
+[D1EF]
+Nữ chiến binh phục
+vụ thế lực bóng tối.{end}
+
+[D1F0]
+Sinh vật nhãn cầu có
+chân để nhảy cao và
+kết liễu bằng móng
+vuốt sắc.{end}
+
+[D1F1]
+Cầm Kiếm Tâm Linh,
+kẻ sát nhân nham
+hiểm này cai trị
+vùng biên.{end}
+
+[D1F2]
+Số phận đối thủ được
+định đoạt khi ngọn
+lửa trên mỗi ngón
+tay tắt.{end}
+
+[D1F3]
+Thủy linh bao phủ
+đối thủ trong sương
+mù dày đặc để che
+giấu đòn đánh.{end}
+
+[D1F4]
+Sinh ra từ hố dung
+nham. Tỏa nhiệt cực
+mạnh làm tan chảy
+kẻ thù.{end}
+
+[D1F5]
+Ác quỷ nhãn cầu do
+tay sai bóng tối tạo
+ra. Dùng "Cầu Bóng
+Tối" thổi bay
+kẻ thù.{end}
+
+[D1F6]
+Sinh vật cầm kiếm,
+lấy sức mạnh từ sinh
+lực của nạn nhân.{end}
+
+[D1F7]
+Lưỡng cư gọi được
+sóng thần từ biển
+tối cuốn sạch quái
+vật địch.{end}
+
+[D1F8]
+Bộ đôi đáng sợ gồm
+một thuần thú sư và
+kẻ hầu trung thành.{end}
+
+[D1F9]
+Biến nước tràn từ
+chiếc bình thành
+những con rồng
+tấn công.{end}
+
+[D1FA]
+Chiến binh băng, chỉ
+chạm nhẹ cũng đóng
+băng đối thủ.{end}
+
+[D1FB]
+Nàng tiên cá xinh
+đẹp dụ người đi biển
+chết chìm dưới
+đáy nước.{end}
+
+[D1FC]
+Mèo quái trông dễ
+thương nhưng cào
+bằng móng vuốt sắc.{end}
+
+[D1FD]
+Sinh vật đã chọn con
+đường tà thuật để
+trở thành phù thủy.{end}
+
+[D1FE]
+Quái vật ghê tởm có
+cái bụng há ra nuốt
+gần như mọi thứ.{end}
+
+[D1FF]
+Được lớp da phủ lông
+dày bảo vệ.{end}
+
+[D200]
+Quái vật tạo được
+khe nứt không gian
+để giam kẻ thù.{end}
+
+[D201]
+Thân phủ lông cứng
+như đá, thủ vô cùng
+xuất sắc.{end}
+
+[D202]
+Biến mặt đất dưới
+chân thành cát lún
+để bẫy kẻ thù.{end}
+
+[D203]
+Bậc thầy chiến đấu
+dùng nhiều loại gậy
+khiến kẻ thù
+bất tỉnh.{end}
+
+[D204]
+Nữ thần mặt trăng
+xinh đẹp dựng màn
+trăng chặn đòn
+tấn công.{end}
+
+[D205]
+Tấm gương độc ác
+thôi miên kẻ nhìn
+vào, khiến nạn nhân
+dễ bị tấn công.{end}
+
+[D206]
+Chiến binh tiên tộc
+cưỡi thằn lằn
+khổng lồ.{end}
+
+[D207]
+Golem đá biến đối
+thủ thành đá rồi
+nghiền thành bụi.{end}
+
+[D208]
+Ẩn trong vỏ trứng,
+nó chặn đòn bằng đôi
+cánh lớn.{end}
+
+[D209]
+Đại vương Bảy Biển.
+Gọi sóng thần khổng
+lồ nhấn chìm kẻ thù.{end}
+
+[D20A]
+Nữ hoàng kiếm thuật,
+gần như vô địch với
+mọi loại kiếm.{end}
+
+[D20B]
+Tốc độ của chiến
+binh tạo chân không
+cực mạnh cắt xuyên
+cả da quái vật.{end}
+
+[D20C]
+Pháp sư thờ bóng
+tối, gọi bàn tay
+khổng lồ kéo đối thủ
+xuống cõi âm.{end}
+
+[D20D]
+Chúa tể hủy diệt
+sinh ra từ trái tim
+bóng tối, gọi bão tố
+diệt đối thủ.{end}
+
+[D20E]
+Thần mưa gọi bão lớn
+thổi bay kẻ thù.{end}
+
+[D20F]
+Đôi mắt đáng sợ bắn
+tia xuyên thấu vào
+kẻ thù.{end}
+
+[D210]
+Họ hàng với phượng
+hoàng, sống trên
+núi. Hơi thở lửa cực
+kỳ nóng bỏng.{end}
+
+[D211]
+Với kho tri thức đồ
+sộ, nó chặn được gần
+như mọi đòn
+tấn công.{end}
+
+[D212]
+Vị vua trẻ của rừng
+xanh sống trong thế
+giới cây cối và
+muông thú.{end}
+
+[D213]
+Rô-bốt bọc giáp trên
+cạn, đồn rằng từng
+có khả năng tác
+chiến dưới biển.{end}
+
+[D214]
+Mặt Trời và Gió Bấc
+bắt tay tung đòn
+phối hợp giữa nhiệt
+và cuồng phong.{end}
+
+[D215]
+Trứng gorgon có mắt,
+đồn rằng tạo ra bất
+kỳ sinh vật nào lọt
+vào tầm nhìn.{end}
+
+[D216]
+Không ai biết ấu
+trùng bí ẩn này sẽ
+nở ra sinh vật gì.{end}
+
+[D217]
+Bóng ma sống trong
+màn khói mù mịt.{end}
+
+[D218]
+Sinh vật bảo vệ ngai
+vua khỏi kẻ
+soán ngôi.{end}
+
+[D219]
+Không gì ngăn được
+đòn tấn công điên
+cuồng của nó.{end}
+
+[D21A]
+Cừu quái đuôi dài
+thôi miên kẻ thù
+khiến chúng bất lực.{end}
+
+[D21B]
+Cỗ máy tạo ảo ảnh
+làm rối trí kẻ thù
+để dễ bề tấn công.{end}
+
+[D21C]
+Pháp sư bẻ cong âm
+dương tạo sức mạnh
+vặn vẹo để tấn công.{end}
+
+[D21D]
+Rắn một mắt thổi hơi
+băng đóng băng
+đối thủ.{end}
+
+[D21E]
+Cỗ máy không thể phá
+hủy, xây để bảo vệ
+các lối vào
+quan trọng.{end}
+
+[D21F]
+Quỷ bị bóng tối
+chiếm hữu. Ít ai
+chịu nổi cú lao
+nhanh của nó.{end}
+
+[D220]
+Nghệ nhân điên tạo
+tác phẩm nghệ thuật
+để nghiền nát
+kẻ thù.{end}
+
+[D221]
+Chất nhờn biến hình,
+có thể mang hình
+dạng sinh vật khác.{end}
+
+[D222]
+Tùy tùng của nữ thần
+mặt trăng, cầm giáo
+có lưỡi hình
+trăng khuyết.{end}
+
+[D223]
+Sinh vật độc ác bao
+phủ lửa, tấn công
+bằng lửa dữ dội.{end}
+
+[D224]
+Lưỡng cư có siêu
+năng lực để chặn đòn
+tấn công.{end}
+
+[D225]
+Kiếm sư huyền thoại,
+đã trải qua hơn 100
+trận đánh.{end}
+
+[D226]
+Chiến binh trang bị
+đồ làm từ vảy rồng.{end}
+
+[D227]
+Sinh vật quái dị
+sinh ra từ một thí
+nghiệm thất bại.{end}
+
+[D228]
+Rồng mang khiên
+không chỉ để phòng
+thủ mà còn để húc
+kẻ thù.{end}
+
+[D229]
+Chiến binh máy không
+thể cản, vận hành
+bằng sức mạnh
+bóng tối.{end}
+
+[D22A]
+Rồng hai đầu với đôi
+hàm hung dữ nghiền
+nát kẻ thù.{end}
+
+[D22B]
+Thiếu nữ dùng âm
+thanh làm lợi thế,
+cầm lưỡi hái hình
+nốt nhạc.{end}
+
+[D22C]
+Chim hung dữ tấn
+công từ trên trời
+bằng đuôi như roi.{end}
+
+[D22D]
+Thanh kiếm phát huy
+tối đa sức mạnh
+chiến binh. Tay sai
+bóng tối không
+dùng được.{end}
+
+[D22E]
+Sức mạnh bóng tối
+tăng sức cho
+Chiến Binh!{end}
+
+[D22F]
+Sức mạnh bóng tối
+tăng sức cho Ác Quỷ
+và quái vật Bóng
+Tối khác!{end}
+
+[D230]
+Ác Quỷ và Thú Chiến
+Binh luôn phát huy
+sức mạnh tối đa!{end}
+
+[D231]
+Trang bị tia laser
+uy lực cho
+Côn Trùng!{end}
+
+[D232]
+Giúp Côn Trùng bắn
+ra luồng lửa dữ dội!{end}
+
+[D233]
+Tăng sức mạnh tiên
+tộc bằng ánh sáng
+huyền bí!{end}
+
+[D234]
+Tăng sức mạnh Thú và
+các quái vật có
+nanh khác!{end}
+
+[D235]
+Tăng sức quái vật có
+vỏ! Nghe nói vô dụng
+với loài không
+có vỏ.{end}
+
+[D236]
+Vi khuẩn độc hại
+tăng sức cho Thực
+Vật trong rừng!{end}
+
+[D237]
+Mặt dây chuyền tăng
+thêm sức mạnh cho
+pháp sư Bóng Tối!{end}
+
+[D238]
+Cung tên bạc tăng
+sức mạnh cho Tiên.{end}
+
+[D239]
+Tăng sức sinh vật có
+sừng! Vô dụng với
+quái vật Bóng Tối.{end}
+
+[D23A]
+Tăng sức quái vật
+Bóng Tối có sừng!{end}
+
+[D23B]
+Kho báu huyền thoại
+tăng sức mạnh
+cho rồng.{end}
+
+[D23C]
+Roi làm tê liệt kẻ
+thù. Tăng sức khi
+trang bị cho sinh
+vật nữ.{end}
+
+[D23D]
+Tăng sức quái vật nữ
+bằng cách thay đổi
+thái độ của họ.{end}
+
+[D23E]
+Tạo hai phân thân
+của Harpie Lady để
+tấn công ba mũi!{end}
+
+[D23F]
+Ánh trăng tăng sức
+mạnh cho Thú!{end}
+
+[D240]
+Buộc lá quái vật
+đang thủ của đối thủ
+chuyển sang
+thế công.{end}
+
+[D241]
+Sức mạnh ma quỷ tăng
+sức quái vật nữ và
+quái vật Bóng Tối!{end}
+
+[D242]
+Sức mạnh huyền bí từ
+pha lê tăng sức
+Thây Ma.{end}
+
+[D243]
+Sách phép tăng sức
+Pháp Sư. Pháp Sư có
+tâm địa xấu không
+dùng được.{end}
+
+[D244]
+Tăng sức quái vật
+Sấm, Đá và Lửa.{end}
+
+[D245]
+Nhà máy nâng cấp mọi
+quái vật Máy.{end}
+
+[D246]
+Hấp thụ năng lượng
+mặt trời để tăng sức
+Khủng Long!{end}
+
+[D247]
+Gió trợ lực tăng sức
+Thú Có Cánh và các
+quái vật bay khác!{end}
+
+[D248]
+Chia sẻ sức mạnh
+Poseidon tăng sức
+quái vật Nước, Cá và
+Rắn Biển!{end}
+
+[D249]
+Tiêu diệt mọi quái
+vật Rồng của đối thủ
+trên sân!{end}
+
+[D24A]
+Đổi sân có lợi cho
+Thú Chiến Binh, Côn
+Trùng, Thực Vật
+và Thú!{end}
+
+[D24B]
+Đổi sân có lợi cho
+Thây Ma, Khủng Long
+và Đá!{end}
+
+[D24C]
+Đổi sân có lợi cho
+Rồng, Thú Có Cánh
+và Sấm!{end}
+
+[D24D]
+Đổi sân thành đồng
+cỏ có lợi cho Chiến
+Binh và Thú
+Chiến Binh!{end}
+
+[D24E]
+Đổi sân có lợi cho
+Nước và Sấm, bất lợi
+cho Máy và Lửa!{end}
+
+[D24F]
+Đổi sân có lợi cho
+Pháp Sư và Ác Quỷ,
+bất lợi cho Tiên!{end}
+
+[D250]
+Hút sạch mọi lá bài
+đang có trên sân!{end}
+
+[D251]
+Tiêu diệt mọi quái
+vật đối thủ bằng một
+tia sét!{end}
+
+[D252]
+Món cà ri bò ngon
+tuyệt tăng 200 Điểm
+Sinh Mệnh!{end}
+
+[D253]
+Thuốc thần tăng 500
+Điểm Sinh Mệnh!{end}
+
+[D254]
+Thảo dược yêu tinh
+tăng 1000 Điểm
+Sinh Mệnh!{end}
+
+[D255]
+Thuốc tiên tăng 2000
+Điểm Sinh Mệnh!{end}
+
+[D256]
+Sức mạnh huyền bí
+tăng 5000 Điểm
+Sinh Mệnh!{end}
+
+[D257]
+Mưa tia lửa gây 50
+điểm sát thương vào
+Điểm Sinh Mệnh
+đối thủ!!{end}
+
+[D258]
+Quả cầu lửa gây 100
+điểm sát thương vào
+Điểm Sinh Mệnh
+đối thủ!!{end}
+
+[D259]
+Ngọn lửa gây 200
+điểm sát thương vào
+Điểm Sinh Mệnh
+đối thủ!!{end}
+
+[D25A]
+Ngọn lửa gây 500
+điểm sát thương vào
+Điểm Sinh Mệnh
+đối thủ!{end}
+
+[D25B]
+Biển lửa gây 1000
+điểm sát thương vào
+Điểm Sinh Mệnh
+đối thủ!{end}
+
+[D25C]
+Lật mặt quái vật
+địch, đối thủ không
+thể tấn công trong
+ba lượt.{end}
+
+[D25D]
+Lời nguyền giảm sức
+mạnh mọi quái
+vật địch!{end}
+
+[D25E]
+Ánh sáng chói lòa
+làm lộ mọi quái vật
+trên sân.{end}
+
+[D25F]
+Quái vật tấn công
+bất kỳ ai định mở
+nắp của nó.{end}
+
+[D260]
+Nữ kiếm sĩ bay như
+bướm, chích như ong.{end}
+
+[D261]
+Sinh vật có vây, họ
+hàng xa với
+Rồng biển.{end}
+
+[D262]
+Thú bông trông dễ
+thương vô hại nhưng
+biết cắn.{end}
+
+[D263]
+Cỗ máy tận thế bí ẩn
+đến từ rìa vũ trụ.{end}
+
+[D264]
+Sư tử cực kỳ hung dữ
+với móng vuốt dài
+và sắc.{end}
+
+[D265]
+Quái vật ba đầu
+phun lửa.{end}
+
+[D266]
+Rồng thiêng thiêu
+rụi cái ác bằng ngọn
+lửa huyền bí.{end}
+
+[D267]
+Bony và Tubby, cặp
+bộ xương thân thiện.{end}
+
+[D268]
+Quái vật khổng lồ
+tàn bạo tấn công
+bằng móng vuốt sắc
+như dao cạo.{end}
+
+[D269]
+Chim cánh cụt hiếm
+có, bay bằng đôi
+cánh trên đầu.{end}
+
+[D26A]
+Ứng viên Bảo Vật
+Ngàn Năm, đồn rằng
+chặn được mọi
+đòn mạnh.{end}
+
+[D26B]
+Bay khắp nơi mang
+hạnh phúc đến cho
+mọi người.{end}
+
+[D26C]
+Chiến binh mạnh mẽ
+ngang tầm Blue-eyes
+White Dragon
+huyền thoại.{end}
+
+[D26D]
+Tấm kính bí ẩn kéo
+kẻ thù vào thế giới
+trong gương.{end}
+
+[D26E]
+Những bức tường mọc
+lên trên sân tạo
+thành mê cung không
+lối thoát.{end}
+
+[D26F]
+Nhện quái sống dưới
+lòng đất.{end}
+
+[D270]
+Thây ma nguy hiểm bò
+trong bóng tối.{end}
+
+[D271]
+Quái vật cực nhanh
+lướt trên tường để
+tấn công kẻ thù.{end}
+
+[D272]
+Xe tăng chạy quanh
+mê cung săn lùng
+kẻ thù.{end}
+
+[D273]
+Golem dùng đòn sét
+giống Anh Em
+Mê Cung.{end}
+
+[D274]
+Golem điều khiển gió
+giống Anh Em
+Mê Cung.{end}
+
+[D275]
+Golem dùng đòn nước
+giống Anh Em
+Mê Cung.{end}
+
+[D276]
+Sanga, Kazejin và
+Suijin hợp lại thành
+một quái vật
+hùng mạnh.{end}
+
+[D277]
+Ẩn dưới sàn mê cung,
+nuốt chửng bất kỳ ai
+đi qua bên trên.{end}
+
+[D278]
+Bậc thầy thuần phục
+quái vật, điều khiển
+nhiều sinh vật
+cùng lúc.{end}
+
+[D279]
+Ryu-kishin được bóng
+tối cường hóa. Móng
+vuốt sắc khiến nó
+thành đối thủ
+xứng tầm.{end}
+
+[D27A]
+Quái vật hình thành
+từ oán hồn của những
+kẻ tử trận.{end}
+
+[D27B]
+Thần đèn luôn sẵn
+sàng tuân lệnh
+chủ nhân.{end}
+
+[D27C]
+Rồng tối thượng sinh
+ra từ dung hợp ba
+Blue-eyes White
+Dragon.{end}
+
+[D27D]
+Cá sấu quái vật bước
+ra từ phim
+hoạt hình.{end}
+
+[D27E]
+Cầm rìu ở mỗi tay,
+quái vật này gây sát
+thương nặng nề.{end}
+
+[D27F]
+Rồng hoạt hình nguy
+hiểm hơn vẻ ngoài.{end}
+
+[D280]
+Thỏ hoạt hình nhảy
+khắp nơi rất nhanh,
+khó đánh trúng.{end}
+
+[D281]
+Hộp hề bật lò xo,
+giỏi đánh úp
+bất ngờ.{end}
+
+[D282]
+Thú cưng yêu thích
+của các Harpie Lady,
+nhưng là con rồng
+rất nguy hiểm.{end}
+
+[D283]
+Cây đèn pháp sư dùng
+để pha chế thuốc.{end}
+
+[D284]
+Cỗ máy tra tấn khủng
+khiếp với lưỡi con
+lắc khổng lồ.{end}
+
+[D285]
+Cầm giáo thiêu đốt
+linh hồn, sinh vật
+này ưa đòn
+phép thuật.{end}
+
+[D286]
+Nhện máy phóng tên
+lửa nổ vào kẻ thù.{end}
+
+[D287]
+Quái vật chỉ phát
+huy hết tiềm năng
+khi biến thành dạng
+kim loại.{end}
+
+[D288]
+Zoa kim loại có đòn
+tấn công dồn dập.{end}
+
+[D289]
+Sinh vật biển nuốt
+kẻ thù rồi tiêu hóa
+từ từ.{end}
+
+[D28A]
+Quái vật đuôi sắt
+với đôi càng
+cực sắc.{end}
+
+[D28B]
+Tiên tộc nhảy múa
+trên trời với đôi
+cánh là những lưỡi
+dao sắc.{end}
+
+[D28C]
+Trông đáng sợ, nó
+dùng đôi mắt và tai
+lớn theo dõi mọi
+chuyển động.{end}
+
+[D28D]
+Dù có nanh và gai
+lớn nhưng không
+mạnh lắm.{end}
+
+[D28E]
+Ếch bò quái vật có
+gai độc.{end}
+
+[D28F]
+Chiến binh phương
+Đông cầm thanh kiếm
+bị nguyền rủa.{end}
+
+[D290]
+Quái vật bò sát
+phun lửa.{end}
+
+[D291]
+Quái vật bò hồi sinh
+bằng hắc thuật, hiện
+ra từ trong
+chiếc bình.{end}
+
+[D292]
+Kẻ hầu theo dõi mọi
+thứ. Tung màn khói
+khi bị phát hiện.{end}
+
+[D293]
+Quái vật khổng lồ có
+bờm sư tử như "Chúa
+Tể Muôn Loài".{end}
+
+[D294]
+Quái vật biển nhanh
+nhẹn mang thân ngựa
+và thân cá.{end}
+
+[D295]
+Cỗ máy điên cuồng
+vung thanh kiếm
+khổng lồ.{end}
+
+[D296]
+Cỗ máy giấu nhiều
+lưỡi dao trong thân
+hình vuông.{end}
+
+[D297]
+Bọc giáp siêu hợp
+kim, rô-bốt này bắn
+lửa từ hai cánh tay.{end}
+
+[D298]
+Vung rìu rung chuyển
+mặt đất, hạ kẻ thù
+chỉ bằng một nhát.{end}
+
+[D299]
+Rồng vàng phun lửa
+thiêu đốt mọi đối
+thủ trên đường đi.{end}
+
+[D29A]
+Quái vật máy hình
+nhện với lưỡi liềm ở
+đầu chân.{end}
+
+[D29B]
+Dơi máy tấn công
+bằng cách thả quả
+cầu nổ.{end}
+
+[D29C]
+Sói làm hoàn toàn
+bằng sắt. Hàm thép
+cắn xuyên mọi thứ.{end}
+
+[D29D]
+Chiến binh hình tròn
+lăn quanh, làm hộ vệ
+cho Machine King.{end}
+
+[D29E]
+Cầm đôi xẻng, sinh
+vật này là cỗ máy
+hủy diệt biết đi.{end}
+
+[D29F]
+Thợ săn truy đuổi
+mục tiêu không ngừng
+theo lệnh
+Machine King.{end}
+
+[D2A0]
+Mỗi bộ phận của nó
+là một vũ khí riêng
+có sức tàn phá lớn.{end}
+
+[D2A1]
+Cỗ máy hẹn giờ biết
+đi, rất thích thổi
+bay kẻ thù.{end}
+
+[D2A2]
+Golem sắt khổng lồ
+xuất hiện từ khe nứt
+không gian.{end}
+
+[D2A3]
+Vung quả cầu gai
+khổng lồ để tiêu
+diệt kẻ thù.{end}
+
+[D2A4]
+Tạo ra trong phòng
+thí nghiệm dưới hầm,
+cỗ máy quỷ này bắn
+tên lửa từ miệng.{end}
+
+[D2A5]
+Lực lượng tấn công
+trang bị ra-đa và
+cảm biến.{end}
+
+[D2A6]
+Tạo ra trong phòng
+thí nghiệm ngầm,
+sinh vật nhân tạo
+này đôi khi
+nổi điên.{end}
+
+[D2A7]
+Sinh vật như con
+tatu, cuộn tròn thân
+thành con xúc xắc.{end}
+
+[D2A8]
+Rồng như chim với
+bốn cánh sắc
+như dao.{end}
+
+[D2A9]
+Rồng gọi sấm sét tấn
+công đối thủ.{end}
+
+[D2AA]
+Thân làm toàn bằng
+đá, con rồng này ném
+đá tảng vào kẻ thù.{end}
+
+[D2AB]
+Hoàng đế rồng kiêu
+hãnh và hùng mạnh.{end}
+
+[D2AC]
+Dù yếu ớt nhưng nó
+biết phép xua tan
+bóng tối.{end}
+
+[D2AD]
+Nữ thần nhút nhát,
+dường như dành phần
+lớn thời gian
+để ngủ.{end}
+
+[D2AE]
+Bao vây đối thủ bằng
+nước và cuốn họ
+trong đòn quét.{end}
+
+[D2AF]
+Nàng tiên cá rất
+hung hăng có gai để
+tấn công.{end}
+
+[D2B0]
+Tiên lang thang trên
+biển. Đồn rằng có
+thể gọi rồng biển.{end}
+
+[D2B1]
+Tiên tộc được đồn đã
+sống hàng nghìn năm.
+Dẫn đội quân linh
+hồn chống kẻ thù.{end}
+
+[D2B2]
+Nữ pháp sư hiếm có
+cầm chiếc roi
+hung dữ.{end}
+
+[D2B3]
+Sinh vật xinh đẹp
+bắn những mũi
+tên băng.{end}
+
+[D2B4]
+Cá heo trắng có
+sừng, tấn công bằng
+cách gọi sóng thần.{end}
+
+[D2B5]
+Cá mập hung bạo tấn
+công mọi thứ
+dưới biển.{end}
+
+[D2B6]
+Cá thép có vây lưng
+sắc bén.{end}
+
+[D2B7]
+Tay bơi xinh đẹp
+nhưng tính khí
+rất tệ.{end}
+
+[D2B8]
+Cá cầu vồng hiếm,
+gần như không thể
+bắt được.{end}
+
+[D2B9]
+Mang khẩu pháo
+plasma trên lưng.{end}
+
+[D2BA]
+Rồng sống dưới biển.
+Phun được tia nước
+áp suất cao.{end}
+
+[D2BB]
+Vua biển cả, được
+mai cứng bảo vệ,
+phun bong bóng độc
+vào kẻ thù.{end}
+
+[D2BC]
+Quái vật một mắt kỳ
+lạ cầm cây giáo
+nguy hiểm.{end}
+
+[D2BD]
+Chiến binh người cá
+tấn công bất kỳ ai
+dám làm ô
+nhiễm biển.{end}
+
+[D2BE]
+Dìm chết đối thủ
+bằng cách thôi miên
+với quả cầu ở đuôi.{end}
+
+[D2BF]
+Rắn biển cắn mọi thứ
+đi ngang qua.{end}
+
+[D2C0]
+Dùng gai mọc trên
+thân đâm đối thủ rồi
+truyền điện vào.{end}
+
+[D2C1]
+Rùa khổng lồ được
+bảo vệ kỹ, đã sống
+hơn 30000 năm.{end}
+
+[D2C2]
+Lưỡng cư thề báo thù
+cho cái chết của anh
+em mình.{end}
+
+[D2C3]
+Cua quái vật với đôi
+càng khổng lồ để cắt
+kẻ thù.{end}
+
+[D2C4]
+Tôm hùm đất mới tiến
+hóa với càng sắc để
+kẹp kẻ thù.{end}
+
+[D2C5]
+Golem đã canh giữ
+kho báu gần một
+thiên niên kỷ.{end}
+
+[D2C6]
+Golem có bàn tay
+phải khổng lồ để
+nghiền nát nạn nhân.{end}
+
+[D2C7]
+Lao vào kẻ thù và
+bắn đôi pháo gắn
+trên vai.{end}
+
+[D2C8]
+Chiến binh đá cầm
+thanh kiếm đá
+rất nặng.{end}
+
+[D2C9]
+Nổi giận bùng phát
+gây ra trận mưa
+đá tảng.{end}
+
+[D2CA]
+Quái vật phán xử kẻ
+làm sai và trừng
+phạt thích đáng.{end}
+
+[D2CB]
+Tấn công kẻ thù bằng
+sóng điện từ.{end}
+
+[D2CC]
+Phun chất nhầy khiến
+kẻ thù không cử động
+được rồi giật điện.{end}
+
+[D2CD]
+Quái vật có đôi roi
+điện thay cho
+cánh tay.{end}
+
+[D2CE]
+Sinh vật tấn công kẻ
+thù bằng sấm sét.{end}
+
+[D2CF]
+Rắn có cái đuôi để
+tích điện.{end}
+
+[D2D0]
+Thợ săn bầu trời
+chưa từng trượt
+mục tiêu.{end}
+
+[D2D1]
+Quan tòa bầu trời
+tuyên án bằng móng
+vuốt trắng bạc.{end}
+
+[D2D2]
+Lao xuống tấn công
+bằng cơn mưa dao
+giấu trong cánh.{end}
+
+[D2D3]
+Quái vật cháy rực
+lửa đỏ, vỗ cánh tạo
+mưa tia lửa.{end}
+
+[D2D4]
+Sinh vật tấn công kẻ
+thù bằng chiếc
+mỏ lớn.{end}
+
+[D2D5]
+Ninja xanh tấn công
+bằng lưỡi liềm lớn
+và bàn chân có gai.{end}
+
+[D2D6]
+Tung phép gây sợ hãi
+và hỗn loạn ngay
+trước khi tấn công.{end}
+
+[D2D7]
+Gã hề này đem sinh
+lực kẻ thù cho một
+con thằn lằn quái
+vật ăn.{end}
+
+[D2D8]
+Làm kẻ thù ngạt thở
+bằng cách nuốt hết
+không khí
+xung quanh.{end}
+
+[D2D9]
+Chiến binh lửa tỏa
+nhiệt dữ dội từ
+cơ thể.{end}
+
+[D2DA]
+Quái vật tàn nhẫn xé
+kẻ thù bằng móng
+vuốt sắc.{end}
+
+[D2DB]
+Rắn độc biết bay,
+không giỏi di chuyển
+trên mặt đất.{end}
+
+[D2DC]
+Nhện có càng, tấn
+công mọi thứ mắc
+vào lưới.{end}
+
+[D2DD]
+Bọ kìm quái vật có
+sừng và tay
+răng cưa.{end}
+
+[D2DE]
+Lính côn trùng tấn
+công theo bầy.{end}
+
+[D2DF]
+Chiến binh gián ẩn
+trong kẽ hở rồi lao
+ra tấn công.{end}
+
+[D2E0]
+Bọ kìm hung bạo với
+lưỡi cắt sắc như
+dao cạo.{end}
+
+[D2E1]
+Chuột lanh lợi có
+móng trái được
+mài sắc.{end}
+
+[D2E2]
+Quái vật rất nguy
+hiểm có gai trên đầu
+và đuôi.{end}
+
+[D2E3]
+Sinh vật độc ác
+trông như sư tử
+có cánh.{end}
+
+[D2E4]
+Bao bọc kẻ thù rồi
+tiêu hóa từ từ.{end}
+
+[D2E5]
+Lăn những vật khổng
+lồ để nghiền nát
+kẻ thù.{end}
+
+[D2E6]
+Pháp sư sách với
+trang này nối trang
+kia toàn phép mạnh.{end}
+
+[D2E7]
+Mãnh thú phủ đầy hoa
+từ đầu đến chân.{end}
+
+[D2E8]
+Hoa quái có bông màu
+cầu vồng dụ kẻ thù
+vào hàm đang
+chờ sẵn.{end}
+
+[D2E9]
+Bông hoa nguy hiểm
+bắn đạn phấn hoa.{end}
+
+[D2EA]
+Quả cầu phủ đầy kim
+nhọn. Thường cả bầy
+rơi xuống đầu
+kẻ thù.{end}
+
+[D2EB]
+Sinh vật như công
+xinh đẹp, bắn lông
+vũ vào đối thủ.{end}
+
+[D2EC]
+Kéo theo cái đuôi
+tuyệt đẹp, sao băng
+này gây sát thương
+khi va vào kẻ thù.{end}
+
+[D2ED]
+Pháp sư áo xanh
+thường được thấy
+đang thiền định.{end}
+
+[D2EE]
+Nàng tiên cá lạ xuất
+hiện mỗi khi cầu
+vồng vắt ngang trời.{end}
+
+[D2EF]
+Tay guitar cừ khôi
+tấn công kẻ thù bằng
+sóng siêu âm.{end}
+
+[D2F0]
+Thỏ hung dữ có móng
+vuốt sắc.{end}
+
+[D2F1]
+Ốc mượn hồn có
+đầu rồng.{end}
+
+[D2F2]
+Ác quỷ kỳ lạ tay
+dài, móng sắc như
+dao cạo.{end}
+
+[D2F3]
+Nhả tơ vào kẻ thù để
+tấn công. Không ai
+biết hình thái cuối
+của nó.{end}
+
+[D2F4]
+Quái vật đáng sợ
+được gửi từ cõi âm
+để diệt rồng.{end}
+
+[D2F5]
+Cắt thái bằng càng
+rồi ăn thịt
+nạn nhân.{end}
+
+[D2F6]
+Mang sức mạnh rồng,
+chiến binh cầm kiếm
+làm từ nanh rồng.{end}
+
+[D2F7]
+Sinh vật như cáo có
+mai bảo vệ.{end}
+
+[D2F8]
+Rỉ axit từ lỗ chân
+lông làm tan mọi thứ
+chạm vào da nó.{end}
+
+[D2F9]
+Pha lê trong suốt
+hội tụ ánh sáng tạo
+tia laser mạnh.{end}
+
+[D2FA]
+Bướm đêm khổng lồ
+tạo lốc xoáy chứa
+bụi độc.{end}
+
+[D2FB]
+Cá bay có đầu nhọn
+để đâm xuyên
+mục tiêu.{end}
+
+[D2FC]
+Khủng long máy trang
+bị pháo tia.{end}
+
+[D2FD]
+Khủng long khổng lồ
+giẫm nát mọi thứ lạc
+vào đường đi.{end}
+
+[D2FE]
+Bông hoa cười, tiếng
+khúc khích có thể
+khiến kẻ thù
+phát điên.{end}
+
+[D2FF]
+Chiến binh thực vật
+vừa chém kiếm vừa
+bắn hạt đậu.{end}
+
+[D300]
+Cỗ máy hủy diệt mạnh
+trang bị khẩu pháo
+uy lực.{end}
+
+[D301]
+Rô-bốt canh gác có
+tên lửa tầm nhiệt,
+bảo vệ phòng ngai
+vàng khỏi kẻ
+xâm nhập.{end}
+
+[D302]
+Sinh vật điều khiển
+nhiều chiếc kéo, đòn
+nào cũng hiệu quả.{end}
+
+[D303]
+Tượng đá khổng lồ từ
+Đảo Phục Sinh, bắn
+vòng laser từ miệng.{end}
+
+[D304]
+Chọc giận đối thủ
+đến mức kẻ thù
+nổi điên.{end}
+
+[D305]
+Trồi lên từ lòng
+đất, tấn công bằng
+xúc tu dài như rắn.{end}
+
+[D306]
+Rùa đá có chỉ số thủ
+rất cao.{end}
+
+[D307]
+Mực lửa giữ được
+ngọn lửa cả
+dưới nước.{end}
+
+[D308]
+Rùa bay hiếm có sống
+ở biển.{end}
+
+[D309]
+Hơi thở của con chim
+này cướp đi sinh lực
+sinh vật.{end}
+
+[D30A]
+Chim khổng lồ nổi
+tiếng với cú bổ nhào
+sắc bén.{end}
+
+[D30B]
+Kẻ thù bại trận trở
+thành nguyên liệu
+cho quái vật sành
+ăn này.{end}
+
+[D30C]
+Sinh vật ngoài hành
+tinh thích sống
+trong nước.{end}
+
+[D30D]
+Tiếng sáo của nó có
+thể rút cạn ý chí
+kẻ thù.{end}
+
+[D30E]
+Cầm lưỡi liềm khổng
+lồ, bắn tia từ đôi
+mắt lớn.{end}
+
+[D30F]
+Thường bị tưởng là
+thú cưng dễ thương,
+thực ra là mãnh thú
+rất nguy hiểm.{end}
+
+[D310]
+Quái vật rất nhanh,
+cuộn tròn và húc
+kẻ thù.{end}
+
+[D311]
+Mãnh thú bốc lửa,
+chạm vào là chết.{end}
+
+[D312]
+Dùng đũa phép tung
+nhiều loại phép lên
+kẻ thù.{end}
+
+[D313]
+Biến kẻ thù thành đá
+rồi nghiền
+thành bụi.{end}
+
+[D314]
+Cặp song sinh tiên
+tộc tấn công kẻ thù
+từ hai phía.{end}
+
+[D315]
+Côn trùng quái vật
+có hàm bọ kìm và
+sừng bọ hung.{end}
+
+[D316]
+Quái vật có bốn tay
+cực khéo, tung đòn
+riêng biệt.{end}
+
+[D317]
+Bọ ngựa hình người
+với hai lưỡi hái sắc
+như dao cạo.{end}
+
+[D318]
+Quái vật như tắc kè
+hoa, ẩn ở bất cứ đâu
+nhờ đổi màu.{end}
+
+[D319]
+Lăn trên mặt đất
+phóng tia điện tấn
+công kẻ thù.{end}
+
+[D31A]
+Nuốt chửng kẻ thù và
+dùng tinh chất của
+chúng làm
+năng lượng.{end}
+
+[D31B]
+Cá mập thây ma lang
+thang đáy biển,
+nguyền rủa kẻ nào
+dám cản đường.{end}
+
+[D31C]
+Tiên ma bắn vô số
+mũi tên vào bất cứ
+thứ gì có ý định
+tấn công.{end}
+
+[D31D]
+Chặn kẻ thù bằng
+cuồng phong và tấn
+công bằng rìu chiến
+khổng lồ.{end}
+
+[D31E]
+Cá phóng tên lửa
+được gai nhọn
+bảo vệ.{end}
+
+[D31F]
+Sống nhờ sinh lực
+của những con cá nó
+bắt bằng lưỡi dài.{end}
+
+[D320]
+Quái vật máy bắn cực
+chuẩn, phủ đầy pháo
+cỡ lớn.{end}
+
+[D321]
+Rồng thây ma xương
+xẩu có thể bay khắp
+bầu trời.{end}
+
+[D322]
+Mãnh thú cá khổng lồ
+có tay, chân và răng
+sắc như dao cạo.{end}
+
+[D323]
+Xoay quanh kẻ thù,
+bắn lá làm mù và hạt
+gây đau.{end}
+
+[D324]
+Chuột thây ma chuyên
+săn mèo.{end}
+
+[D325]
+Sinh vật nhầy đầu
+ếch, vừa ộp ộp vừa
+tấn công.{end}
+
+[D326]
+Rắn biển kỳ lạ có
+cái miệng khổng lồ
+đầy răng nanh.{end}
+
+[D327]
+Tiên tộc độc ác rất
+thích lao vào
+chiến đấu.{end}
+
+[D328]
+Tạo lốc xoáy mạnh
+bằng đôi cánh
+khổng lồ.{end}
+
+[D329]
+Mushroom Man trưởng
+thành với công
+tăng lên.{end}
+
+[D32A]
+Anh em của Swamp
+Battleguard, không
+mạnh nhưng thủ
+khá tốt.{end}
+
+[D32B]
+Rồng đỏ thẫm phun
+cầu lửa vào kẻ thù.{end}
+
+[D32C]
+Quái vật lang thang
+vô định đi tìm
+kẻ thù.{end}
+
+[D32D]
+Tượng thép được tôn
+thờ ở Vùng Đất
+Máy Móc.{end}
+
+[D32E]
+Kẻ hầu của pháp sư,
+không đáng tin lắm.{end}
+
+[D32F]
+Chiến binh kỳ lạ đến
+từ chiều không
+gian khác.{end}
+
+[D330]
+Sinh vật đến từ một
+thiên hà khác.{end}
+
+[D331]
+Rồng hạng thấp,
+không phun được lửa.{end}
+
+[D332]
+Ấu trùng có gai thép
+tấn công kẻ sơ hở.{end}
+
+[D333]
+Sinh vật vô hại
+thường thấy trên gác
+mái mọi nhà.{end}
+
+[D334]
+Voi thây ma xương
+xẩu rất lạ với bộ
+xương vàng
+phát sáng.{end}
+
+[D335]
+Cá mập đen đánh hơi
+được gần như mọi mùi
+dưới nước.{end}
+
+[D336]
+Con rắn rất dài
+thường xuất hiện
+trong truyền thuyết
+và thần thoại.{end}
+
+[D337]
+Cây gai ở vùng đất
+tối, quấn chặt những
+lữ khách sơ ý.{end}
+
+[D338]
+Khủng long dạng
+người, sức yếu nhưng
+chỉ số IQ cao.{end}
+
+[D339]
+Rắn hút máu hình
+người, tấn công mọi
+sinh vật đi
+ngang qua.{end}
+
+[D33A]
+Rồng vằn hổ thường
+thấy lao qua hoang
+mạc với tốc độ
+kinh hoàng.{end}
+
+[D33B]
+Rồng đen tuyền sống
+trong rừng rậm và
+ăn cây.{end}
+
+[D33C]
+Nữ hoàng của Vương
+Quốc Vàng. Không ai
+được trái ý bà.{end}
+
+[D33D]
+Quái vật cực kỳ hung
+dữ sinh ra từ khủng
+long bạo chúa.{end}
+
+[D33E]
+Phù thủy sống trong
+rừng, nhìn thấu mọi
+thứ bằng con mắt
+trên trán.{end}
+
+[D33F]
+Dê trắng sống trong
+rừng từ bao đời.
+Thực ra là bậc
+trưởng lão của rừng.{end}
+
+[D340]
+Bọ cạp đỏ hiếm, sống
+ở vùng lãnh nguyên
+chứ không phải
+sa mạc.{end}
+
+[D341]
+Yêu tinh mũi dài rất
+thông thái với sức
+mạnh siêu nhiên.{end}
+
+[D342]
+Pháp sư áo choàng
+đen, thực ra là sư
+tử biết nói giả
+làm người.{end}
+
+[D343]
+Loài hoa hiếm nở
+trong vực thẳm
+tối đen.{end}
+
+[D344]
+Rô-bốt tối tân tiêu
+diệt kẻ xâm nhập
+ngay khi phát hiện.{end}
+
+[D345]
+Con chim này là điềm
+báo tai họa!!{end}
+
+[D346]
+Sinh vật nổi tiếng
+trong thần thoại,
+phán xử bằng ngọn
+giáo sắc.{end}
+
+[D347]
+Nổi tiếng với việc
+dự báo thời tiết cực
+kỳ thiếu chính xác.{end}
+
+[D348]
+Dồn kẻ thù vào góc
+và phong ấn sức mạnh
+của chúng.{end}
+
+[D349]
+Ốc sên được cơ khí
+hóa nhưng vẫn chậm
+như xưa.{end}
+
+[D34A]
+Biến thành hình dạng
+kẻ thù và sao chép
+mọi đòn tấn công.{end}
+
+[D34B]
+Larvas tiến hóa cao,
+còn mạnh hơn trước.{end}
+
+[D34C]
+Bình hoa sống làm mù
+kẻ thù bằng phấn hoa
+và cắn bằng
+răng sắc.{end}
+
+[D34D]
+Vươn dây leo xanh
+tấn công đối thủ
+ở gần.{end}
+
+[D34E]
+Quấn chặt đối thủ
+rồi mổ bằng chiếc mỏ
+khổng lồ.{end}
+
+[D34F]
+Chiếc bình lớn tấn
+công kẻ thù gần đó
+bằng cách thả con
+quái bên trong.{end}
+
+[D350]
+Tiên nghệ thuật và
+là người chơi đàn
+hạc xuất sắc.{end}
+
+[D351]
+Rùa quái vật mai đỏ
+thẫm. Nó ăn lửa.{end}
+
+[D352]
+Hoa hồng đỏ bị ác
+linh nhập, hút sinh
+lực kẻ khác để
+nuôi hoa.{end}
+
+[D353]
+Kéo kẻ thù vào thế
+giới trong gương.{end}
+
+[D354]
+Quái vật ăn bao
+nhiêu cũng không bao
+giờ no.{end}
+
+[D355]
+Làn da trắng xanh,
+sinh vật kỳ lạ này
+trông thật đáng sợ.{end}
+
+[D356]
+Quái vật từ thí
+nghiệm ghép cánh cho
+mãnh thú.{end}
+
+[D357]
+Quái vật có thể gây
+ra những trận mưa
+bất chợt.{end}
+
+[D358]
+Phong ấn phần thiện
+trong linh hồn để
+tạo ra một kẻ
+độc ác.{end}
+
+[D359]
+Tiên dễ thương hết
+lòng mang đến tình
+yêu vĩnh cửu.{end}
+
+[D35A]
+Lính chim cánh cụt
+hạng thấp, tấn công
+theo nhóm.{end}
+
+[D35B]
+Tiên rồng xinh đẹp
+và mạnh mẽ.{end}
+
+[D35C]
+Chuột đồng vô lễ,
+gặm mọi thứ.{end}
+
+[D35D]
+Dạng sống lỏng di
+chuyển tự do
+trong nước.{end}
+
+[D35E]
+Sinh vật dưới biển
+tấn công bằng hai
+chiếc đuôi như roi.{end}
+
+[D35F]
+Quái vật có cái
+miệng khổng lồ nuốt
+chửng kẻ thù.{end}
+
+[D360]
+Sứ giả hòa bình giữa
+các quái vật.{end}
+
+[D361]
+Ruồi quái lao xuống
+với đôi tay sắc như
+kiếm chìa ra
+phía trước.{end}
+
+[D362]
+Thằn lằn phóng điện
+tích trong cơ thể.{end}
+
+[D363]
+Tay sai ác quỷ, chủ
+yếu dùng để do thám.{end}
+
+[D364]
+Xoa dịu tâm hồn
+người khác bằng một
+câu thần chú bí ẩn.{end}
+
+[D365]
+Rồng Sấm hai đầu,
+tung đòn điện
+cực mạnh.{end}
+
+[D366]
+Thợ săn dùng mạng
+nhện để bẫy kẻ thù.{end}
+
+[D367]
+Sao biển xanh có lớp
+da cứng chống đỡ đòn
+tấn công.{end}
+
+[D368]
+Tiên điều khiển cảm
+xúc người khác,
+truyền cho họ lòng
+dũng cảm.{end}
+
+[D369]
+Sinh vật biển răng
+sắc, đã cắn thì
+không bao giờ nhả.{end}
+
+[D36A]
+Nữ chiến binh thấm
+đẫm tinh hoa của cả
+nghìn chiến trường.{end}
+
+[D36B]
+Tượng đất sét tượng
+trưng cho thần đá.
+Công và thủ đều
+đáng kể.{end}
+
+[D36C]
+Sinh vật gồm nhiều
+con rắn tấn công
+riêng rẽ.{end}
+
+[D36D]
+Pháp sư chiến binh
+độc ác, giỏi tung
+phép chết chóc.{end}
+
+[D36E]
+Điều khiển luồng
+khí, tạo cơn gió bất
+chợt thổi bay
+đối thủ.{end}
+
+[D36F]
+Trước khi nó xuất
+hiện, mặt đất dưới
+chân đối thủ
+tan chảy.{end}
+
+[D370]
+Chiến binh lưỡng cư
+dễ dàng di chuyển
+dưới nước.{end}
+
+[D371]
+Tiên hết lòng bảo vệ
+đài phun nước khỏi
+ô nhiễm.{end}
+
+[D372]
+Nàng tiên cá lính
+gác phục vụ Vua Biển
+và vương quốc
+của ngài.{end}
+
+[D373]
+Nhanh nhẹn, dễ dàng
+né đòn rồi phản công
+bằng móng vuốt
+hung dữ.{end}
+
+[D374]
+Phù thủy non tay vừa
+mới học phép thuật.{end}
+
+[D375]
+Chuột được lớp lông
+như áo giáp bảo vệ.{end}
+
+[D376]
+Chiến binh thằn lằn
+tiền sử mạnh mẽ.{end}
+
+[D377]
+Pháp sư mặt trăng
+dùng phép huyền bí
+gây ảo giác.{end}
+
+[D378]
+Người khổng lồ làm
+từ những tảng
+đá lớn.{end}
+
+[D379]
+Sứ giả của sự
+sống mới.{end}
+
+[D37A]
+Chiến binh thằn lằn
+vảy xanh hết lòng
+bảo vệ biển cả.{end}
+
+[D37B]
+Thế thân nữ hoàng,
+chẳng mấy hữu dụng.{end}
+
+[D37C]
+Chim rực lửa xanh,
+có mái tóc hình
+vương miện.{end}
+
+[D37D]
+Người bảo vệ rừng,
+cái cây khổng lồ này
+vẫn tiếp tục lớn.{end}
+
+[D37E]
+Nữ hoàng của Thụ
+Linh, được lá thu
+rực rỡ ôm ấp.{end}
+
+[D37F]
+Bugroth được cải
+tiến để tác chiến
+dưới nước.{end}
+
+[D380]
+Sâu bướm khổng lồ
+phun axit làm tan
+gần như mọi thứ.{end}
+
+[D381]
+Nữ hoàng mưu mô thèm
+muốn ngai vàng khi
+nhà vua vắng mặt.{end}
+
+[D382]
+Cừu lông đen biết
+phép thuật.{end}
+
+[D383]
+Ẩn trong chiếc đĩa,
+chỉ xuất hiện để tấn
+công kẻ thù.{end}
+
+[D384]
+Rắn lục phun lửa, di
+chuyển cực nhanh.{end}
+
+[D385]
+Lính máy có ý chí
+riêng. Vốn được tạo
+ra để bảo vệ
+hoàng tộc.{end}
+
+[D386]
+Trông như mọi chất
+nhờn khác, nhưng
+mạnh hơn nhiều!{end}
+
+[D387]
+Lưỡng cư có công cao
+nhưng thủ thấp.{end}
+
+[D388]
+Cỗ máy thiết kế để
+đánh chớp nhoáng
+kẻ thù.{end}
+
+[D389]
+Làm rối quái vật
+địch bằng âm thanh
+chói tai.{end}
+
+[D38A]
+Tấn công từ trên
+trời bằng cái đuôi
+như roi.{end}
+
+[D38B]
+Boomerang mang hiệu
+ứng của hai lá
+Legendary Sword và
+Sword of
+Dark Destruction.{end}
+
+[D38C]
+Lá bài tăng sức mạnh
+cho Labyrinth Wall.{end}
+
+[D38D]
+Tiêu diệt mọi lá
+Chiến Binh của đối
+thủ trên sân.{end}
+
+[D38E]
+Tăng sức mạnh cho kẻ
+điều khiển sức mạnh
+Salamandra.{end}
+
+[D38F]
+Hóa giải phép trên
+mọi quái vật bị giảm
+cấp, đặt chúng về
+cấp 0.{end}
+
+[D390]
+Tiêu diệt mọi sinh
+vật Thây Ma.{end}
+
+[D391]
+Tăng sức mạnh quái
+vật được chọn thêm
+2 cấp.{end}
+
+[D392]
+Biến quái vật được
+chọn thành quái
+vật Máy.{end}
+
+[D393]
+Chiếc tù và tăng sức
+mạnh cho Tiên.{end}
+
+[D394]
+Mưa axit tiêu diệt
+quái vật Máy của
+đối thủ.{end}
+
+[D395]
+Loại bỏ quái vật đối
+thủ trên sân có công
+từ 1500 trở lên.{end}
+
+[D396]
+Thuốc diệt côn trùng
+quét sạch quái vật
+Côn Trùng của đối
+thủ trên sân.{end}
+
+[D397]
+Luồng gió phép biến
+quái vật Đá của đối
+thủ trên sân thành
+đống đổ nát.{end}
+
+[D398]
+Luồng nhiệt làm khô
+và tiêu diệt quái
+vật Cá của đối thủ
+trên sân.{end}
+
+[D399]
+Hiến tế quái vật có
+thủ cao nhất để
+triệu hồi Shield.{end}
+
+[D39A]
+Hiến tế quái vật Thú
+Chiến Binh, Rồng và
+Lửa để triệu
+hồi Yamadron.{end}
+
+[D39B]
+Hiến tế Kazejin,
+Suijin và Sanga of
+the Thunder để triệu
+hồi Gate Guardian.{end}
+
+[D39C]
+Ánh sáng chói chang
+tăng sức mạnh cho
+mọi quái vật.{end}
+
+[D39D]
+Giảm hai cấp quái
+vật đối thủ đang
+trên sân.{end}
+
+[D39E]
+Nghi lễ triệu hồi
+Black Luster
+Soldier. Cần
+hiến tế.{end}
+
+[D39F]
+Nghi lễ triệu hồi
+Zera. Cần hiến tế.{end}
+
+[D3A0]
+Tiêu diệt mọi lá
+Phép của đối thủ
+đang trên sân.{end}
+
+[D3A1]
+Nghi lễ triệu hồi
+War Lion. Cần
+hiến tế.{end}
+
+[D3A2]
+Nghi lễ triệu hồi
+Fiend's Mirror. Cần
+hiến tế.{end}
+
+[D3A3]
+Hiến tế ba Blue-eyes
+để triệu hồi
+Ultimate Dragon.{end}
+
+[D3A4]
+Hiến tế Vũ Công và
+Chiến Binh để triệu
+hồi Performance
+of Sword.{end}
+
+[D3A5]
+Lá bài ghi nguyên
+liệu làm món
+hamburger ngon
+tuyệt.{end}
+
+[D3A6]
+Hiến tế Thú Chiến
+Binh và Golem để
+triệu hồi Sengenjin.{end}
+
+[D3A7]
+Hiến tế Chiến Binh
+và Kẻ Cầm Lưỡi Hái
+để triệu hồi
+Skull Guardian.{end}
+
+[D3A8]
+Hiến tế một quái vật
+có sừng để triệu hồi
+Tri-Horned Dragon.{end}
+
+[D3A9]
+Loại khỏi sân quái
+vật có công từ 500
+trở xuống.{end}
+
+[D3AA]
+Loại khỏi sân quái
+vật có công từ 1000
+trở xuống.{end}
+
+[D3AB]
+Khi quái vật đối thủ
+có công từ 1500 trở
+xuống, nó bị loại
+khỏi sân.{end}
+
+[D3AC]
+Khi quái vật đối thủ
+có công từ 2000 trở
+xuống, nó bị loại
+khỏi sân.{end}
+
+[D3AD]
+Khi quái vật đối thủ
+có công từ 3000 trở
+xuống, nó bị loại
+khỏi sân.{end}
+
+[D3AE]
+Khi quái vật đối thủ
+tấn công, nó bị nổ
+tan xác và loại
+khỏi sân.{end}
+
+[D3AF]
+Phản lại sát thương
+của các lá tấn công
+trực tiếp như Sparks
+và Inferno về phía
+đối thủ.{end}
+
+[D3B0]
+Đảo ngược hiệu ứng
+lá hồi phục, biến
+điểm hồi thành
+sát thương.{end}
+
+[D3B1]
+Đảo ngược hiệu ứng
+lá tăng sức, biến
+thành giảm sức mạnh.{end}
+
+[D3B2]
+Lá bẫy để lừa đối
+thủ. Không có gì xảy
+ra khi bị tấn công.{end}
+
+[D3B3]
+Chọn một quái vật cụ
+thể để hiến tế và
+triệu hồi Serpent
+Night Dragon.{end}
+
+[D3B4]
+Hiến tế cua và rùa
+để triệu hồi
+Crab Turtle.{end}
+
+[D3B5]
+Hiến tế một kẻ đeo
+mặt nạ để triệu hồi
+mặt nạ mới.{end}
+
+[D3B6]
+Hiến tế 3 quái vật
+Ác Quỷ để làm nghi
+lễ Hồi Sinh Chakra.{end}
+
+[D3B7]
+Hiến tế Bậc Thầy Múa
+Rối và quái vật Máy
+để triệu hồi
+Con Rối.{end}
+
+[D3B8]
+Hiến tế bọ kìm và bọ
+hung để triệu hồi
+Javelin Beetle.{end}
+
+[D3B9]
+Hiến tế Cánh Tay
+Ashura và Kiếm Sĩ để
+triệu hồi.{end}
+
+[D3BA]
+Hiến tế một Nữ Hoàng
+thường để triệu hồi
+Cosmo Queen.{end}
+
+[D3BB]
+Hiến tế Đền và Gián
+để triệu
+hồi Dokurorider.{end}
+
+[D3BC]
+Hiến tế Sừng và Cá
+Máy để triệu hồi
+Pháo Đài Biển.{end}
+
+[D3BD]
+Chiến binh vũ công
+với những bước nhảy
+hoa mỹ.{end}
+
+[D3BE]
+Dụ kẻ thù đói bằng
+mùi thơm rồi ăn thịt
+khi chúng lại
+đủ gần.{end}
+
+[D3BF]
+Người nguyên thủy
+bướng bỉnh mang theo
+Bảo Vật Ngàn Năm.{end}
+
+[D3C0]
+Người giữ luật không
+tha thứ gian lận.
+Tấn công bằng đôi
+tay như kiếm.{end}
+
+[D3C1]
+Rồng tà ác có ba
+chiếc sừng mọc
+trên đầu.{end}
+
+[D3C2]
+Rồng sinh ra từ linh
+hồn của một hiệp sĩ
+độc ác.{end}
+
+[D3C3]
+Tu sĩ từng làm nhiều
+nghi lễ ở cõi âm,
+dùng được cả vũ khí
+lẫn phép thuật.{end}
+
+[D3C4]
+Nữ hoàng cai quản
+mọi vì sao trong
+vũ trụ.{end}
+
+[D3C5]
+Hình thù vặn vẹo tấn
+công bằng đôi tay
+như xúc tu.{end}
+
+[D3C6]
+Sinh vật có mai rùa
+và càng cua, công và
+thủ đều cao.{end}
+
+[D3C7]
+Chiến binh rồng cầm
+kiếm hình trăng
+khuyết. Đồn rằng đến
+từ mặt trăng.{end}
+
+[D3C8]
+Rồng đến trái đất
+trên một sao chổi
+rơi từ tận cùng
+vũ trụ.{end}
+
+[D3C9]
+Mang lớp da rực cháy
+của thiên thạch, nó
+làm bốc hơi mọi thứ
+nó chạm vào.{end}
+
+[D3CA]
+Tuấn mã thiên giới
+bay khắp bầu trời
+bằng đôi cánh
+đỏ thẫm.{end}
+
+[D3CB]
+Búp bê bí ẩn với
+điệu nhảy lạ cướp
+sức mạnh quái
+vật địch.{end}
+
+[D3CC]
+Chiến binh lão luyện
+dùng sáu thanh kiếm
+chống quái vật địch.{end}
+
+[D3CD]
+Sinh vật có đôi càng
+chết người cắt xuyên
+gần như mọi thứ.{end}
+
+[D3CE]
+Quái vật biển gắn
+pháo trên lưng để
+bắn tan kẻ thù.{end}
+
+[D3CF]
+Kị sĩ cô độc lao qua
+hoang mạc, tung lên
+những đám bụi dày.{end}
+
+[D3D0]
+Bẻ cong ánh sáng và
+bóng tối tạo ảo ảnh
+làm rối trí đối thủ.{end}
+
+[D3D1]
+Nghi lễ triệu hồi
+Magician of Black
+Chaos. Cần hiến tế.{end}
+
+[D3D2]
+Pháp sư tối thượng,
+nắm sức mạnh hỗn
+mang sinh ra từ dung
+hợp Bóng Tối và
+Ánh Sáng.{end}
+
+@bank names
+
+[8300]
+Rồng{end}
+
+[8301]
+Pháp sư{end}
+
+[8302]
+Thây ma{end}
+
+[8303]
+Chiến binh{end}
+
+[8304]
+Thú chiến binh{end}
+
+[8305]
+Thú{end}
+
+[8306]
+Thú có cánh{end}
+
+[8307]
+Ác quỷ{end}
+
+[8308]
+Tiên{end}
+
+[8309]
+Côn trùng{end}
+
+[830A]
+Khủng long{end}
+
+[830B]
+Bò sát{end}
+
+[830C]
+Cá{end}
+
+[830D]
+Rắn biển{end}
+
+[830E]
+Máy{end}
+
+[830F]
+Sấm{end}
+
+[8310]
+Nước{end}
+
+[8311]
+Lửa{end}
+
+[8312]
+Đá{end}
+
+[8313]
+Thực vật{end}
+
+[8314]
+Phép{end}
+
+[8315]
+Bẫy{end}
+
+[8316]
+Nghi lễ{end}
+
+[8317]
+Trang bị{end}
+
+[8318]
+Sao Hỏa{end}
+
+[8319]
+Sao Mộc{end}
+
+[831A]
+Sao Thổ{end}
+
+[831B]
+Sao Thiên Vương{end}
+
+[831C]
+Sao Diêm Vương{end}
+
+[831D]
+Sao Hải Vương{end}
+
+[831E]
+Sao Thủy{end}
+
+[831F]
+Mặt Trời{end}
+
+[8320]
+Mặt Trăng{end}
+
+[8321]
+Sao Kim{end}
+
+[8328]
+Xếp bộ bài{end}
+
+[832C]
+Dân làng 1{end}
+
+[832D]
+Dân làng 2{end}
+
+[832E]
+Dân làng 3{end}
+
+[833A]
+Lính pháp sư{end}
+
+[833B]
+Jono (lần 2){end}
+
+[833C]
+Teana (lần 2){end}
+
+[833D]
+Pháp sư Biển{end}
+
+[833E]
+Pháp sư Tối cao Secmeton{end}
+
+[833F]
+Pháp sư Rừng{end}
+
+[8340]
+Pháp sư Tối cao Anubisius{end}
+
+[8341]
+Pháp sư Núi{end}
+
+[8342]
+Pháp sư Tối cao Atenza{end}
+
+[8343]
+Pháp sư Sa Mạc{end}
+
+[8344]
+Pháp sư Tối cao Martis{end}
+
+[8345]
+Pháp sư Đồng Cỏ{end}
+
+[8346]
+Pháp sư Tối cao Kepura{end}
+
+[8347]
+Pháp sư Mê Cung{end}
+
+[8348]
+Seto (lần 2){end}
+
+[8349]
+Hộ vệ Sebek{end}
+
+[834A]
+Hộ vệ Neku{end}
+
+[834B]
+Heishin (lần 2){end}
+
+[834C]
+Seto (lần 3){end}
+
+[834F]
+Bậc thầy Đấu bài K{end}
+
+[8350]
+{f8 02 28}Đô thị{end}
+
+[8351]
+{f8 02 20}Đền Rừng{end}
+
+[8352]
+{f8 02 18}Đền Sa Mạc{end}
+
+[8353]
+{f8 02 08}Thung Lũng Vua{end}
+
+[8354]
+{f8 02 20}Đền Biển{end}
+
+[8355]
+{f8 02 08}Đền Vinh Quang{end}
+
+[8356]
+{f8 02 24}Đền Núi{end}
+
+[8357]
+{f8 02 10}Tàn Tích Cấm{end}
+
+[8358]
+{f8 02 14}Đền Đồng Cỏ{end}
+
+[8359]
+{f8 02 10}Đền Rộng Lớn{end}
+
+[835A]
+{f8 02 10}Quảng trường{end}
+
+[835B]
+{f8 02 24}Đền thờ{end}
+
+[835E]
+Cung điện Pharaoh{end}
+
+[835C]
+{if 0047 L8E6E}{f8 02 24}Sân đấu{end}
+
+{:L8E6E}
+{f8 02 18}Sân đấu cũ{end}
+
+[835D]
+{if 0047 L8E8A}{f8 02 10}Cửa hàng bài{end}
+
+{:L8E8A}
+{f8 02 04}Cửa hàng bài cũ{end}
+
+[835F]
+Cửa hàng bài bí mật{end}
+

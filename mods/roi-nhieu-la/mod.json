@@ -1,0 +1,23 @@
+{
+    "id": "roi-nhieu-la",
+    "name": "Rơi nhiều lá",
+    "version": "1.0",
+    "author": "2ez4gcx",
+    "description": "Mỗi trận thắng cho nhiều lá (mặc định 5, như bản Mod5 của bản Việt hoá đĩa): đặt sẵn Game > Card drops khi game khởi động. Đổi số lá ở tuỳ chọn bên dưới rồi khởi động lại.",
+    "library": "roi-nhieu-la",
+    "enabled": true,
+    "min_api": 12,
+    "settings": [
+        {
+            "key": "drops",
+            "label": "Số lá mỗi trận thắng",
+            "type": "int",
+            "default": 5,
+            "min": 1,
+            "max": 99,
+            "step": 1,
+            "restart": true,
+            "description": "Bao nhiêu lá một trận thắng cho (Game > Card drops). Đặt lại mỗi lần game khởi động."
+        }
+    ]
+}

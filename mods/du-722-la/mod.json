@@ -1,0 +1,1050 @@
+{
+    "id": "du-722-la",
+    "name": "Đủ 722 lá",
+    "version": "1.0",
+    "author": "2ez4gcx",
+    "description": "Gom được đủ 722 lá: 82 lá vốn không rơi được thêm vào bảng rơi S/A của đối thủ dùng lá đó, 122 lá giá 999999 sao được hạ giá theo cấp, 24 lá không có mật mã được thêm mật mã thật (như tools/card_pool_mod.py của bản đĩa).",
+    "enabled": true,
+    "drops": {
+        "Simon Muran": {
+            "pow": {
+                "Magician of Faith": 16,
+                "Kattapillar": 16
+            },
+            "tec": {
+                "Magician of Faith": 16,
+                "Kattapillar": 16
+            }
+        },
+        "Teana": {
+            "pow": {
+                "Petit Moth": 16
+            },
+            "tec": {
+                "Petit Moth": 16
+            }
+        },
+        "Jono": {
+            "pow": {
+                "Magician of Faith": 16
+            },
+            "tec": {
+                "Magician of Faith": 16
+            }
+        },
+        "Villager 1": {
+            "pow": {
+                "Kattapillar": 16
+            },
+            "tec": {
+                "Kattapillar": 16
+            }
+        },
+        "Villager 2": {
+            "pow": {
+                "Goddess of Whim": 16,
+                "Barrel Lily": 16,
+                "Mega Thunderball": 16,
+                "Acid Crawler": 16
+            },
+            "tec": {
+                "Goddess of Whim": 16,
+                "Barrel Lily": 16,
+                "Mega Thunderball": 16,
+                "Acid Crawler": 16
+            }
+        },
+        "Villager 3": {
+            "pow": {
+                "Rock Ogre Grotto #1": 16,
+                "Dark Artist": 16,
+                "Three-legged Zombies": 16,
+                "Goddess of Whim": 16,
+                "Barrel Lily": 16,
+                "Acid Crawler": 16
+            },
+            "tec": {
+                "Rock Ogre Grotto #1": 16,
+                "Dark Artist": 16,
+                "Three-legged Zombies": 16,
+                "Goddess of Whim": 16,
+                "Barrel Lily": 16,
+                "Acid Crawler": 16
+            }
+        },
+        "Seto": {
+            "pow": {
+                "Hane-Hane": 16,
+                "Flame Viper": 16,
+                "Black Luster Ritual": 8
+            },
+            "tec": {
+                "Hane-Hane": 16,
+                "Flame Viper": 16,
+                "Black Luster Ritual": 8
+            }
+        },
+        "Heishin": {
+            "pow": {
+                "Right Leg of the Forbidden One": 8,
+                "Left Leg of the Forbidden One": 8,
+                "Great Moth": 8,
+                "Perfectly Ultimate Great Moth": 8,
+                "Thousand Dragon": 8,
+                "Super War-lion": 8,
+                "Zera The Mant": 8,
+                "Javelin Beetle Pact": 8,
+                "Sengenjin": 8,
+                "Skull Guardian": 8,
+                "Tri-horned Dragon": 8,
+                "Serpent Night Dragon": 8,
+                "Cosmo Queen": 8,
+                "Chakra": 8,
+                "Crab Turtle": 8,
+                "Mikazukinoyaiba": 8,
+                "Psycho-Puppet": 8,
+                "Garma Sword": 8,
+                "Javelin Beetle": 8,
+                "Fortress Whale": 8
+            },
+            "tec": {
+                "Right Leg of the Forbidden One": 8,
+                "Left Leg of the Forbidden One": 8,
+                "Great Moth": 8,
+                "Perfectly Ultimate Great Moth": 8,
+                "Thousand Dragon": 8,
+                "Super War-lion": 8,
+                "Zera The Mant": 8,
+                "Javelin Beetle Pact": 8,
+                "Sengenjin": 8,
+                "Skull Guardian": 8,
+                "Tri-horned Dragon": 8,
+                "Serpent Night Dragon": 8,
+                "Cosmo Queen": 8,
+                "Chakra": 8,
+                "Crab Turtle": 8,
+                "Mikazukinoyaiba": 8,
+                "Psycho-Puppet": 8,
+                "Garma Sword": 8,
+                "Javelin Beetle": 8,
+                "Fortress Whale": 8
+            }
+        },
+        "Rex Raptor": {
+            "pow": {
+                "Mega Thunderball": 16,
+                "Needle Worm": 16,
+                "Witch's Apprentice": 16
+            },
+            "tec": {
+                "Mega Thunderball": 16,
+                "Needle Worm": 16,
+                "Witch's Apprentice": 16
+            }
+        },
+        "Weevil Underwood": {
+            "pow": {
+                "Larvae Moth": 16,
+                "Cocoon of Evolution": 16,
+                "Wodan the Resident of the Forest": 16,
+                "Nekogal #1": 16,
+                "Petit Moth": 16,
+                "Tao the Chanter": 16,
+                "Dark Artist": 16,
+                "Sonic Maid": 16,
+                "Stuffed Animal": 16,
+                "Flying Penguin": 16,
+                "Fairy Dragon": 16
+            },
+            "tec": {
+                "Larvae Moth": 16,
+                "Cocoon of Evolution": 16,
+                "Wodan the Resident of the Forest": 16,
+                "Nekogal #1": 16,
+                "Petit Moth": 16,
+                "Tao the Chanter": 16,
+                "Dark Artist": 16,
+                "Sonic Maid": 16,
+                "Stuffed Animal": 16,
+                "Flying Penguin": 16,
+                "Fairy Dragon": 16
+            }
+        },
+        "Mai Valentine": {
+            "pow": {
+                "Winged Dragon #1": 16,
+                "Harpie Lady": 16,
+                "Elegant Egotist": 8,
+                "Takriminos": 16,
+                "Fairy's Gift": 16
+            },
+            "tec": {
+                "Winged Dragon #1": 16,
+                "Harpie Lady": 16,
+                "Elegant Egotist": 8,
+                "Takriminos": 16,
+                "Fairy's Gift": 16
+            }
+        },
+        "Bandit Keith": {
+            "pow": {
+                "Armored Lizard": 16,
+                "Harpie Lady": 16,
+                "Yaranzo": 16,
+                "Kanan the Swordmistress": 16,
+                "Takriminos": 16
+            },
+            "tec": {
+                "Armored Lizard": 16,
+                "Harpie Lady": 16,
+                "Yaranzo": 16,
+                "Kanan the Swordmistress": 16,
+                "Takriminos": 16
+            }
+        },
+        "Shadi": {
+            "pow": {
+                "Hane-Hane": 16,
+                "Witch's Apprentice": 16,
+                "Flame Viper": 16
+            },
+            "tec": {
+                "Hane-Hane": 16,
+                "Witch's Apprentice": 16,
+                "Flame Viper": 16
+            }
+        },
+        "Yami Bakura": {
+            "pow": {
+                "Kanan the Swordmistress": 16,
+                "Millennium Shield": 16
+            },
+            "tec": {
+                "Kanan the Swordmistress": 16,
+                "Millennium Shield": 16
+            }
+        },
+        "Pegasus": {
+            "pow": {
+                "Nekogal #1": 16,
+                "Yamadron": 16
+            },
+            "tec": {
+                "Nekogal #1": 16,
+                "Yamadron": 16
+            }
+        },
+        "Isis": {
+            "pow": {
+                "Great White": 16,
+                "Swords of Revealing Light": 8
+            },
+            "tec": {
+                "Great White": 16,
+                "Swords of Revealing Light": 8
+            }
+        },
+        "Kaiba": {
+            "pow": {
+                "Megasonic Eye": 16,
+                "Yamadron": 16,
+                "Lava Battleguard": 16
+            },
+            "tec": {
+                "Megasonic Eye": 16,
+                "Yamadron": 16,
+                "Lava Battleguard": 16
+            }
+        },
+        "Mage Soldier": {
+            "pow": {
+                "Winged Dragon #1": 16,
+                "Great White": 16,
+                "Flying Penguin": 16,
+                "Fairy's Gift": 16,
+                "Fairy Dragon": 16
+            },
+            "tec": {
+                "Winged Dragon #1": 16,
+                "Great White": 16,
+                "Flying Penguin": 16,
+                "Fairy's Gift": 16,
+                "Fairy Dragon": 16
+            }
+        },
+        "Jono 2nd": {
+            "pow": {
+                "Rock Ogre Grotto #1": 16,
+                "Armored Lizard": 16,
+                "Tiger Axe": 16
+            },
+            "tec": {
+                "Rock Ogre Grotto #1": 16,
+                "Armored Lizard": 16,
+                "Tiger Axe": 16
+            }
+        },
+        "Teana 2nd": {
+            "pow": {
+                "Goddess of Whim": 16
+            },
+            "tec": {
+                "Goddess of Whim": 16
+            }
+        },
+        "Ocean Mage": {
+            "pow": {
+                "Great White": 16,
+                "Takriminos": 16
+            },
+            "tec": {
+                "Great White": 16,
+                "Takriminos": 16
+            }
+        },
+        "High Mage Secmeton": {
+            "pow": {
+                "Crab Turtle": 8
+            },
+            "tec": {
+                "Crab Turtle": 8
+            }
+        },
+        "Forest Mage": {
+            "pow": {
+                "Hercules Beetle": 16,
+                "Tiger Axe": 16,
+                "Cocoon of Evolution": 16,
+                "Rabid Horseman": 16,
+                "Nekogal #1": 16,
+                "Acid Crawler": 16,
+                "Reverse Trap": 8
+            },
+            "tec": {
+                "Hercules Beetle": 16,
+                "Tiger Axe": 16,
+                "Cocoon of Evolution": 16,
+                "Rabid Horseman": 16,
+                "Nekogal #1": 16,
+                "Acid Crawler": 16,
+                "Reverse Trap": 8
+            }
+        },
+        "High Mage Anubisius": {
+            "pow": {
+                "Hercules Beetle": 16,
+                "Great Moth": 8,
+                "Perfectly Ultimate Great Moth": 8,
+                "Rabid Horseman": 16,
+                "Tao the Chanter": 16,
+                "Javelin Beetle Pact": 8,
+                "Javelin Beetle": 8
+            },
+            "tec": {
+                "Hercules Beetle": 16,
+                "Great Moth": 8,
+                "Perfectly Ultimate Great Moth": 8,
+                "Rabid Horseman": 16,
+                "Tao the Chanter": 16,
+                "Javelin Beetle Pact": 8,
+                "Javelin Beetle": 8
+            }
+        },
+        "Mountain Mage": {
+            "pow": {
+                "Winged Dragon #1": 16,
+                "Harpie Lady": 16,
+                "Yamadron": 16,
+                "Tyhone #2": 16,
+                "Fairy Dragon": 16
+            },
+            "tec": {
+                "Winged Dragon #1": 16,
+                "Harpie Lady": 16,
+                "Yamadron": 16,
+                "Tyhone #2": 16,
+                "Fairy Dragon": 16
+            }
+        },
+        "High Mage Atenza": {
+            "pow": {
+                "Gaia the Dragon Champion": 8,
+                "Harpie Lady Sisters": 16,
+                "Thousand Dragon": 8,
+                "Elegant Egotist": 8,
+                "Seiyaryu": 8,
+                "Tyhone #2": 16,
+                "Serpent Night Dragon": 8,
+                "Mikazukinoyaiba": 8
+            },
+            "tec": {
+                "Gaia the Dragon Champion": 8,
+                "Harpie Lady Sisters": 16,
+                "Thousand Dragon": 8,
+                "Elegant Egotist": 8,
+                "Seiyaryu": 8,
+                "Tyhone #2": 16,
+                "Serpent Night Dragon": 8,
+                "Mikazukinoyaiba": 8
+            }
+        },
+        "Desert Mage": {
+            "pow": {
+                "Rock Ogre Grotto #1": 16,
+                "Yaranzo": 16,
+                "Three-legged Zombies": 16,
+                "Skelgon": 16
+            },
+            "tec": {
+                "Rock Ogre Grotto #1": 16,
+                "Yaranzo": 16,
+                "Three-legged Zombies": 16,
+                "Skelgon": 16
+            }
+        },
+        "High Mage Martis": {
+            "pow": {
+                "Summoned Skull": 16,
+                "Tao the Chanter": 16,
+                "Fairy's Gift": 16,
+                "Skelgon": 16,
+                "Dokurorider": 16
+            },
+            "tec": {
+                "Summoned Skull": 16,
+                "Tao the Chanter": 16,
+                "Fairy's Gift": 16,
+                "Skelgon": 16,
+                "Dokurorider": 16
+            }
+        },
+        "Meadow Mage": {
+            "pow": {
+                "Tiger Axe": 16,
+                "Rabid Horseman": 16,
+                "Wodan the Resident of the Forest": 16,
+                "Sonic Maid": 16,
+                "Kanan the Swordmistress": 16,
+                "Stuffed Animal": 16,
+                "Millennium Shield": 16,
+                "Lava Battleguard": 16
+            },
+            "tec": {
+                "Tiger Axe": 16,
+                "Rabid Horseman": 16,
+                "Wodan the Resident of the Forest": 16,
+                "Sonic Maid": 16,
+                "Kanan the Swordmistress": 16,
+                "Stuffed Animal": 16,
+                "Millennium Shield": 16,
+                "Lava Battleguard": 16
+            }
+        },
+        "High Mage Kepura": {
+            "pow": {
+                "Gaia the Dragon Champion": 8,
+                "Hercules Beetle": 16,
+                "Thousand Dragon": 8,
+                "B. Skull Dragon": 8,
+                "Megasonic Eye": 16,
+                "Seiyaryu": 8,
+                "Wall Shadow": 8,
+                "Tyhone #2": 16,
+                "Performance of Sword": 16
+            },
+            "tec": {
+                "Gaia the Dragon Champion": 8,
+                "Hercules Beetle": 16,
+                "Thousand Dragon": 8,
+                "B. Skull Dragon": 8,
+                "Megasonic Eye": 16,
+                "Seiyaryu": 8,
+                "Wall Shadow": 8,
+                "Tyhone #2": 16,
+                "Performance of Sword": 16
+            }
+        },
+        "Labyrinth Mage": {
+            "pow": {
+                "Flying Penguin": 16,
+                "Wall Shadow": 8,
+                "Reverse Trap": 8
+            },
+            "tec": {
+                "Flying Penguin": 16,
+                "Wall Shadow": 8,
+                "Reverse Trap": 8
+            }
+        },
+        "Seto 2nd": {
+            "pow": {
+                "Black Luster Soldier": 8,
+                "Gate Guardian": 8,
+                "Lava Battleguard": 16,
+                "Gate Guardian Ritual": 8
+            },
+            "tec": {
+                "Black Luster Soldier": 8,
+                "Gate Guardian": 8,
+                "Lava Battleguard": 16,
+                "Gate Guardian Ritual": 8
+            }
+        },
+        "Guardian Sebek": {
+            "pow": {
+                "Megasonic Eye": 16,
+                "Super War-lion": 8,
+                "Millennium Shield": 16,
+                "Skelgon": 16,
+                "Shadow Spell": 8
+            },
+            "tec": {
+                "Megasonic Eye": 16,
+                "Super War-lion": 8,
+                "Millennium Shield": 16,
+                "Skelgon": 16,
+                "Shadow Spell": 8
+            }
+        },
+        "Guardian Neku": {
+            "pow": {
+                "Summoned Skull": 16,
+                "Dark Artist": 16,
+                "Fiend's Mirror": 16
+            },
+            "tec": {
+                "Summoned Skull": 16,
+                "Dark Artist": 16,
+                "Fiend's Mirror": 16
+            }
+        },
+        "Heishin 2nd": {
+            "pow": {
+                "Right Leg of the Forbidden One": 8,
+                "Left Leg of the Forbidden One": 8,
+                "Swords of Revealing Light": 8,
+                "Zera The Mant": 8,
+                "Gate Guardian": 8,
+                "Gate Guardian Ritual": 8,
+                "Hungry Burger": 16,
+                "Mask of Shine & Dark": 16,
+                "Dark Magic Ritual": 8,
+                "Magician of Black Chaos": 8
+            },
+            "tec": {
+                "Right Leg of the Forbidden One": 8,
+                "Left Leg of the Forbidden One": 8,
+                "Swords of Revealing Light": 8,
+                "Zera The Mant": 8,
+                "Gate Guardian": 8,
+                "Gate Guardian Ritual": 8,
+                "Hungry Burger": 16,
+                "Mask of Shine & Dark": 16,
+                "Dark Magic Ritual": 8,
+                "Magician of Black Chaos": 8
+            }
+        },
+        "Seto 3rd": {
+            "pow": {
+                "Summoned Skull": 16,
+                "Gaia the Dragon Champion": 8,
+                "Harpie Lady Sisters": 16,
+                "B. Skull Dragon": 8,
+                "Seiyaryu": 8,
+                "Wall Shadow": 8,
+                "Gate Guardian": 8,
+                "Blue-eyes Ultimate Dragon": 8,
+                "Gate Guardian Ritual": 8,
+                "Shadow Spell": 8
+            },
+            "tec": {
+                "Summoned Skull": 16,
+                "Gaia the Dragon Champion": 8,
+                "Harpie Lady Sisters": 16,
+                "B. Skull Dragon": 8,
+                "Seiyaryu": 8,
+                "Wall Shadow": 8,
+                "Gate Guardian": 8,
+                "Blue-eyes Ultimate Dragon": 8,
+                "Gate Guardian Ritual": 8,
+                "Shadow Spell": 8
+            }
+        },
+        "DarkNite": {
+            "pow": {
+                "Swords of Revealing Light": 8,
+                "Shadow Spell": 8,
+                "Reverse Trap": 8,
+                "Hungry Burger": 16,
+                "Cosmo Queen": 8,
+                "Mask of Shine & Dark": 16,
+                "Dark Magic Ritual": 8,
+                "Magician of Black Chaos": 8
+            },
+            "tec": {
+                "Swords of Revealing Light": 8,
+                "Shadow Spell": 8,
+                "Reverse Trap": 8,
+                "Hungry Burger": 16,
+                "Cosmo Queen": 8,
+                "Mask of Shine & Dark": 16,
+                "Dark Magic Ritual": 8,
+                "Magician of Black Chaos": 8
+            }
+        },
+        "Nitemare": {
+            "pow": {
+                "Great Moth": 8,
+                "Harpie Lady Sisters": 16,
+                "Perfectly Ultimate Great Moth": 8,
+                "B. Skull Dragon": 8,
+                "Black Luster Soldier": 8,
+                "Blue-eyes Ultimate Dragon": 8,
+                "Javelin Beetle Pact": 8,
+                "Hungry Burger": 16,
+                "Sengenjin": 8,
+                "Skull Guardian": 8,
+                "Tri-horned Dragon": 8,
+                "Serpent Night Dragon": 8,
+                "Cosmo Queen": 8,
+                "Chakra": 8,
+                "Crab Turtle": 8,
+                "Mikazukinoyaiba": 8,
+                "Psycho-Puppet": 8,
+                "Garma Sword": 8,
+                "Javelin Beetle": 8,
+                "Fortress Whale": 8,
+                "Mask of Shine & Dark": 16,
+                "Dark Magic Ritual": 8,
+                "Magician of Black Chaos": 8
+            },
+            "tec": {
+                "Great Moth": 8,
+                "Harpie Lady Sisters": 16,
+                "Perfectly Ultimate Great Moth": 8,
+                "B. Skull Dragon": 8,
+                "Black Luster Soldier": 8,
+                "Blue-eyes Ultimate Dragon": 8,
+                "Javelin Beetle Pact": 8,
+                "Hungry Burger": 16,
+                "Sengenjin": 8,
+                "Skull Guardian": 8,
+                "Tri-horned Dragon": 8,
+                "Serpent Night Dragon": 8,
+                "Cosmo Queen": 8,
+                "Chakra": 8,
+                "Crab Turtle": 8,
+                "Mikazukinoyaiba": 8,
+                "Psycho-Puppet": 8,
+                "Garma Sword": 8,
+                "Javelin Beetle": 8,
+                "Fortress Whale": 8,
+                "Mask of Shine & Dark": 16,
+                "Dark Magic Ritual": 8,
+                "Magician of Black Chaos": 8
+            }
+        },
+        "Duel Master K": {
+            "pow": {
+                "Magician of Faith": 16,
+                "Kattapillar": 16
+            },
+            "tec": {
+                "Magician of Faith": 16,
+                "Kattapillar": 16
+            }
+        }
+    },
+    "passwords": {
+        "Blue-eyes White Dragon": {
+            "starchips": 2500
+        },
+        "Baby Dragon": {
+            "starchips": 100
+        },
+        "Winged Dragon #1": {
+            "starchips": 200
+        },
+        "Time Wizard": {
+            "starchips": 50
+        },
+        "Right Leg of the Forbidden One": {
+            "starchips": 3000
+        },
+        "Left Leg of the Forbidden One": {
+            "starchips": 3000
+        },
+        "Right Arm of the Forbidden One": {
+            "starchips": 3000
+        },
+        "Left Arm of the Forbidden One": {
+            "starchips": 3000
+        },
+        "Exodia the Forbidden": {
+            "starchips": 3000
+        },
+        "Summoned Skull": {
+            "starchips": 800
+        },
+        "Battle Ox": {
+            "starchips": 200
+        },
+        "Rock Ogre Grotto #1": {
+            "starchips": 100
+        },
+        "Dark Magician": {
+            "starchips": 1500
+        },
+        "Gaia the Dragon Champion": {
+            "starchips": 1500
+        },
+        "Gaia the Fierce Knight": {
+            "starchips": 1500
+        },
+        "Curse of Dragon": {
+            "starchips": 400
+        },
+        "Armored Lizard": {
+            "starchips": 200
+        },
+        "Hercules Beetle": {
+            "starchips": 400
+        },
+        "Gokibore": {
+            "starchips": 200
+        },
+        "Larvae Moth": {
+            "starchips": 50
+        },
+        "Great Moth": {
+            "starchips": 2500
+        },
+        "Great White": {
+            "starchips": 200
+        },
+        "Harpie Lady": {
+            "starchips": 200
+        },
+        "Harpie Lady Sisters": {
+            "starchips": 800
+        },
+        "Tiger Axe": {
+            "starchips": 200
+        },
+        "Perfectly Ultimate Great Moth": {
+            "starchips": 2500
+        },
+        "Thousand Dragon": {
+            "starchips": 1500
+        },
+        "Cocoon of Evolution": {
+            "starchips": 100
+        },
+        "Red-eyes B. Dragon": {
+            "starchips": 1500
+        },
+        "Mystic Horseman": {
+            "starchips": 200
+        },
+        "Rabid Horseman": {
+            "starchips": 800
+        },
+        "Job-change Mirror": {
+            "starchips": 100
+        },
+        "Monster Egg": {
+            "starchips": 100
+        },
+        "B. Skull Dragon": {
+            "starchips": 4000
+        },
+        "Wodan the Resident of the Forest": {
+            "starchips": 100
+        },
+        "Nekogal #1": {
+            "starchips": 100
+        },
+        "Tao the Chanter": {
+            "starchips": 100
+        },
+        "Dark Artist": {
+            "starchips": 100
+        },
+        "Sonic Maid": {
+            "starchips": 100
+        },
+        "Elegant Egotist": {
+            "starchips": 1000
+        },
+        "Machine Conversion Factory": {
+            "starchips": 1000
+        },
+        "Dragon Capture Jar": {
+            "starchips": 1000
+        },
+        "Raigeki": {
+            "starchips": 1000
+        },
+        "Mooyan Curry": {
+            "starchips": 1000
+        },
+        "Dian Keto the Cure Master": {
+            "starchips": 1000
+        },
+        "Tremendous Fire": {
+            "starchips": 1000
+        },
+        "Swords of Revealing Light": {
+            "starchips": 1000
+        },
+        "Spellbinding Circle": {
+            "starchips": 1000
+        },
+        "Dark-piercing Light": {
+            "starchips": 1000
+        },
+        "Super War-lion": {
+            "password": "33951077",
+            "starchips": 1500
+        },
+        "Zera The Mant": {
+            "password": "69123138",
+            "starchips": 2500
+        },
+        "Black Luster Soldier": {
+            "password": "05405694",
+            "starchips": 2500
+        },
+        "Fiend's Mirror": {
+            "password": "31890399",
+            "starchips": 800
+        },
+        "Wall Shadow": {
+            "starchips": 1500
+        },
+        "Labyrinth Tank": {
+            "starchips": 1500
+        },
+        "Sanga of the Thunder": {
+            "starchips": 1500
+        },
+        "Kazejin": {
+            "starchips": 1500
+        },
+        "Suijin": {
+            "starchips": 1500
+        },
+        "Gate Guardian": {
+            "password": "25833572",
+            "starchips": 6000
+        },
+        "Blue-eyes Ultimate Dragon": {
+            "password": "23995346",
+            "starchips": 6000
+        },
+        "Harpie's Pet Dragon": {
+            "starchips": 1500
+        },
+        "Launcher Spider": {
+            "starchips": 1500
+        },
+        "Zoa": {
+            "starchips": 1500
+        },
+        "Metalzoa": {
+            "starchips": 2500
+        },
+        "Magician of Faith": {
+            "starchips": 50
+        },
+        "Goddess of Whim": {
+            "starchips": 100
+        },
+        "Cockroach Knight": {
+            "starchips": 100
+        },
+        "Kattapillar": {
+            "starchips": 50
+        },
+        "Hane-Hane": {
+            "starchips": 50
+        },
+        "Skelgon": {
+            "starchips": 800
+        },
+        "Lava Battleguard": {
+            "starchips": 400
+        },
+        "Tyhone #2": {
+            "starchips": 800
+        },
+        "Needle Worm": {
+            "starchips": 50
+        },
+        "B. Dragon Jungle King": {
+            "starchips": 800
+        },
+        "Fairy Dragon": {
+            "starchips": 200
+        },
+        "Witch's Apprentice": {
+            "starchips": 50
+        },
+        "Acid Crawler": {
+            "starchips": 100
+        },
+        "Warrior Elimination": {
+            "starchips": 1000
+        },
+        "Eternal Rest": {
+            "starchips": 1000
+        },
+        "Metalmorph": {
+            "starchips": 1000
+        },
+        "Stain Storm": {
+            "starchips": 1000
+        },
+        "Crush Card": {
+            "starchips": 1000
+        },
+        "Eradicating Aerosol": {
+            "starchips": 1000
+        },
+        "Breath of Light": {
+            "starchips": 1000
+        },
+        "Eternal Draught": {
+            "starchips": 1000
+        },
+        "Gate Guardian Ritual": {
+            "starchips": 1000
+        },
+        "Shadow Spell": {
+            "starchips": 1000
+        },
+        "Harpie's Feather Duster": {
+            "starchips": 1000
+        },
+        "Ultimate Dragon": {
+            "starchips": 1000
+        },
+        "House of Adhesive Tape": {
+            "starchips": 1000
+        },
+        "Eatgaboon": {
+            "starchips": 1000
+        },
+        "Bear Trap": {
+            "starchips": 1000
+        },
+        "Invisible Wire": {
+            "starchips": 1000
+        },
+        "Acid Trap Hole": {
+            "starchips": 1000
+        },
+        "Widespread Ruin": {
+            "starchips": 1000
+        },
+        "Goblin Fan": {
+            "starchips": 1000
+        },
+        "Bad Reaction to Simochi": {
+            "starchips": 1000
+        },
+        "Reverse Trap": {
+            "starchips": 1000
+        },
+        "Fake Trap": {
+            "starchips": 1000
+        },
+        "Javelin Beetle Pact": {
+            "starchips": 1000
+        },
+        "Performance of Sword": {
+            "password": "04849037",
+            "starchips": 800
+        },
+        "Hungry Burger": {
+            "password": "30243636",
+            "starchips": 800
+        },
+        "Sengenjin": {
+            "password": "76232340",
+            "starchips": 2500
+        },
+        "Skull Guardian": {
+            "password": "03627449",
+            "starchips": 1500
+        },
+        "Tri-horned Dragon": {
+            "password": "39111158",
+            "starchips": 2500
+        },
+        "Serpent Night Dragon": {
+            "password": "66516792",
+            "starchips": 1500
+        },
+        "Skull Knight": {
+            "starchips": 1500
+        },
+        "Cosmo Queen": {
+            "password": "38999506",
+            "starchips": 2500
+        },
+        "Chakra": {
+            "password": "65393205",
+            "starchips": 1500
+        },
+        "Crab Turtle": {
+            "password": "91782219",
+            "starchips": 2500
+        },
+        "Mikazukinoyaiba": {
+            "starchips": 1500
+        },
+        "Meteor Dragon": {
+            "starchips": 800
+        },
+        "Meteor B. Dragon": {
+            "password": "90660762",
+            "starchips": 2500
+        },
+        "Firewing Pegasus": {
+            "starchips": 800
+        },
+        "Psycho-Puppet": {
+            "password": "63459075",
+            "starchips": 1500
+        },
+        "Garma Sword": {
+            "password": "90844184",
+            "starchips": 1500
+        },
+        "Javelin Beetle": {
+            "password": "26932788",
+            "starchips": 2500
+        },
+        "Fortress Whale": {
+            "password": "62337487",
+            "starchips": 1500
+        },
+        "Dokurorider": {
+            "password": "99721536",
+            "starchips": 800
+        },
+        "Mask of Shine & Dark": {
+            "password": "25110231",
+            "starchips": 800
+        },
+        "Dark Magic Ritual": {
+            "password": "76792184",
+            "starchips": 1000
+        },
+        "Magician of Black Chaos": {
+            "password": "30208479",
+            "starchips": 2500
+        }
+    }
+}
