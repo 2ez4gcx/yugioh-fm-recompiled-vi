@@ -119,8 +119,21 @@ mục mod của người chơi) thành một file zip. Mod code phải build b�
 - Port Yu-Gi-Oh! Forbidden Memories Recompiled: Unchiga và cộng sự (phần port: MIT). Giải mã gốc:
   [memories-decomp](https://github.com/krystalgamer/memories-decomp). Yu-Gi-Oh! và Forbidden Memories thuộc Konami.
 - Gói Forbidden Memories HD: Unchiga, X@nder (tải ở release của port, không nằm trong gói này).
-- Monster Effects, Adversários à Mesa, 3D Duel Arena, Dual Play và bản AI Hard Mode 0.1.10: jonasfelix92
-  (AI Hard Mode gốc: DecompRecomp).
+- Mod của **jonasfelix92**, chia sẻ công khai trên [Discord YFM Re-Decomp](https://discord.gg/Gn6Mag52q):
+
+  | Mod | Phiên bản |
+  |---|---|
+  | Monster Effects | 0.37.1 |
+  | Adversários à Mesa (`simon-at-table`) | 0.5.0 |
+  | 3D Duel Arena | 0.6.2 |
+  | Dual Play | 0.5.10 |
+  | AI Hard Mode (bản dùng cùng Monster Effects; AI Hard Mode gốc của DecompRecomp, MIT) | 0.1.10 |
+
+  Các mod này được gói lại **nguyên vẹn**, không sửa đổi, kèm mã nguồn, tài liệu và giấy phép của tác giả trong thư
+  mục từng mod. Bản quyền thuộc tác giả. `monster-effects-vi` chỉ thêm bản dịch tiếng Việt các mô tả hiệu ứng của
+  Monster Effects, không đổi mod gốc.
 - Bản Việt hoá (chữ, đồ hoạ, mô tả hiệu ứng), Đủ 722 lá, Rơi nhiều lá: Bản Việt hóa phi lợi nhuận bởi KhươngKid.
 
-Gói mod chứa mod của jonasfelix92: trước khi chia sẻ công khai, hãy hỏi ý tác giả.
+Gói mod phát hành **phi lợi nhuận**, miễn phí, để người chơi cài đặt thuận tiện. Không bán và không dùng vào mục đích
+thương mại. Tác giả nào muốn gỡ phần của mình khỏi gói, hoặc muốn ghi công khác đi, xin mở issue ở repo này: phần đó
+sẽ được gỡ hoặc sửa ngay.
