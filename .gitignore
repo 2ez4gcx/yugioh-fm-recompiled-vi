@@ -2,6 +2,8 @@
 *.bin
 *.cue
 *.iso
+# ...but a mod's own data files are part of the mod (viet-hoa-gfx/field_frames.bin)
+!mods/**/*.bin
 # release files go in GitHub Releases, not the repository
 *.apk
 *.zip
