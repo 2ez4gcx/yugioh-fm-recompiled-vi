@@ -8,7 +8,8 @@ SHA-256 6e22494a45bf50fa2d239cd3819a57163a5f9b91e0365babc3e101509b5c3a7c, lấy 
 
 TRONG GÓI (thư mục mods/)
   Của bản Việt hoá:  viet-hoa (chữ), viet-hoa-gfx (đồ hoạ), du-722-la (đủ 722 lá),
-                     roi-nhieu-la (5 lá mỗi trận thắng), monster-effects-vi (mô tả hiệu ứng tiếng Việt)
+                     roi-nhieu-la (5 lá mỗi trận thắng), monster-effects-vi (mô tả hiệu ứng tiếng Việt),
+                     may-choi-nhanh (lượt của máy chạy 300%, cảnh máy tấn công giữ tốc độ thường)
   Của jonasfelix92:  monster-effects, simon-at-table (Adversários à Mesa), 3d-duel-arena,
                      dual-play và ai-hard-mode (hai mod này tắt sẵn)
 
@@ -24,8 +25,8 @@ ANDROID
 1. Cài APK chính thức (ở trên), mở app, chọn Choose disc image... -> file .bin.
 2. Mods > HD pack... (tải gói HD chính thức).
 3. Mods > Import mod... -> chọn file zip này. Mod nhập vào đều đang tắt: bật
-   Tiếng Việt, Tiếng Việt: đồ hoạ, Đủ 722 lá, Rơi nhiều lá, Monster Effects, Monster Effects – tiếng Việt,
-   Adversários à Mesa, 3D Duel Arena.
+   Tiếng Việt, Tiếng Việt: đồ hoạ, Đủ 722 lá, Rơi nhiều lá, Máy chơi nhanh, Monster Effects,
+   Monster Effects – tiếng Việt, Adversários à Mesa, 3D Duel Arena.
 4. Mods > 3D Monsters > Monsters attack = On the field (đánh thẳng trên bàn).
 5. Apply rồi mở lại app. Tuỳ chọn: Video > Internal 4x, HD text (máy yếu: 2x).
 
@@ -43,6 +44,9 @@ WINDOWS (v0.3.0 hoặc v0.3.1-preview.1)
 
 GHI CHÚ
 - Rơi 5 lá: mod Rơi nhiều lá đặt Game > Card drops mỗi lần mở game; đổi số lá trong Mods > Rơi nhiều lá.
+- Máy chơi nhanh: trong lượt của máy, game tự chạy 300% như khi giữ Tab (nhạc giữ nhịp); cảnh máy tấn công vẫn ở
+  tốc độ thường. Đổi tốc độ (100-400%) hoặc tăng tốc cả đòn đánh trong Mods > Máy chơi nhanh.
+  Máy "nghĩ" lâu sau khi ra bài là hoạt cảnh của game gốc (con trỏ trượt từng ô), cùng số khung như bản PS1.
 - Save thẻ nhớ cũ (.mcr .mcd .srm .gme .mcs .psv ...): chép vào thư mục saves rồi chọn LOAD ở màn tiêu đề.
 - Mod code có ba bản: Windows (.o), Android v0.3.0 (.aarch64.o), Android v0.3.1 (.aarch64-translated.o).
   Bản Android v0.3.1 của các mod đọc file (Tiếng Việt: đồ hoạ, Adversários à Mesa, 3D Duel Arena) có thêm

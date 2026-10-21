@@ -1,0 +1,16 @@
+{
+  "id": "may-choi-nhanh",
+  "name": "Máy chơi nhanh",
+  "version": "1.0",
+  "author": "KhươngKid",
+  "description": "Lượt của máy chạy nhanh hơn: rút bài, đặt bài, con trỏ chọn lá và mục tiêu, qua lượt. Mặc định đòn đánh của máy vẫn ở tốc độ thường. Như tự giữ Tab trong lượt của máy; nhạc giữ nhịp.",
+  "library": "may-choi-nhanh",
+  "enabled": true,
+  "min_api": 12,
+  "settings": [
+    {"key": "speed", "label": "Tốc độ lượt của máy (%)", "type": "int", "default": 300, "min": 100, "max": 400, "step": 50,
+     "description": "100 là tốc độ thường. Máy yếu có thể không đạt tới mức đã chọn."},
+    {"key": "battle", "label": "Tăng tốc cả đòn đánh của máy", "type": "bool", "default": 0,
+     "description": "Tắt: cảnh máy tấn công chạy ở tốc độ thường để dễ xem. Bật: cả lượt của máy đều nhanh."}
+  ]
+}

@@ -59,6 +59,7 @@ Mã SHA-256 của gói mod nằm trong `SHA256SUMS.txt` của release.
 | Đủ 722 lá (`du-722-la`) | bản Việt hoá này | 82 lá vốn không rơi được thêm vào bảng rơi S/A của đối thủ dùng lá đó, 122 lá giá 999999 sao được hạ giá theo cấp, 24 lá không có mật mã được thêm mật mã thật |
 | Rơi nhiều lá (`roi-nhieu-la`) | bản Việt hoá này | mỗi trận thắng 5 lá (đổi số lá trong tuỳ chọn của mod) |
 | Monster Effects – tiếng Việt (`monster-effects-vi`) | bản Việt hoá này | mô tả hiệu ứng tiếng Việt cho 63 lá của Monster Effects |
+| Máy chơi nhanh (`may-choi-nhanh`) | bản Việt hoá này | lượt của máy chạy 300%: rút bài, đặt bài, con trỏ chọn lá và mục tiêu, qua lượt; cảnh máy tấn công giữ tốc độ thường. Trong tuỳ chọn của mod: đổi tốc độ (100–400%), tăng tốc cả đòn đánh |
 | Monster Effects | jonasfelix92 | 61 quái vật có hiệu ứng, mở rộng Dark Hole và Harpie's Feather Duster |
 | Adversários à Mesa (`simon-at-table`) | jonasfelix92 | đối thủ ngồi sau bàn đấu, chớp mắt và đổi nét mặt theo điểm sinh mệnh |
 | 3D Duel Arena | jonasfelix92 | cảnh 3D quanh bàn đấu; sân vận động ở giải đấu trong cốt truyện (đối thủ 9 đến 17) |
@@ -80,8 +81,8 @@ Android v0.3.1-preview.1 (`.aarch64-translated.o`).
    (xem bên dưới).
 2. **Mods > HD pack...** để tải gói HD (tuỳ chọn).
 3. **Mods > Import mod...**, chọn `yfm-viet-hoa-mods-v<phiên bản>.zip`. Mod nhập vào đều đang tắt: bật
-   **Tiếng Việt, Tiếng Việt: đồ hoạ, Đủ 722 lá, Rơi nhiều lá, Monster Effects, Monster Effects – tiếng Việt,
-   Adversários à Mesa, 3D Duel Arena**.
+   **Tiếng Việt, Tiếng Việt: đồ hoạ, Đủ 722 lá, Rơi nhiều lá, Máy chơi nhanh, Monster Effects, Monster Effects – tiếng
+   Việt, Adversários à Mesa, 3D Duel Arena**.
 4. **Mods > 3D Monsters > Monsters attack = On the field**: quái vật đánh thẳng trên bàn, không vào cảnh hai lá bài lớn.
 5. **Apply** rồi mở lại app. Tuỳ chọn: Video > Internal 4x và HD text (máy yếu thì 2x).
 
@@ -115,12 +116,16 @@ Save state (F5/F7, hay của giả lập) không chuyển được giữa máy v
 ## Lưu ý
 
 - Gói mod đã chạy đúng trên bản Windows chính thức v0.3.0 và v0.3.1-preview.1: chữ và đồ hoạ tiếng Việt, đánh trên
-  bàn, rơi 5 lá, sân vận động, đủ 7 mod code. Bản Android v0.3.0 của các mod jonasfelix92 tác giả ghi là chưa thử trên
-  máy thật; bản Android v0.3.1-preview.1 của mọi mod code được build bằng SDK chính thức của v0.3.1-preview.1 và chưa
-  thử trên máy thật.
+  bàn, rơi 5 lá, sân vận động, Máy chơi nhanh; mọi mod code bật sẵn đều nạp được. Bản Android v0.3.0 của các mod jonasfelix92 tác giả ghi
+  là chưa thử trên máy thật; bản Android v0.3.1-preview.1 của mọi mod code được build bằng SDK chính thức của
+  v0.3.1-preview.1 và chưa thử trên máy thật.
 - Font của port rộng cố định 8 px (bản đĩa dùng chữ rộng thay đổi), nên vài chỗ được ngắt dòng lại hoặc xếp lại cho
   vừa ô: mô tả lá bài, vài câu thoại dài, tên "Thung Lũng Vua" trên bản đồ (ô 16 chữ), menu chọn thủ hộ tinh
   (lựa chọn sát lề trái để "Sao Thiên Vương" vừa khung, kể cả chữ HD trên Android).
+- Máy "nghĩ" lâu sau khi ra bài là hoạt cảnh của game gốc: camera chuyển lên nhìn từ trên, con trỏ của máy dừng trên lá
+  rồi trượt từng ô tới mục tiêu, cùng số khung hình như bản PS1 (máy tính nước đi chưa tới một khung). Mod Máy chơi
+  nhanh cho lượt của máy chạy 300%. Thấy chậm hơn PS1 thì thường là máy không đạt 100% tốc độ (Debug > Show HUD: 100%
+  là khoảng 60 fps).
 - Chỉ dùng bản Việt hoá này: đừng bật cùng một bản dịch tiếng Việt khác (port từ chối bộ mod có hai bản dịch xung đột).
 
 ## Đóng gói lại
@@ -157,7 +162,8 @@ repo này với mod của tác giả khác thành một file zip; `check_bundle.
   thức của port, cộng `fread_android.c` ở 3D Duel Arena và Adversários à Mesa (xem [Đóng gói lại](#đóng-gói-lại)).
   Bản quyền thuộc tác giả. `monster-effects-vi` chỉ thêm bản dịch tiếng Việt các mô tả hiệu ứng của
   Monster Effects, không đổi mod gốc.
-- Bản Việt hoá (chữ, đồ hoạ, mô tả hiệu ứng), Đủ 722 lá, Rơi nhiều lá: Bản Việt hóa phi lợi nhuận bởi KhươngKid.
+- Bản Việt hoá (chữ, đồ hoạ, mô tả hiệu ứng), Đủ 722 lá, Rơi nhiều lá, Máy chơi nhanh: Bản Việt hóa phi lợi nhuận bởi
+  KhươngKid.
 
 Gói mod phát hành **phi lợi nhuận**, miễn phí, để người chơi cài đặt thuận tiện. Không bán và không dùng vào mục đích
 thương mại. Tác giả nào muốn gỡ phần của mình khỏi gói, hoặc muốn ghi công khác đi, xin mở issue ở repo này: phần đó

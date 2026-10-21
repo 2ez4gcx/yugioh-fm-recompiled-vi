@@ -18,7 +18,7 @@ import argparse, hashlib, json, os, sys, zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 USER_MODS = os.path.join(os.path.expanduser("~"), "Documents", "My Games", "YFM Re-Decomp", "mods")
-OWN = ["viet-hoa", "viet-hoa-gfx", "du-722-la", "monster-effects-vi", "roi-nhieu-la"]   # mods/ của repo này
+OWN = ["viet-hoa", "viet-hoa-gfx", "du-722-la", "monster-effects-vi", "roi-nhieu-la", "may-choi-nhanh"]   # mods/ của repo này
 # Mod của tác giả khác đi kèm. Bản Việt hoá là của repo này (viet-hoa), không gói bản dịch khác.
 OTHERS = ["monster-effects", "simon-at-table", "3d-duel-arena", "dual-play", "ai-hard-mode"]
 SKIP_SUFFIXES = (".pdb", ".undefined", ".partial")
