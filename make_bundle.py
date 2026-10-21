@@ -1,13 +1,18 @@
-"""Gói mod duy nhất cho bản chính thức v0.3.0 của Yu-Gi-Oh! Forbidden Memories Recompiled (Windows và Android).
+"""Gói mod duy nhất cho bản chính thức của Yu-Gi-Oh! Forbidden Memories Recompiled: v0.3.0 (Windows và Android)
+và v0.3.1-preview.1 (Windows và Android).
 
 Một file zip, thư mục mods/ ở gốc:
   * Android: Mods > Import mod... nhận mọi mod trong mods/ (trình nhập của v0.3.0 đọc thư mục bọc mods/);
   * PC: giải nén vào Documents/My Games/YFM Re-Decomp, được mods/<mod>.
-Mod code có cả đối tượng i386 (<library>.o, Windows) và aarch64 (<library>.aarch64.o, Android), build theo
-API 12 (tools/pc/build_mod.py của port v0.3.0): bản API mới hơn bị game v0.3.0 từ chối.
+Mod code có ba đối tượng:
+  * <library>.o, i386 (Windows v0.3.0 và v0.3.1-preview.1), build theo API 12 (tools/pc/build_mod.py của port
+    v0.3.0): bản API mới hơn bị game v0.3.0 từ chối;
+  * <library>.aarch64.o, Android v0.3.0 (game bộ nhớ cố định), cùng API 12;
+  * <library>.aarch64-translated.o, Android v0.3.1-preview.1 (game dịch), build bằng build_translated.py với
+    SDK của bản v0.3.1-preview.1.
 
-    python make_bundle.py --version 2.0 --out <thư mục>
-Mặc định lấy các mod từ thư mục mods/ của người chơi và mods/ của repo này.
+    python make_bundle.py --version 2.1 --out <thư mục> --others <thư mục mod của tác giả khác>
+Mod của repo này lấy từ mods/; mod của tác giả khác mặc định từ thư mục mods/ của người chơi.
 """
 import argparse, hashlib, json, os, sys, zipfile
 
@@ -45,9 +50,9 @@ def main():
             if manifest.get("library"):
                 have = sorted(f for f in os.listdir(root) if f.endswith(".o"))
                 library = manifest["library"]
-                for need in (f"{library}.o", f"{library}.aarch64.o"):
+                for need in (f"{library}.o", f"{library}.aarch64.o", f"{library}.aarch64-translated.o"):
                     if need not in have:
-                        sys.exit(f"{mod}: thiếu {need} (cần cả Windows i386 và Android aarch64)")
+                        sys.exit(f"{mod}: thiếu {need} (cần Windows i386, Android v0.3.0 và Android v0.3.1)")
                 objects[mod] = have
             for folder, _dirs, names in os.walk(root):
                 for f in sorted(names):

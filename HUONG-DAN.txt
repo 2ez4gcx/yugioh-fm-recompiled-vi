@@ -1,6 +1,7 @@
 YU-GI-OH! FORBIDDEN MEMORIES RECOMPILED — GÓI MOD VIỆT HOÁ
-Dùng cho bản chính thức v0.3.0 (Windows và Android) của Unchiga:
-https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.0
+Dùng cho bản chính thức của Unchiga, Windows và Android:
+  v0.3.0             https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.0
+  v0.3.1-preview.1   https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.1-preview.1
 
 Không kèm file game: cần đĩa Mỹ SLUS-01411 dạng .bin thô (MODE2/2352), chưa vá,
 SHA-256 6e22494a45bf50fa2d239cd3819a57163a5f9b91e0365babc3e101509b5c3a7c, lấy từ đĩa của chính bạn.
@@ -11,8 +12,16 @@ TRONG GÓI (thư mục mods/)
   Của jonasfelix92:  monster-effects, simon-at-table (Adversários à Mesa), 3d-duel-arena,
                      dual-play và ai-hard-mode (hai mod này tắt sẵn)
 
+ANDROID: CHỌN APK NÀO
+  - v0.3.0 (bản ổn định): yfm-redecomp-v0.3.0-android-arm64.apk
+  - v0.3.1-preview.1 (bản thử nghiệm): yfm-redecomp-v0.3.1-preview.1-android-arm64.apk
+    Dùng bản này nếu v0.3.0 báo "The game could not set up the memory it runs in on this device:
+    the addresses from 0x80000000 to 0x801FFFFF could not be had" (nhiều máy Android 8-13).
+    Cài đè lên bản cũ được; save thẻ nhớ giữ nguyên, save state của v0.3.0 không nạp được.
+  Gói này chạy được trên cả hai bản.
+
 ANDROID
-1. Cài yfm-redecomp-v0.3.0-android-arm64.apk (bản chính thức), mở app, chọn Choose disc image... -> file .bin.
+1. Cài APK chính thức (ở trên), mở app, chọn Choose disc image... -> file .bin.
 2. Mods > HD pack... (tải gói HD chính thức).
 3. Mods > Import mod... -> chọn file zip này. Mod nhập vào đều đang tắt: bật
    Tiếng Việt, Tiếng Việt: đồ hoạ, Đủ 722 lá, Rơi nhiều lá, Monster Effects, Monster Effects – tiếng Việt,
@@ -20,9 +29,13 @@ ANDROID
 4. Mods > 3D Monsters > Monsters attack = On the field (đánh thẳng trên bàn).
 5. Apply rồi mở lại app. Tuỳ chọn: Video > Internal 4x, HD text (máy yếu: 2x).
 
-WINDOWS
-1. Giải nén yfm-redecomp-v0.3.0-windows.zip (bản chính thức), chạy memories-pc.exe, chọn file .bin.
-2. Giải nén yfm-redecomp-hd-mod-v0.3.0.zip (gói HD chính thức) vào thư mục game (cạnh memories-pc.exe).
+ANDROID: CẬP NHẬT TỪ GÓI CŨ
+  Mod đang chạy thì không thay được. Mods > tắt các mod của gói > Apply, mở lại app;
+  rồi Import mod... chọn file zip mới, trả lời Replace cho từng mod; bật lại như bước 3-5.
+
+WINDOWS (v0.3.0 hoặc v0.3.1-preview.1)
+1. Giải nén bản Windows chính thức (yfm-redecomp-<phiên bản>-windows.zip), chạy memories-pc.exe, chọn file .bin.
+2. Giải nén gói HD chính thức (yfm-redecomp-hd-mod-<phiên bản>.zip) vào thư mục game (cạnh memories-pc.exe).
 3. Đóng game. Giải nén gói này vào Documents\My Games\YFM Re-Decomp (sẽ có ...\YFM Re-Decomp\mods\viet-hoa ...).
    Các mod tự bật (trừ Dual Play, AI Hard Mode).
 4. Mở game, F10 > Game > Mods > 3D Monsters > Monsters attack = On the field, Apply.
@@ -31,4 +44,7 @@ WINDOWS
 GHI CHÚ
 - Rơi 5 lá: mod Rơi nhiều lá đặt Game > Card drops mỗi lần mở game; đổi số lá trong Mods > Rơi nhiều lá.
 - Save thẻ nhớ cũ (.mcr .mcd .srm .gme .mcs .psv ...): chép vào thư mục saves rồi chọn LOAD ở màn tiêu đề.
+- Mod code có ba bản: Windows (.o), Android v0.3.0 (.aarch64.o), Android v0.3.1 (.aarch64-translated.o).
+  Bản Android v0.3.1 của các mod đọc file (Tiếng Việt: đồ hoạ, Adversários à Mesa, 3D Duel Arena) có thêm
+  fread_android.c: game v0.3.1 chưa cho mod dùng fread, tệp này thay bằng fgets; mã nguồn của mod giữ nguyên.
 - Mod của jonasfelix92 và gói HD thuộc về tác giả của chúng. Bản Việt hoá phi lợi nhuận bởi KhươngKid.

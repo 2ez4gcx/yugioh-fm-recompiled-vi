@@ -1,8 +1,8 @@
 # Yu-Gi-Oh! Forbidden Memories Recompiled — Việt hoá (PC + Android)
 
 Một gói mod tiếng Việt cho [Yu-Gi-Oh! Forbidden Memories Recompiled](https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled)
-(bản PC/Android dựng từ mã nguồn giải mã của game PS1). Dùng **bản chính thức v0.3.0** của port cho cả Windows và
-Android, chỉ cần thêm **một file zip** mod. Bản dịch lấy từ bản Việt hoá đĩa
+(bản PC/Android dựng từ mã nguồn giải mã của game PS1). Dùng **bản chính thức** của port (v0.3.0, hoặc bản thử
+nghiệm v0.3.1-preview.1) cho cả Windows và Android, chỉ cần thêm **một file zip** mod. Bản dịch lấy từ bản Việt hoá đĩa
 [yugioh-fm-vi-patch](https://github.com/2ez4gcx/yugioh-fm-vi-patch).
 
 **Không kèm dữ liệu game.** File game gốc do người chơi tự cung cấp (xem [File game gốc](#file-game-gốc-người-chơi-tự-cung-cấp)).
@@ -44,7 +44,8 @@ Bạn cần:
 | File | Lấy ở |
 |---|---|
 | Game bản chính thức v0.3.0: `yfm-redecomp-v0.3.0-android-arm64.apk` (Android) hoặc `yfm-redecomp-v0.3.0-windows.zip` (Windows) | [release v0.3.0 của port](https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.0) |
-| Gói HD (tuỳ chọn): `yfm-redecomp-hd-mod-v0.3.0.zip`; trên Android tải trong app bằng Mods > HD pack... | release v0.3.0 của port |
+| Hoặc bản thử nghiệm v0.3.1-preview.1: `yfm-redecomp-v0.3.1-preview.1-android-arm64.apk`, `yfm-redecomp-v0.3.1-preview.1-windows.zip`. Trên Android, dùng bản này nếu v0.3.0 không mở được (xem [Cài trên Android](#cài-trên-android)) | [release v0.3.1-preview.1 của port](https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.1-preview.1) |
+| Gói HD (tuỳ chọn): `yfm-redecomp-hd-mod-<phiên bản>.zip`, cùng phiên bản với game; trên Android tải trong app bằng Mods > HD pack... | release của port |
 | **Gói mod Việt hoá**: `yfm-viet-hoa-mods-v<phiên bản>.zip`, dùng chung cho Windows và Android | [Releases](../../releases) của repo này |
 
 Mã SHA-256 của gói mod nằm trong `SHA256SUMS.txt` của release.
@@ -63,7 +64,8 @@ Mã SHA-256 của gói mod nằm trong `SHA256SUMS.txt` của release.
 | 3D Duel Arena | jonasfelix92 | cảnh 3D quanh bàn đấu; sân vận động ở giải đấu trong cốt truyện (đối thủ 9 đến 17) |
 | Dual Play, AI Hard Mode 0.1.10 | jonasfelix92 | tuỳ chọn, tắt sẵn |
 
-Mod code trong gói có cả bản Windows (i386) và Android (arm64), build cho game v0.3.0.
+Mod code trong gói có ba bản: Windows (i386, chạy trên v0.3.0 và v0.3.1-preview.1), Android v0.3.0 (`.aarch64.o`) và
+Android v0.3.1-preview.1 (`.aarch64-translated.o`).
 
 | | |
 |---|---|
@@ -73,7 +75,9 @@ Mod code trong gói có cả bản Windows (i386) và Android (arm64), build cho
 ## Cài trên Android
 
 1. Cài `yfm-redecomp-v0.3.0-android-arm64.apk` (Android 7.0 trở lên, máy arm64), mở app, chọn **Choose disc image...**
-   và chọn file `.bin`.
+   và chọn file `.bin`. Nếu app báo *"The game could not set up the memory it runs in on this device: the addresses
+   from 0x80000000 to 0x801FFFFF could not be had"*, cài `yfm-redecomp-v0.3.1-preview.1-android-arm64.apk` đè lên
+   (xem bên dưới).
 2. **Mods > HD pack...** để tải gói HD (tuỳ chọn).
 3. **Mods > Import mod...**, chọn `yfm-viet-hoa-mods-v<phiên bản>.zip`. Mod nhập vào đều đang tắt: bật
    **Tiếng Việt, Tiếng Việt: đồ hoạ, Đủ 722 lá, Rơi nhiều lá, Monster Effects, Monster Effects – tiếng Việt,
@@ -81,16 +85,25 @@ Mod code trong gói có cả bản Windows (i386) và Android (arm64), build cho
 4. **Mods > 3D Monsters > Monsters attack = On the field**: quái vật đánh thẳng trên bàn, không vào cảnh hai lá bài lớn.
 5. **Apply** rồi mở lại app. Tuỳ chọn: Video > Internal 4x và HD text (máy yếu thì 2x).
 
+**Máy báo lỗi bộ nhớ (0x80000000) khi mở v0.3.0:** trên nhiều máy Android 8–13, bộ nhớ Java của hệ thống chiếm sẵn
+vùng địa chỉ mà game v0.3.0 cần, lần mở nào cũng vậy; mở lại hay xoá dữ liệu không hết. Bản thử nghiệm
+**v0.3.1-preview.1** của port không cần vùng đó nữa và gói mod này có sẵn bản cho nó. Cài APK v0.3.1-preview.1 đè lên
+bản cũ rồi làm các bước trên. Save thẻ nhớ giữ nguyên; save state của v0.3.0 không nạp được trên v0.3.1.
+
+**Cập nhật lên gói mod mới:** mod đang chạy thì không thay được. Tắt các mod của gói, Apply và mở lại app; rồi
+**Import mod...** chọn file zip mới, trả lời **Replace** cho từng mod, và bật lại như bước 3–5.
+
 ## Cài trên Windows
 
-1. Giải nén `yfm-redecomp-v0.3.0-windows.zip`, chạy `memories-pc.exe`, chọn file `.bin`.
-2. Gói HD (tuỳ chọn): giải nén `yfm-redecomp-hd-mod-v0.3.0.zip` vào thư mục game (cạnh `memories-pc.exe`).
+1. Giải nén `yfm-redecomp-v0.3.0-windows.zip` (hoặc `yfm-redecomp-v0.3.1-preview.1-windows.zip`), chạy
+   `memories-pc.exe`, chọn file `.bin`.
+2. Gói HD (tuỳ chọn): giải nén `yfm-redecomp-hd-mod-<phiên bản>.zip` vào thư mục game (cạnh `memories-pc.exe`).
 3. Đóng game. Giải nén `yfm-viet-hoa-mods-v<phiên bản>.zip` vào `Documents\My Games\YFM Re-Decomp`
    (thành `...\YFM Re-Decomp\mods\viet-hoa`, ...). Các mod tự bật, trừ Dual Play và AI Hard Mode.
 4. Mở game, **F10 > Game > Mods > 3D Monsters > Monsters attack = On the field**, Apply.
    Video > Resolution > Internal 4x và Video > HD text.
 
-Cập nhật lên gói mod mới: làm lại bước 3 (Android) hoặc giải nén đè (Windows).
+Cập nhật lên gói mod mới: đóng game, giải nén đè.
 
 ## Save cũ
 
@@ -101,8 +114,10 @@ Save state (F5/F7, hay của giả lập) không chuyển được giữa máy v
 
 ## Lưu ý
 
-- Gói mod đã chạy đúng trên bản Windows build từ mã v0.3.0 (cùng mã với APK): chữ và đồ hoạ tiếng Việt, đánh
-  trên bàn, rơi 5 lá, sân vận động. Bản Android của các mod jonasfelix92 tác giả ghi là chưa thử trên máy thật.
+- Gói mod đã chạy đúng trên bản Windows chính thức v0.3.0 và v0.3.1-preview.1: chữ và đồ hoạ tiếng Việt, đánh trên
+  bàn, rơi 5 lá, sân vận động, đủ 7 mod code. Bản Android v0.3.0 của các mod jonasfelix92 tác giả ghi là chưa thử trên
+  máy thật; bản Android v0.3.1-preview.1 của mọi mod code được build bằng SDK chính thức của v0.3.1-preview.1 và chưa
+  thử trên máy thật.
 - Font của port rộng cố định 8 px (bản đĩa dùng chữ rộng thay đổi), nên vài chỗ được ngắt dòng lại hoặc xếp lại cho
   vừa ô: mô tả lá bài, vài câu thoại dài, tên "Thung Lũng Vua" trên bản đồ (ô 16 chữ), menu chọn thủ hộ tinh
   (lựa chọn sát lề trái để "Sao Thiên Vương" vừa khung, kể cả chữ HD trên Android).
@@ -110,9 +125,16 @@ Save state (F5/F7, hay của giả lập) không chuyển được giữa máy v
 
 ## Đóng gói lại
 
-`python make_bundle.py --version <phiên bản> --out <thư mục>` gom `mods/` của repo này với mod của tác giả khác (từ thư
-mục mod của người chơi) thành một file zip. Mod code phải build bằng `tools/pc/build_mod.py` của port **v0.3.0**
-(API 12): bản API mới hơn bị game v0.3.0 từ chối.
+`python make_bundle.py --version <phiên bản> --out <thư mục> --others <thư mục mod của tác giả khác>` gom `mods/` của
+repo này với mod của tác giả khác thành một file zip; `check_bundle.py <file zip>` kiểm tra lại. Mỗi mod code cần ba
+đối tượng:
+
+- `<library>.o` (Windows) và `<library>.aarch64.o` (Android v0.3.0): build bằng `tools/pc/build_mod.py` của port
+  **v0.3.0** (API 12), vì bản API mới hơn bị game v0.3.0 từ chối;
+- `<library>.aarch64-translated.o` (Android v0.3.1-preview.1): `python build_translated.py --sdk <thư mục sdk của bản
+  Windows v0.3.1-preview.1> --cc <llvm-mingw 20260922>\bin\clang.exe <thư mục mod>...`. Game Android v0.3.1 chưa
+  cho mod dùng `fread`; mod nào gọi `fread` được thêm `fread_android.c` (`fread` viết bằng `fgets`, chỉ build cho
+  game đó), mã nguồn của mod giữ nguyên.
 
 ## Ghi công và giấy phép
 
@@ -129,8 +151,11 @@ mục mod của người chơi) thành một file zip. Mod code phải build b�
   | Dual Play | 0.5.10 |
   | AI Hard Mode (bản dùng cùng Monster Effects; AI Hard Mode gốc của DecompRecomp, MIT) | 0.1.10 |
 
-  Các mod này được gói lại **nguyên vẹn**, không sửa đổi, kèm mã nguồn, tài liệu và giấy phép của tác giả trong thư
-  mục từng mod. Bản quyền thuộc tác giả. `monster-effects-vi` chỉ thêm bản dịch tiếng Việt các mô tả hiệu ứng của
+  Các mod này được gói lại kèm mã nguồn, tài liệu và giấy phép của tác giả trong thư mục từng mod; mã nguồn và các
+  đối tượng Windows, Android v0.3.0 của tác giả giữ **nguyên vẹn**. Phần thêm duy nhất là bản cho Android
+  v0.3.1-preview.1 (`.aarch64-translated.o`), do bản Việt hoá build từ chính mã nguồn tác giả gửi kèm bằng SDK chính
+  thức của port, cộng `fread_android.c` ở 3D Duel Arena và Adversários à Mesa (xem [Đóng gói lại](#đóng-gói-lại)).
+  Bản quyền thuộc tác giả. `monster-effects-vi` chỉ thêm bản dịch tiếng Việt các mô tả hiệu ứng của
   Monster Effects, không đổi mod gốc.
 - Bản Việt hoá (chữ, đồ hoạ, mô tả hiệu ứng), Đủ 722 lá, Rơi nhiều lá: Bản Việt hóa phi lợi nhuận bởi KhươngKid.
 
